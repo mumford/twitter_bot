@@ -15,10 +15,9 @@ var twit = new Twit(config);
 var morse = Morse.create('ITU');
 var lastPosted;
 
-setInterval(function() {   
+var run = function() {
     var postTimeToday = moment(messages.repeatingMessages.postTime, "HH:mm:ss");
-
-    console.log(postTimeToday.format() + " < " + moment().format());    
+    console.log("Today's post time is " + postTimeToday.format());    
 
     if (!lastPosted ){
         //|| (lastPosted.dayOfYear() < moment().dayOfYear()         
@@ -30,12 +29,23 @@ setInterval(function() {
 
         var message = morse.encode(messages.repeatingMessages.messages[index - 1]);
 
+        console.log("Converted message to " + message.length + " long morse code.");
+        console.log(message);
+
         twit.post('statuses/update', { status: message },
             function(err, data, response) {
                 console.log(data);
                 lastPosted = moment();
                 console.log("Last message posted at " + lastPosted.format());
             });
+    }
+} 
+
+setInterval(function() {   
+    try {
+        run();
+    } catch (e) {
+        console.log(e);
     }
 }, 60000*60);
 
