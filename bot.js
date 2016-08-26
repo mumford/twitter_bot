@@ -85,7 +85,23 @@ var processRepeatingMessages = function(cb) {
 
 var processOneTimeMessages = function(cb) {
     console.log("Processing one time messags.");
-    cb(null);
+
+    async.each(messages.oneTimeMessages, function(oneTimeMessage, messageDone) {
+        console.log("Working on: " + oneTimeMessage.message);
+        var message = morse.encode(oneTimeMessage.message);        
+
+        async.each(oneTimeMessage.recipients, function(recipient, recipientDone) {
+            var tweet = recipient + " " + message;
+            postMessageToConsole(tweet, recipientDone);
+        }, 
+        function(err) {
+            if (err) {
+                console.log("Error during one time message processing: " + err);
+            }
+
+            messageDone();
+        });
+    }, cb);
 }
 
 var postMessageToTwitter = function(message, cb) {
