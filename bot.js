@@ -7,28 +7,32 @@ var fs = require('fs'),
     config = require(path.join(__dirname, 'config.js')),
     messages = require(path.join(__dirname, 'messageConfig.json'));
 
-moment().tz("America/Chicago").format();
-moment.tz.setDefault("America/Chicago");
-
-config.consumer_secret = process.env.consumer_secret;
-config.access_token_secret = process.env.access_token_secret;
-
-var processInterval = /*60 * 60 **/ 1000; // minutes, seconds, milliseconds
+var defaultTimezone = "America/Chicago";
+var processInterval = 60 * 60 * 1000; // minutes, seconds, milliseconds
 var morse = Morse.create('ITU');
 var lastPosted;
 var twit;
+
+// Configure moment with the timezone we want to use
+moment().tz(defaultTimezone).format();
+moment.tz.setDefault(defaultTimezone);
+
+// Configure Twit so we can post
+config.consumer_secret = process.env.consumer_secret;
+config.access_token_secret = process.env.access_token_secret;
 
 if (config.consumer_secret && config.access_token_secret) {
     twit = new Twit(config);
 }
 
+// Output some useful information
 console.log("Bot started, interval is currently " + processInterval + "ms");
 console.log("The current time is " + moment().format());
 console.log("The post delay is " + messages.repeatingMessages.repeatDelayInSeconds);
 
 var run = function() {
     async.waterfall([
-        //processRepeatingMessages,
+        processRepeatingMessages,
         processOneTimeMessages
     ],
     function(err, result) {
@@ -59,7 +63,7 @@ var processRepeatingMessages = function(cb) {
         console.log("Converted message to " + message.length + " long morse code.");
         console.log(message);
 
-        postMessageToConsole(message, function(err, botData) {
+        postMessageToTwitter(message, function(err, botData) {
             if (err) {
                 console.log("There was an error posting the message: ", err);
                 cb(err);
@@ -93,7 +97,7 @@ var processOneTimeMessages = function(cb) {
 
             async.each(oneTimeMessage.recipients, function(recipient, recipientDone) {
                 var tweet = recipient + " " + message;
-                postMessageToConsole(tweet, function(err) {
+                postMessageToTwitter(tweet, function(err) {
                     if (!err) {
                         oneTimeMessage.isPosted = true;
                         fs.writeFile(path.join(__dirname, 'messageConfig.json'), JSON.stringify(messages, null, 2),
