@@ -12,7 +12,7 @@ moment.tz.setDefault("America/Chicago");
 config.consumer_secret = process.env.consumer_secret;
 config.access_token_secret = process.env.access_token_secret;
 
-var processInterval = /*60 * 60 **/ 1000; // minutes, seconds, milliseconds
+var processInterval = 60 * 60 * 1000; // minutes, seconds, milliseconds
 var morse = Morse.create('ITU');
 var lastPosted;
 var twit;
@@ -50,21 +50,29 @@ var processRepeatingMessages = function(cb) {
         console.log("Converted message to " + message.length + " long morse code.");
         console.log(message);
 
-        postMessageToConsole(message, function(err, botData) {
+        postMessageToTwitter(message, function(err, botData) {
             if (err) {
                 console.log("There was an error posting the message: ", err);
+                cb();
             } else {
                 messages.repeatingMessages.lastPosted = moment().format();
                 console.log("Message posted successfully: " + botData);
                 console.log("Last message posted at " + messages.repeatingMessages.lastPosted);
-            }
 
-            cb();
+                fs.writeFile(path.join(__dirname, 'messageConfig.json'), JSON.stringify(messages),
+                    function(err) {
+                        if (err) {
+                            console.log("Error when saving the messages file: " + err);
+                        }
+
+                        cb();
+                    });
+            }
         });
     }
 }
 
-var postMessage = function(message, cb) {
+var postMessageToTwitter = function(message, cb) {
     twit.post('statuses/update', { status: message },
         function(err, data, response) {
             cb(err, data);
