@@ -11,7 +11,7 @@ moment().format();
 config.consumer_secret = process.env.consumer_secret;
 config.access_token_secret = process.env.access_token_secret;
 
-var processInterval = 1 * 60 * 1000; // minutes, seconds, milliseconds
+var processInterval = 60 * 60 * 1000; // minutes, seconds, milliseconds
 var twit = new Twit(config);
 var morse = Morse.create('ITU');
 var lastPosted;
@@ -22,9 +22,9 @@ var run = function() {
     var postTimeToday = moment(messages.repeatingMessages.postTime, "HH:mm:ss");
     console.log("Today's post time is " + postTimeToday.format());    
 
-    if (!lastPosted ){
-        //|| (lastPosted.dayOfYear() < moment().dayOfYear()         
-        //&& postTimeToday.isBefore(moment()))) {
+    if (!lastPosted 
+        || (lastPosted.dayOfYear() < moment().dayOfYear()         
+        && postTimeToday.isBefore(moment()))) {
         var index = Math.round(Math.random() * messages.repeatingMessages.messages.length);
 
         console.log("Retrieving message " + index + " of " +
