@@ -11,7 +11,7 @@ moment().format();
 config.consumer_secret = process.env.consumer_secret;
 config.access_token_secret = process.env.access_token_secret;
 
-//var twit = new Twit(config);
+var twit = new Twit(config);
 var morse = Morse.create('ITU');
 var lastPosted;
 
@@ -45,12 +45,12 @@ var run = function() {
 }
 
 var postMessage = function(message, cb) {
-    console.log("Message post: " + message);
-    cb();    
-    /*twit.post('statuses/update', { status: message },
+    /*console.log("Message post: " + message);
+    cb();*/    
+    twit.post('statuses/update', { status: message },
         function(err, data, response) {
             cb(err, data);
-        });*/
+        });
 }
 
 setInterval(function() {   
