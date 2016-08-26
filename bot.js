@@ -16,6 +16,8 @@ var twit = new Twit(config);
 var morse = Morse.create('ITU');
 var lastPosted;
 
+console.log("Bot started, interval is currently " + processInterval + "ms");
+
 var run = function() {
     var postTimeToday = moment(messages.repeatingMessages.postTime, "HH:mm:ss");
     console.log("Today's post time is " + postTimeToday.format());    
@@ -52,8 +54,8 @@ var postMessage = function(message, cb) {
         });
 }
 
-setInterval(function() {   
-    console.log("App started, interval set.");
+setInterval(function() {  
+    
     try {
         run();
     } catch (e) {
