@@ -9,7 +9,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "fs": "0.0.1-security",    
+    "async": "^2.0.1",
+    "fs": "0.0.1-security",
     "moment-timezone": "^0.5.5",
     "morse-node": "^0.1.1",
     "path": "^0.12.7",

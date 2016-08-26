@@ -3,6 +3,7 @@ var fs = require('fs'),
     Twit = require('twit'),
     Morse = require('morse-node'),
     moment = require('moment-timezone'),
+    async = require('async'),
     config = require(path.join(__dirname, 'config.js')),
     messages = require(path.join(__dirname, 'messageConfig.json'));
 
@@ -12,7 +13,7 @@ moment.tz.setDefault("America/Chicago");
 config.consumer_secret = process.env.consumer_secret;
 config.access_token_secret = process.env.access_token_secret;
 
-var processInterval = 60 * 60 * 1000; // minutes, seconds, milliseconds
+var processInterval = /*60 * 60 **/ 1000; // minutes, seconds, milliseconds
 var morse = Morse.create('ITU');
 var lastPosted;
 var twit;
@@ -26,8 +27,16 @@ console.log("The current time is " + moment().format());
 console.log("The post delay is " + messages.repeatingMessages.repeatDelayInSeconds);
 
 var run = function() {
-    processRepeatingMessages(function() {
-        console.log("Repeating messages processed.");
+    async.waterfall([
+        processRepeatingMessages,
+        processOneTimeMessages
+    ],
+    function(err, result) {
+        if (err) {
+            console.log("There was an error processing messages: " + err);
+        } else {
+            console.log("Messages processed successfully");
+        }
     });
 }
 
@@ -50,10 +59,10 @@ var processRepeatingMessages = function(cb) {
         console.log("Converted message to " + message.length + " long morse code.");
         console.log(message);
 
-        postMessageToTwitter(message, function(err, botData) {
+        postMessageToConsole(message, function(err, botData) {
             if (err) {
                 console.log("There was an error posting the message: ", err);
-                cb();
+                cb(err);
             } else {
                 messages.repeatingMessages.lastPosted = moment().format();
                 console.log("Message posted successfully: " + botData);
@@ -65,11 +74,18 @@ var processRepeatingMessages = function(cb) {
                             console.log("Error when saving the messages file: " + err);
                         }
 
-                        cb();
+                        cb(null);
                     });
             }
         });
+    } else {
+        cb();
     }
+}
+
+var processOneTimeMessages = function(cb) {
+    console.log("Processing one time messags.");
+    cb(null);
 }
 
 var postMessageToTwitter = function(message, cb) {
