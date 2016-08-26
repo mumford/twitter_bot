@@ -1,6 +1,7 @@
 {
     "repeatingMessages":{
-        "postTime": "10:48:00",
+        "repeatDelayInSeconds": 5,
+        "lastPosted": "2016-08-26T10:51:28-05:00",
         "messages":[
             "You are in shadow",
             "Beware Demiurge",

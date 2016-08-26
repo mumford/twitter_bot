@@ -12,22 +12,34 @@ moment.tz.setDefault("America/Chicago");
 config.consumer_secret = process.env.consumer_secret;
 config.access_token_secret = process.env.access_token_secret;
 
-var processInterval = 60 * 60 * 1000; // minutes, seconds, milliseconds
-var twit = new Twit(config);
+var processInterval = /*60 * 60 **/ 1000; // minutes, seconds, milliseconds
 var morse = Morse.create('ITU');
 var lastPosted;
+var twit;
+
+if (config.consumer_secret && config.access_token_secret) {
+    twit = new Twit(config);
+}
 
 console.log("Bot started, interval is currently " + processInterval + "ms");
 console.log("The current time is " + moment().format());
-console.log("The post time is " + moment(messages.repeatingMessages.postTime, "HH:mm:ss").format())
+console.log("The post delay is " + messages.repeatingMessages.repeatDelayInSeconds);
 
 var run = function() {
-    var postTimeToday = moment(messages.repeatingMessages.postTime, "HH:mm:ss");
-    console.log("Today's post time is " + postTimeToday.format());    
+    processRepeatingMessages(function() {
+        console.log("Repeating messages processed.");
+    });
+}
 
-    if (!lastPosted 
-        || (lastPosted.dayOfYear() < moment().dayOfYear()         
-        && postTimeToday.isBefore(moment()))) {
+var processRepeatingMessages = function(cb) {
+    var postDelay = messages.repeatingMessages.repeatDelayInSeconds * 1000;
+    var lastPosted = moment(messages.repeatingMessages.lastPosted);
+    var sinceLastMessage = moment() - lastPosted;
+
+    console.log("Since last message was posted " + sinceLastMessage + "ms");
+    console.log("Post delay is " + postDelay + "ms");
+
+    if (sinceLastMessage > postDelay) {
         var index = Math.round(Math.random() * messages.repeatingMessages.messages.length);
 
         console.log("Retrieving message " + index + " of " +
@@ -38,15 +50,17 @@ var run = function() {
         console.log("Converted message to " + message.length + " long morse code.");
         console.log(message);
 
-        postMessage(message, function(err, botData) {
+        postMessageToConsole(message, function(err, botData) {
             if (err) {
                 console.log("There was an error posting the message: ", err);
-            } else {                
-                lastPosted = moment();
+            } else {
+                messages.repeatingMessages.lastPosted = moment().format();
                 console.log("Message posted successfully: " + botData);
-                console.log("Last message posted at " + lastPosted.format());
+                console.log("Last message posted at " + messages.repeatingMessages.lastPosted);
             }
-        })
+
+            cb();
+        });
     }
 }
 
@@ -55,8 +69,11 @@ var postMessage = function(message, cb) {
         function(err, data, response) {
             cb(err, data);
         });
-    /*console.log(message);
-    cb();*/
+}
+
+var postMessageToConsole = function(message, cb) {
+    console.log("Outputting message to the console.\n\n" + message + "\n");
+    cb();
 }
 
 setInterval(function() {
