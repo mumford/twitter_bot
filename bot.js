@@ -11,6 +11,7 @@ moment().format();
 config.consumer_secret = process.env.consumer_secret;
 config.access_token_secret = process.env.access_token_secret;
 
+var processInterval = 1 * 60 * 1000; // minutes, seconds, milliseconds
 var twit = new Twit(config);
 var morse = Morse.create('ITU');
 var lastPosted;
@@ -58,4 +59,4 @@ setInterval(function() {
     } catch (e) {
         console.log(e);
     }
-}, 60000*60);
+}, processInterval);
