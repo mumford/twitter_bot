@@ -28,7 +28,7 @@ console.log("The post delay is " + messages.repeatingMessages.repeatDelayInSecon
 
 var run = function() {
     async.waterfall([
-        processRepeatingMessages,
+        //processRepeatingMessages,
         processOneTimeMessages
     ],
     function(err, result) {
@@ -87,20 +87,38 @@ var processOneTimeMessages = function(cb) {
     console.log("Processing one time messags.");
 
     async.each(messages.oneTimeMessages, function(oneTimeMessage, messageDone) {
-        console.log("Working on: " + oneTimeMessage.message);
-        var message = morse.encode(oneTimeMessage.message);        
+        if (!oneTimeMessage.isPosted && moment().isAfter(moment(oneTimeMessage.postDate))) {
+            console.log("Sending this message: " + oneTimeMessage.message);
+            var message = morse.encode(oneTimeMessage.message);
 
-        async.each(oneTimeMessage.recipients, function(recipient, recipientDone) {
-            var tweet = recipient + " " + message;
-            postMessageToConsole(tweet, recipientDone);
-        }, 
-        function(err) {
-            if (err) {
-                console.log("Error during one time message processing: " + err);
-            }
+            async.each(oneTimeMessage.recipients, function(recipient, recipientDone) {
+                var tweet = recipient + " " + message;
+                postMessageToConsole(tweet, function(err) {
+                    if (!err) {
+                        oneTimeMessage.isPosted = true;
+                        fs.writeFile(path.join(__dirname, 'messageConfig.json'), JSON.stringify(messages, null, 2),
+                            function(err) {
+                                if (err) {
+                                    console.log("Error when saving the messages file: " + err);
+                                }
 
-            messageDone();
-        });
+                                recipientDone();
+                            });
+                    } else {
+                        recipientDone(err);
+                    }
+                });
+            }, 
+            function(err) {
+                if (err) {
+                    console.log("Error during one time message processing: " + err);
+                }
+
+                messageDone();
+            });
+        }
+
+        
     }, cb);
 }
 
