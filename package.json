@@ -2,16 +2,12 @@
   "name": "twitter-bots",
   "version": "1.0.0",
   "main": "bot.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+  "scripts": {    
     "start": "node bot.js"
   },
   "author": "",
   "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "twit": "^2.2.4"
-  },
+  "description": "",  
   "dependencies": {
     "fs": "0.0.1-security",
     "moment": "^2.14.1",
