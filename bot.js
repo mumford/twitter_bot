@@ -11,7 +11,7 @@ moment().format();
 config.consumer_secret = process.env.consumer_secret;
 config.access_token_secret = process.env.access_token_secret;
 
-var twit = new Twit(config);
+//var twit = new Twit(config);
 var morse = Morse.create('ITU');
 var lastPosted;
 
@@ -32,22 +32,35 @@ var run = function() {
         console.log("Converted message to " + message.length + " long morse code.");
         console.log(message);
 
-        twit.post('statuses/update', { status: message },
-            function(err, data, response) {
-                console.log(data);
+        postMessage(message, function(err, botData) {
+            if (err) {
+                console.log("There was an error posting the message: ", err);
+            } else {                
                 lastPosted = moment();
+                console.log("Message posted successfully: " + botData);
                 console.log("Last message posted at " + lastPosted.format());
-            });
+            }
+        })
     }
-} 
+}
+
+var postMessage = function(message, cb) {
+    console.log("Message post: " + message);
+    cb();    
+    /*twit.post('statuses/update', { status: message },
+        function(err, data, response) {
+            cb(err, data);
+        });*/
+}
 
 setInterval(function() {   
+    console.log("App started, interval set.");
     try {
         run();
     } catch (e) {
         console.log(e);
     }
-}, 60000*60);
+}, 1000);//60000*60);
 
 /*
 var message = morse.encode("Testing out morse node");
