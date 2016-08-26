@@ -7,6 +7,7 @@ var fs = require('fs'),
     messages = require(path.join(__dirname, 'messageConfig.json'));
 
 moment().tz("America/Chicago").format();
+moment().tz.setDefault("America/Chicago");
 
 config.consumer_secret = process.env.consumer_secret;
 config.access_token_secret = process.env.access_token_secret;
