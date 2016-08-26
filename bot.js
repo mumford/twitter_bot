@@ -68,7 +68,7 @@ var processRepeatingMessages = function(cb) {
                 console.log("Message posted successfully: " + botData);
                 console.log("Last message posted at " + messages.repeatingMessages.lastPosted);
 
-                fs.writeFile(path.join(__dirname, 'messageConfig.json'), JSON.stringify(messages),
+                fs.writeFile(path.join(__dirname, 'messageConfig.json'), JSON.stringify(messages, null, 2),
                     function(err) {
                         if (err) {
                             console.log("Error when saving the messages file: " + err);
