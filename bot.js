@@ -11,7 +11,7 @@ moment().format();
 config.consumer_secret = process.env.consumer_secret;
 config.access_token_secret = process.env.access_token_secret;
 
-//var twit = new Twit(config);
+var twit = new Twit(config);
 var morse = Morse.create('ITU');
 var lastPosted;
 
@@ -45,12 +45,10 @@ var run = function() {
 }
 
 var postMessage = function(message, cb) {
-    console.log("Message post: " + message);
-    cb();    
-    /*twit.post('statuses/update', { status: message },
+    twit.post('statuses/update', { status: message },
         function(err, data, response) {
             cb(err, data);
-        });*/
+        });
 }
 
 setInterval(function() {   
@@ -60,23 +58,4 @@ setInterval(function() {
     } catch (e) {
         console.log(e);
     }
-}, 1000);//60000*60);
-
-/*
-var message = morse.encode("Testing out morse node");
-
-console.log("Message length is " + message.length + " characters.");
-
-if (message.length <= 140) {
-    console.log(message);
-} else {
-    console.log("Message length exceeds allowable limit.");
-}
-*/
-
-/*
-twit.post('statuses/update', { status: '.. / .- -- / ... - .. .-.. .-.. / .... . .-. .' },
-    function(err, data, response) {
-        console.log(data);}
-    );
-*/
+}, 60000*60);
