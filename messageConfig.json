@@ -34,29 +34,29 @@
             "Have patience salvation comes"
         ]},
     "oneTimeMessages":[{
-            "postDate":"September 16, 2016 19:00:00 -0500",
+            "postDate":"2016-09-16T19:00:00-0500",
             "message":"I found you",
-            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124"]
+            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124", "@tex_red"]
         },{
-            "postDate":"September 17, 2016 05:00:00 -0500",
+            "postDate":"2016-09-17T07:05:21-0500",
             "message":"Demiurge is searching",
-            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124"]
+            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124", "@tex_red"]
         },{
-            "postDate":"September 20, 2016 15:00:00 -0500",
+            "postDate":"2016-09-20T15:33:46-0500",
             "message":"I am drawing attention",
-            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124"]
+            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124", "@tex_red"]
         },{
-            "postDate":"September 20, 2016 15:02:11 -0500",
+            "postDate":"2016-09-20T15:35:01-0500",
             "message":"You are not safe",
-            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124"]
+            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124", "@tex_red"]
         },{
-            "postDate":"September 20, 2016 15:04:20 -0500",
+            "postDate":"2016-09-20T15:38:10-0500",
             "message":"I must leave Shadow",
-            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124"]
+            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124", "@tex_red"]
         },{
-            "postDate":"September 20, 2016 15:17:17 -0500",
+            "postDate":"2016-09-20T15:47:17-0500",
             "message":"I will return",
-            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124"]
+            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124", "@tex_red"]
         }
     ]
 }
