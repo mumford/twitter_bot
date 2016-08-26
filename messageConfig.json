@@ -18,7 +18,19 @@
             "You are vislae",
             "Follow the path",
             "We must find Book M",
-            "Await the Black Cube"
+            "Await the Black Cube",
+            "Seek the Actuality",
+            "Seek communion with Quiss",
+            "Quiss is gone",
+            "Beware the cysts of the War",
+            "I am looking for you",
+            "You have forgotten",
+            "Silver leaves bloom on rounded trees",
+            "Do not trust Auryn",
+            "Auryn seeks you for Demiurge",
+            "Demiurge is your gaoler",
+            "The Black Cube is summoned",
+            "Have patience salvation comes"
         ]},
     "oneTimeMessages":[{
             "postDate":"September 16, 2016 19:00:00 -0500",
@@ -45,5 +57,5 @@
             "message":"I will return",
             "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124"]
         }
-    ]        
+    ]
 }
