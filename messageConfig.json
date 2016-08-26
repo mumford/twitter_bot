@@ -1,0 +1,49 @@
+{
+    "repeatingMessages":{
+        "postTime": "10:48:00",
+        "messages":[
+            "You are in shadow",
+            "Beware Demiurge",
+            "You must prepare",
+            "Satyrine is waiting",
+            "You are sleeping",
+            "Wake up",
+            "Grey is falsehood",
+            "Grey is prison",
+            "Grey is an oubliette",
+            "The war is over",
+            "You are trapped",
+            "Shadow is twisted",
+            "The reflection is false",
+            "You are vislae",
+            "Follow the path",
+            "We must find Book M",
+            "Await the Black Cube"
+        ]},
+    "oneTimeMessages":[{
+            "postDate":"September 16, 2016 19:00:00 -0500",
+            "message":"I found you",
+            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124"]
+        },{
+            "postDate":"September 17, 2016 05:00:00 -0500",
+            "message":"Demiurge is searching",
+            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124"]
+        },{
+            "postDate":"September 20, 2016 15:00:00 -0500",
+            "message":"I am drawing attention",
+            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124"]
+        },{
+            "postDate":"September 20, 2016 15:02:11 -0500",
+            "message":"You are not safe",
+            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124"]
+        },{
+            "postDate":"September 20, 2016 15:04:20 -0500",
+            "message":"I must leave Shadow",
+            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124"]
+        },{
+            "postDate":"September 20, 2016 15:17:17 -0500",
+            "message":"I will return",
+            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124"]
+        }
+    ]        
+}
