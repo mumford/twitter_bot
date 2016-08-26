@@ -2,11 +2,11 @@ var fs = require('fs'),
     path = require('path'),
     Twit = require('twit'),
     Morse = require('morse-node'),
-    moment = require('moment'),
+    moment = require('moment-timezone'),
     config = require(path.join(__dirname, 'config.js')),
     messages = require(path.join(__dirname, 'messageConfig.json'));
 
-moment().format();
+moment().tz("America/Chicago").format();
 
 config.consumer_secret = process.env.consumer_secret;
 config.access_token_secret = process.env.access_token_secret;
@@ -17,6 +17,8 @@ var morse = Morse.create('ITU');
 var lastPosted;
 
 console.log("Bot started, interval is currently " + processInterval + "ms");
+console.log("The current time is " + moment().format());
+console.log("The post time is " + moment(messages.repeatingMessages.postTime, "HH:mm:ss").format())
 
 var run = function() {
     var postTimeToday = moment(messages.repeatingMessages.postTime, "HH:mm:ss");
@@ -52,6 +54,8 @@ var postMessage = function(message, cb) {
         function(err, data, response) {
             cb(err, data);
         });
+    /*console.log(message);
+    cb();*/
 }
 
 setInterval(function() {  

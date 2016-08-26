@@ -2,15 +2,15 @@
   "name": "twitter-bots",
   "version": "1.0.0",
   "main": "bot.js",
-  "scripts": {    
+  "scripts": {
     "start": "node bot.js"
   },
   "author": "",
   "license": "ISC",
-  "description": "",  
+  "description": "",
   "dependencies": {
-    "fs": "0.0.1-security",
-    "moment": "^2.14.1",
+    "fs": "0.0.1-security",    
+    "moment-timezone": "^0.5.5",
     "morse-node": "^0.1.1",
     "path": "^0.12.7",
     "twit": "^2.2.4"
