@@ -1,7 +1,7 @@
 {
     "repeatingMessages":{
-        "repeatDelayInSeconds": 52380,
-        "lastPosted": "2016-08-26T10:51:28-05:00",
+        "repeatDelayInSeconds": 61200,
+        "lastPosted": "2016-08-29T08:00:00-05:00",
         "messages":[
             "You are in shadow",
             "Beware Demiurge",
@@ -34,31 +34,82 @@
             "Have patience salvation comes",
             "Your eyes are deceitful",
             "Keep watch on the stars",
-            "Satyrine holds its secrets"            
+            "Satyrine holds its secrets",
+            "Time in Shadow is a pale shade",
+            "You are stronger than you know",
+            "You are vislae",
+            "Shadow is becoming more dangerous",
+            "Stay vigilant stay strong",
+            "There is strength in knowledge",
+            "Keep listening",
+            "You are living in exile",
+            "We will get you out of Shadow",
+            "Never stop looking"
         ]},
     "oneTimeMessages":[{
             "postDate":"2016-09-16T19:00:00-0500",
-            "message":"I found you",
+            "message":"I have been looking for you",
+            "encode":true,
             "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124", "@tex_red"]
         },{
-            "postDate":"2016-09-17T07:05:21-0500",
-            "message":"Demiurge is searching",
+            "postDate":"2016-09-16T19:00:30-0500",
+            "message":"You can call me Z",
+            "encode":true,
             "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124", "@tex_red"]
         },{
-            "postDate":"2016-09-20T15:33:46-0500",
-            "message":"I am drawing attention",
+            "postDate":"2016-09-16T19:01:17-0500",
+            "message":"You were buried deep in Shadow",
+            "encode":true,
             "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124", "@tex_red"]
         },{
-            "postDate":"2016-09-20T15:35:01-0500",
-            "message":"You are not safe",
+            "postDate":"2016-09-28T19:27:21-0500",
+            "message":"I think we are unnoticed",
+            "encode":false,
             "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124", "@tex_red"]
         },{
-            "postDate":"2016-09-20T15:38:10-0500",
-            "message":"I must leave Shadow",
+            "postDate":"2016-09-28T19:28:03-0500",
+            "message":"I will be in contact soon enough",
+            "encode":false,
             "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124", "@tex_red"]
         },{
-            "postDate":"2016-09-20T15:47:17-0500",
-            "message":"I will return",
+            "postDate":"2016-10-03T11:31:21-0500",
+            "message":"This world is not real",
+            "encode":false,
+            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124", "@tex_red"]
+        },{
+            "postDate":"2016-10-03T11:31:31-0500",
+            "message":"This world is only Shadow. You must return to Satyrine.",
+            "encode":false,
+            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124", "@tex_red"]
+        },{
+            "postDate":"2016-10-03T11:32:10-0500",
+            "message":"You need to find Book M",
+            "encode":false,
+            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124", "@tex_red"]
+        },{
+            "postDate":"2016-10-03T17:11:41-0500",
+            "message":"They found me. That name has a gravity of its own. I should have known better",
+            "encode":false,
+            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124", "@tex_red"]
+        },{
+            "postDate":"2016-10-31T07:23:41-0500",
+            "message":"I need to be more careful",
+            "encode":true,
+            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124", "@tex_red"]
+        },{
+            "postDate":"2016-10-31T07:25:21-0500",
+            "message":"Words carry power even in Shadow",
+            "encode":true,
+            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124", "@tex_red"]
+        },{
+            "postDate":"2016-11-04T13:13:41-0500",
+            "message":"I need more time",
+            "encode":true,
+            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124", "@tex_red"]
+        },{
+            "postDate":"2016-11-04T13:13:41-0500",
+            "message":"I will get you what you need",
+            "encode":true,
             "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124", "@tex_red"]
         }
     ]
