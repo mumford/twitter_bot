@@ -190,4 +190,5 @@ var runLoop = function(loopTimeoutInSeconds) {
 }
 
 // And run the loop to watch for messages
+console.log("Starting up the loop, using default timeout: " + config.defaultLoopTimeInSeconds + "s");
 runLoop(config.defaultLoopTimeInSeconds);
