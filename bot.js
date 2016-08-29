@@ -7,7 +7,6 @@ var fs = require('fs'),
     config = require(path.join(__dirname, 'config.js')),
     messages = require(path.join(__dirname, 'messageConfig.json'));
 
-var processInterval = config.inDevelopmentMode ? 1000 : 60 * 60 * 1000; // minutes, seconds, milliseconds
 var morse = Morse.create('ITU');
 var twit;
 
@@ -24,11 +23,11 @@ if (!config.inDevelopmentMode) {
 }
 
 // Output some useful information
-console.log("Bot started, interval is currently " + processInterval + "ms");
+console.log("Bot started, interval is currently " + config.defaultLoopTimeInSeconds * 1000 + "ms");
 console.log("The current time is " + moment().format());
 console.log("The post delay is " + messages.repeatingMessages.repeatDelayInSeconds + "s");
 
-var run = function() {
+var run = function(cb) {
     async.waterfall([
         processRepeatingMessages,
         processOneTimeMessages
@@ -39,6 +38,8 @@ var run = function() {
         } else {
             console.log("Messages processed successfully");
         }
+
+        cb(config.defaultLoopTimeInSeconds);
     });
 }
 
@@ -118,9 +119,9 @@ var processOneTimeMessages = function(cb) {
 
                 messageDone();
             });
-        }
-
-        
+        } else {
+            messageDone();
+        }        
     }, cb);
 }
 
@@ -136,10 +137,17 @@ var postMessage = function(message, cb) {
     }
 }
 
-setInterval(function() {
-    try {
-        run();
-    } catch (e) {
-        console.log(e);
-    }
-}, processInterval);
+var runLoop = function(loopTimeoutInSeconds) {
+    setTimeout(function() {
+        try {
+            run(function(timeout) {
+                runLoop(timeout);
+            });
+        } catch (e) {
+            console.log(e);
+        }        
+    }, loopTimeoutInSeconds * 1000);
+}
+
+// And run the loop to watch for messages
+runLoop(config.defaultLoopTimeInSeconds);
