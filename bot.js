@@ -39,7 +39,10 @@ var run = function(cb) {
             console.log("Messages processed successfully");
         }
 
-        cb(config.defaultLoopTimeInSeconds);
+        var difference = result - moment();
+        console.log("The next post will occur at: " + result.format() + "\nIn " + difference / 1000 + "s");
+        
+        cb(difference / 1000);
     });
 }
 
@@ -77,17 +80,26 @@ var processRepeatingMessages = function(cb) {
                             console.log("Error when saving the messages file: " + err);
                         }
 
-                        cb(null);
+                        cb(null, calculateNextRepeatingPostTime());
                     });
             }
         });
     } else {
-        cb();
+        cb(null, calculateNextRepeatingPostTime());
     }
 }
 
-var processOneTimeMessages = function(cb) {
-    console.log("Processing one time messags.");
+var calculateNextRepeatingPostTime = function() {
+    var lastPosted = moment(messages.repeatingMessages.lastPosted);
+    lastPosted.add(messages.repeatingMessages.repeatDelayInSeconds, "seconds");
+
+    console.log("Next repeating post will be at: " + lastPosted.format());
+
+    return lastPosted;
+}
+
+var processOneTimeMessages = function(nextScheduledPost, cb) {
+    console.log("Processing one time messages.");
 
     async.each(messages.oneTimeMessages, function(oneTimeMessage, messageDone) {
         if (!oneTimeMessage.isPosted && moment().isAfter(moment(oneTimeMessage.postDate))) {
@@ -122,7 +134,29 @@ var processOneTimeMessages = function(cb) {
         } else {
             messageDone();
         }        
-    }, cb);
+    }, function() {
+        console.log("Processed one time messages, finding the next time one will be posted.");
+        findNextOneTimeMessage(function(nextOneTimePost) {
+            if (nextOneTimePost.isBefore(nextScheduledPost)) {
+                cb(null, nextOneTimePost);
+            } else {
+                cb(null, nextScheduledPost);
+            }
+        });
+    });
+}
+
+var findNextOneTimeMessage = function(cb) {
+    var nextPost;
+    async.each(messages.oneTimeMessages, function(oneTimeMessage, done) {
+        if (!nextPost || nextPost.isAfter(moment(oneTimeMessage.postDate))) {
+            nextPost = moment(oneTimeMessage.postDate);
+        }
+        done();        
+    }, function() {
+        console.log("The next one time message will be posted at: " + nextPost.format());
+        cb(nextPost);
+    });
 }
 
 var postMessage = function(message, cb) {
