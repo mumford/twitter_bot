@@ -104,7 +104,10 @@ var processOneTimeMessages = function(nextScheduledPost, cb) {
     async.each(messages.oneTimeMessages, function(oneTimeMessage, messageDone) {
         if (!oneTimeMessage.isPosted && moment().isAfter(moment(oneTimeMessage.postDate))) {
             console.log("Sending this message: " + oneTimeMessage.message);
-            var message = morse.encode(oneTimeMessage.message);
+
+            var message = oneTimeMessage.encode 
+                ? morse.encode(oneTimeMessage.message)
+                : oneTimeMessage.message;
 
             async.each(oneTimeMessage.recipients, function(recipient, recipientDone) {
                 var tweet = recipient + " " + message;
@@ -149,8 +152,11 @@ var processOneTimeMessages = function(nextScheduledPost, cb) {
 var findNextOneTimeMessage = function(cb) {
     var nextPost;
     async.each(messages.oneTimeMessages, function(oneTimeMessage, done) {
-        if (!nextPost || nextPost.isAfter(moment(oneTimeMessage.postDate))) {
-            nextPost = moment(oneTimeMessage.postDate);
+        var messageDate = moment(oneTimeMessage.postDate);
+
+        if (messageDate.isAfter(moment()) &&
+            (!nextPost || nextPost.isAfter(messageDate))) {
+            nextPost = messageDate;
         }
         done();        
     }, function() {
