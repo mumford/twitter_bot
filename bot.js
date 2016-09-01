@@ -23,7 +23,7 @@ if (!config.inDevelopmentMode) {
 }
 
 // Output some useful information
-console.log("Bot started, interval is currently " + config.defaultLoopTimeInSeconds * 1000 + "ms");
+console.log("Bot started, interval is currently " + config.defaultLoopTimeInSeconds + "s");
 console.log("The current time is " + moment().format());
 console.log("The post delay is " + messages.repeatingMessages.repeatDelayInSeconds + "s");
 
@@ -51,8 +51,8 @@ var processRepeatingMessages = function(cb) {
     var lastPosted = moment(messages.repeatingMessages.lastPosted);
     var sinceLastMessage = moment() - lastPosted;
 
-    console.log("Since last message was posted " + sinceLastMessage + "ms");
-    console.log("Post delay is " + postDelay + "ms");
+    console.log("Since last message was posted " + (sinceLastMessage / 1000) + "s");
+    console.log("Post delay is " + (postDelay / 1000) + "s");
 
     if (sinceLastMessage > postDelay) {
         var index = Math.round(Math.random() * messages.repeatingMessages.messages.length);
