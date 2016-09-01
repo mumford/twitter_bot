@@ -53,28 +53,33 @@
             "You are not alone"
         ]},
     "oneTimeMessages":[{
-            "postDate":"2016-09-16T19:00:00-0500",
+            "postDate":"2016-09-17T09:33:00-0500",
             "message":"I have been looking for you",
             "encode":true,
             "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124"]
         },{
-            "postDate":"2016-09-16T19:00:30-0500",
-            "message":"You can call me Z",
-            "encode":true,
-            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124"]
-        },{
-            "postDate":"2016-09-16T19:01:17-0500",
+            "postDate":"2016-09-17T09:33:41-0500",
             "message":"You were buried deep in Shadow",
             "encode":true,
             "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124"]
         },{
+            "postDate":"2016-09-17T09:35:00-0500",
+            "message":"You can call me Z",
+            "encode":true,
+            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124"]
+        },{
+            "postDate":"2016-09-17T09:40:17-0500",
+            "message":"I will be in touch when it is safe",
+            "encode":true,
+            "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124"]
+        },{
             "postDate":"2016-09-28T19:27:21-0500",
-            "message":"I think we are unnoticed",
+            "message":"I think we are unnoticed.",
             "encode":false,
             "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124"]
         },{
             "postDate":"2016-09-28T19:28:03-0500",
-            "message":"I will be in contact soon enough",
+            "message":"I am working to get you more information as soon as I can.",
             "encode":false,
             "recipients":["@jimbg", "@trinabg", "@troyp23", "@mage124"]
         },{
