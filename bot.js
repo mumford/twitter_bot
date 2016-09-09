@@ -4,11 +4,12 @@ var fs = require('fs'),
     Morse = require('morse-node'),
     moment = require('moment-timezone'),
     async = require('async'),
-    config = require(path.join(__dirname, 'config.js')),
-    messages = require(path.join(__dirname, 'messageConfig.json'));
+    aws = require('aws-sdk'),
+    config = require(path.join(__dirname, 'config.js'));
 
 var morse = Morse.create('ITU');
 var twit;
+var messages = '';
 
 // Configure moment with the timezone we want to use
 moment().tz(config.timezone).format();
@@ -22,10 +23,27 @@ if (!config.inDevelopmentMode) {
     twit = new Twit(config);
 }
 
-// Output some useful information
-console.log("Bot started, interval is currently " + config.defaultLoopTimeInSeconds + "s");
-console.log("The current time is " + moment().format());
-console.log("The post delay is " + messages.repeatingMessages.repeatDelayInSeconds + "s");
+// Configure the AWS service
+aws.config.region = config.awsRegion;
+var s3Bucket = new aws.S3({params:{Bucket: config.s3Bucket}});
+
+var downloadMessages = function(done) {
+    var file = fs.createWriteStream(path.join(__dirname, 'messageConfig.json'));
+
+    console.log("Attempting to download messages.")
+
+    s3Bucket.getObject({Bucket: config.s3Bucket, Key: 'messageConfig.json'})
+        .on('httpData', function(chunk) {
+            console.log("Downloaded a chunk, writing to file."); 
+            file.write(chunk); 
+        })
+        .on('httpDone', function() {
+            console.log("EOF reached, ending operation."); 
+            file.end();
+            done(); 
+        })
+        .send();
+}
 
 var run = function(cb) {
     async.waterfall([
@@ -189,6 +207,15 @@ var runLoop = function(loopTimeoutInSeconds) {
     }, loopTimeoutInSeconds * 1000);
 }
 
-// And run the loop to watch for messages
-console.log("Starting up the loop, using default timeout: " + config.defaultLoopTimeInSeconds + "s");
-runLoop(config.defaultLoopTimeInSeconds);
+downloadMessages(function() {
+    messages = require(path.join(__dirname, 'messageConfig.json'));
+    
+    // Output some useful information
+    console.log("Bot started, interval is currently " + config.defaultLoopTimeInSeconds + "s");
+    console.log("The current time is " + moment().format());
+    console.log("The post delay is " + messages.repeatingMessages.repeatDelayInSeconds + "s");
+
+    // And run the loop to watch for messages
+    console.log("Starting up the loop, using default timeout: " + config.defaultLoopTimeInSeconds + "s");
+    runLoop(config.defaultLoopTimeInSeconds);
+});
