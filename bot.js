@@ -9,55 +9,24 @@ var fs = require('fs'),
 
 var morse = Morse.create('ITU');
 var twit;
+var s3Bucket;
 var messages = '';
 
-// Configure moment with the timezone we want to use
-moment().tz(config.timezone).format();
-moment.tz.setDefault(config.timezone);
+var runApplication = function() {
+    initializeMoment();
+    initializeTwit();
+    initializeAws();
 
-var isInProductionMode = function() {
-    return process.env.ENVIRONMENT === 'production';
-}
+    downloadMessages(function() {       
+        // Output some useful information
+        logMessage("Bot started, interval is currently " + config.defaultLoopTimeInSeconds + "s");
+        logMessage("The current time is " + moment().format());
+        logMessage("The post delay is " + messages.repeatingMessages.repeatDelayInSeconds + "s");
 
-if (isInProductionMode()) {
-    // Configure Twit so we can post
-    config.consumer_secret = process.env.consumer_secret;
-    config.access_token_secret = process.env.access_token_secret;
-
-    twit = new Twit(config);
-}
-
-// Configure the AWS service
-aws.config.region = config.awsRegion;
-var s3Bucket = new aws.S3({params:{Bucket: config.s3Bucket, Key: 'messageConfig.json'}});
-
-var downloadMessages = function(cb) {
-    var messageData = '';
-
-    console.log("Attempting to download messages.")
-
-    s3Bucket.getObject()
-        .on('httpData', function(chunk) {
-            messageData += chunk;             
-        })
-        .on('httpDone', function() {
-            console.log("EOF reached, messages downloaded.");
-            cb(messageData); 
-        })
-        .send();
-}
-
-var uploadMessages = function(cb) {
-    s3Bucket.upload({Body: JSON.stringify(messages, null, 3)})
-        .on('httpUploadProgress', function(evt) { console.log(evt); })
-        .send(function(err, data) {
-            if (err) {
-                console.log("Ran into an issue uploading the messages: " + err);
-            } else {
-                console.log("Messages uploaded.");
-                cb();
-            }
-        })
+        // And run the loop to watch for messages
+        logMessage("Starting up the loop, using default timeout: " + config.defaultLoopTimeInSeconds + "s");
+        runLoop(config.defaultLoopTimeInSeconds);
+    });
 }
 
 var run = function(cb) {
@@ -67,16 +36,94 @@ var run = function(cb) {
     ],
     function(err, result) {
         if (err) {
-            console.log("There was an error processing messages: " + err);
+            logMessage("There was an error processing messages: " + err);
         } else {
-            console.log("Messages processed successfully");
+            logMessage("Messages processed successfully");
         }
 
         var difference = result - moment();
-        console.log("The next post will occur at: " + result.format() + "\nIn " + difference / 1000 + "s");
+        logMessage("The next post will occur at: " + result.format() + "\nIn " + difference / 1000 + "s");
         
         cb(difference / 1000);
     });
+}
+
+var runLoop = function(loopTimeoutInSeconds) {
+    setTimeout(function() {
+        try {
+            run(function(timeout) {
+                runLoop(timeout);
+            });
+        } catch (e) {
+            logMessage(e);
+        }        
+    }, loopTimeoutInSeconds * 1000);
+}
+
+var initializeMoment = function() {
+    // Configure moment with the timezone we want to use
+    moment().tz(config.timezone).format();
+    moment.tz.setDefault(config.timezone);
+
+    logMessage("Moment configured.\n\tCurrent time is: " + moment().format() + "\n\tDefault timezone: " + config.timezone);
+}
+
+var initializeTwit = function() {
+    if (isInProductionMode()) {
+        logMessage("Running in production mode, initializing twit.");
+        // Configure Twit so we can post
+        config.consumer_secret = process.env.consumer_secret;
+        config.access_token_secret = process.env.access_token_secret;
+
+        twit = new Twit(config);
+    }
+}
+
+var initializeAws = function () {
+    var key = isInProductionMode() ? 'messageConfig.json' : 'messageConfig_test.json';
+    logMessage("Initializing AWS and S3.\n\tRegion: " + config.awsRegion + "\n\tBucket: " + config.s3Bucket + "\n\tKey: " + key);
+
+    // Configure the AWS service
+    aws.config.region = config.awsRegion;
+    s3Bucket = new aws.S3({params:{Bucket: config.s3Bucket, Key: key}});
+}
+
+var isInProductionMode = function() {
+    return process.env.ENVIRONMENT === 'production';
+}
+
+var logMessage = function(message) {
+    console.log(message);
+}
+
+var downloadMessages = function(cb) {
+    var messageData = '';
+
+    logMessage("Attempting to download messages.")
+
+    s3Bucket.getObject()
+        .on('httpData', function(chunk) {
+            messageData += chunk;             
+        })
+        .on('httpDone', function() {
+            logMessage("EOF reached, messages downloaded.");
+            messages = JSON.parse(messageData);
+            cb(); 
+        })
+        .send();
+}
+
+var uploadMessages = function(cb) {
+    s3Bucket.upload({Body: JSON.stringify(messages, null, 3)})
+        .on('httpUploadProgress', function(evt) { logMessage(evt); })
+        .send(function(err, data) {
+            if (err) {
+                logMessage("Ran into an issue uploading the messages: " + err);
+            } else {
+                logMessage("Messages uploaded.");
+                cb();
+            }
+        })
 }
 
 var processRepeatingMessages = function(cb) {
@@ -84,40 +131,32 @@ var processRepeatingMessages = function(cb) {
     var lastPosted = moment(messages.repeatingMessages.lastPosted);
     var sinceLastMessage = moment() - lastPosted;
 
-    console.log("Since last message was posted " + (sinceLastMessage / 1000) + "s");
-    console.log("Post delay is " + (postDelay / 1000) + "s");
+    logMessage("Since last message was posted " + (sinceLastMessage / 1000) + "s");
+    logMessage("Post delay is " + (postDelay / 1000) + "s");
 
     if (sinceLastMessage > postDelay) {
         var index = Math.round(Math.random() * messages.repeatingMessages.messages.length);
 
-        console.log("Retrieving message " + index + " of " +
+        logMessage("Retrieving message " + index + " of " +
             messages.repeatingMessages.messages.length);
 
         var message = morse.encode(messages.repeatingMessages.messages[index - 1]);
 
-        console.log("Converted message to " + message.length + " long morse code.");
-        console.log(message);
+        logMessage("Converted message to " + message.length + " long morse code.");
+        logMessage(message);
 
         postMessage(message, function(err, botData) {
             if (err) {
-                console.log("There was an error posting the message: ", err);
+                logMessage("There was an error posting the message: ", err);
                 cb(err);
             } else {
                 messages.repeatingMessages.lastPosted = moment().format();
-                console.log("Message posted successfully: " + botData);
-                console.log("Last message posted at " + messages.repeatingMessages.lastPosted);
+                logMessage("Message posted successfully: " + botData);
+                logMessage("Last message posted at " + messages.repeatingMessages.lastPosted);
 
                 uploadMessages(function() {
                     cb(null, calculateNextRepeatingPostTime());
-                })
-                /*fs.writeFile(path.join(__dirname, 'messageConfig.json'), JSON.stringify(messages, null, 2),
-                    function(err) {
-                        if (err) {
-                            console.log("Error when saving the messages file: " + err);
-                        }
-
-                        cb(null, calculateNextRepeatingPostTime());
-                    });*/
+                });
             }
         });
     } else {
@@ -129,17 +168,17 @@ var calculateNextRepeatingPostTime = function() {
     var lastPosted = moment(messages.repeatingMessages.lastPosted);
     lastPosted.add(messages.repeatingMessages.repeatDelayInSeconds, "seconds");
 
-    console.log("Next repeating post will be at: " + lastPosted.format());
+    logMessage("Next repeating post will be at: " + lastPosted.format());
 
     return lastPosted;
 }
 
 var processOneTimeMessages = function(nextScheduledPost, cb) {
-    console.log("Processing one time messages.");
+    logMessage("Processing one time messages.");
 
     async.each(messages.oneTimeMessages, function(oneTimeMessage, messageDone) {
         if (!oneTimeMessage.isPosted && moment().isAfter(moment(oneTimeMessage.postDate))) {
-            console.log("Sending this message: " + oneTimeMessage.message);
+            logMessage("Sending this message: " + oneTimeMessage.message);
 
             var message = oneTimeMessage.encode 
                 ? morse.encode(oneTimeMessage.message)
@@ -149,33 +188,24 @@ var processOneTimeMessages = function(nextScheduledPost, cb) {
                 var tweet = recipient + " " + message;
                 postMessage(tweet, function(err) {
                     if (!err) {
-                        oneTimeMessage.isPosted = true;
-                        uploadMessages(recipientDone());                        
-                        /*fs.writeFile(path.join(__dirname, 'messageConfig.json'), JSON.stringify(messages, null, 2),
-                            function(err) {
-                                if (err) {
-                                    console.log("Error when saving the messages file: " + err);
-                                }
-
-                                recipientDone();
-                            });*/
-                    } else {
-                        recipientDone(err);
+                        oneTimeMessage.isPosted = true;                         
                     }
+                    
+                    recipientDone(err);                    
                 });
             }, 
             function(err) {
                 if (err) {
-                    console.log("Error during one time message processing: " + err);
-                }
+                    logMessage("Error during one time message processing: " + err);
+                } 
 
-                messageDone();
+                uploadMessages(messageDone);
             });
         } else {
             messageDone();
         }        
     }, function() {
-        console.log("Processed one time messages, finding the next time one will be posted.");
+        logMessage("Processed one time messages, finding the next time one will be posted.");
         findNextOneTimeMessage(function(nextOneTimePost) {
             if (nextOneTimePost.isBefore(nextScheduledPost)) {
                 cb(null, nextOneTimePost);
@@ -197,14 +227,14 @@ var findNextOneTimeMessage = function(cb) {
         }
         done();        
     }, function() {
-        console.log("The next one time message will be posted at: " + nextPost.format());
+        logMessage("The next one time message will be posted at: " + nextPost.format());
         cb(nextPost);
     });
 }
 
 var postMessage = function(message, cb) {
     if (!isInProductionMode()) {
-        console.log("Outputting message to the console.\n\n" + message + "\n");
+        logMessage("Outputting message to the console.\n\n" + message + "\n");
         cb();
     } else {
         twit.post('statuses/update', { status: message },
@@ -214,27 +244,4 @@ var postMessage = function(message, cb) {
     }
 }
 
-var runLoop = function(loopTimeoutInSeconds) {
-    setTimeout(function() {
-        try {
-            run(function(timeout) {
-                runLoop(timeout);
-            });
-        } catch (e) {
-            console.log(e);
-        }        
-    }, loopTimeoutInSeconds * 1000);
-}
-
-downloadMessages(function(messageData) {
-    messages = JSON.parse(messageData);
-        
-    // Output some useful information
-    console.log("Bot started, interval is currently " + config.defaultLoopTimeInSeconds + "s");
-    console.log("The current time is " + moment().format());
-    console.log("The post delay is " + messages.repeatingMessages.repeatDelayInSeconds + "s");
-
-    // And run the loop to watch for messages
-    console.log("Starting up the loop, using default timeout: " + config.defaultLoopTimeInSeconds + "s");
-    runLoop(config.defaultLoopTimeInSeconds);
-});
+runApplication();
