@@ -15,7 +15,11 @@ var messages = '';
 moment().tz(config.timezone).format();
 moment.tz.setDefault(config.timezone);
 
-if (!config.inDevelopmentMode) {
+var isInProductionMode = function() {
+    return process.env.ENVIRONMENT === 'production';
+}
+
+if (isInProductionMode()) {
     // Configure Twit so we can post
     config.consumer_secret = process.env.consumer_secret;
     config.access_token_secret = process.env.access_token_secret;
@@ -199,7 +203,7 @@ var findNextOneTimeMessage = function(cb) {
 }
 
 var postMessage = function(message, cb) {
-    if (config.inDevelopmentMode) {
+    if (!isInProductionMode()) {
         console.log("Outputting message to the console.\n\n" + message + "\n");
         cb();
     } else {
