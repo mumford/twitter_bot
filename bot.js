@@ -25,24 +25,35 @@ if (!config.inDevelopmentMode) {
 
 // Configure the AWS service
 aws.config.region = config.awsRegion;
-var s3Bucket = new aws.S3({params:{Bucket: config.s3Bucket}});
+var s3Bucket = new aws.S3({params:{Bucket: config.s3Bucket, Key: 'messageConfig.json'}});
 
-var downloadMessages = function(done) {
-    var file = fs.createWriteStream(path.join(__dirname, 'messageConfig.json'));
+var downloadMessages = function(cb) {
+    var messageData = '';
 
     console.log("Attempting to download messages.")
 
-    s3Bucket.getObject({Bucket: config.s3Bucket, Key: 'messageConfig.json'})
+    s3Bucket.getObject()
         .on('httpData', function(chunk) {
-            console.log("Downloaded a chunk, writing to file."); 
-            file.write(chunk); 
+            messageData += chunk;             
         })
         .on('httpDone', function() {
-            console.log("EOF reached, ending operation."); 
-            file.end();
-            done(); 
+            console.log("EOF reached, messages downloaded.");
+            cb(messageData); 
         })
         .send();
+}
+
+var uploadMessages = function(cb) {
+    s3Bucket.upload({Body: JSON.stringify(messages, null, 3)})
+        .on('httpUploadProgress', function(evt) { console.log(evt); })
+        .send(function(err, data) {
+            if (err) {
+                console.log("Ran into an issue uploading the messages: " + err);
+            } else {
+                console.log("Messages uploaded.");
+                cb();
+            }
+        })
 }
 
 var run = function(cb) {
@@ -92,14 +103,17 @@ var processRepeatingMessages = function(cb) {
                 console.log("Message posted successfully: " + botData);
                 console.log("Last message posted at " + messages.repeatingMessages.lastPosted);
 
-                fs.writeFile(path.join(__dirname, 'messageConfig.json'), JSON.stringify(messages, null, 2),
+                uploadMessages(function() {
+                    cb(null, calculateNextRepeatingPostTime());
+                })
+                /*fs.writeFile(path.join(__dirname, 'messageConfig.json'), JSON.stringify(messages, null, 2),
                     function(err) {
                         if (err) {
                             console.log("Error when saving the messages file: " + err);
                         }
 
                         cb(null, calculateNextRepeatingPostTime());
-                    });
+                    });*/
             }
         });
     } else {
@@ -132,14 +146,15 @@ var processOneTimeMessages = function(nextScheduledPost, cb) {
                 postMessage(tweet, function(err) {
                     if (!err) {
                         oneTimeMessage.isPosted = true;
-                        fs.writeFile(path.join(__dirname, 'messageConfig.json'), JSON.stringify(messages, null, 2),
+                        uploadMessages(recipientDone());                        
+                        /*fs.writeFile(path.join(__dirname, 'messageConfig.json'), JSON.stringify(messages, null, 2),
                             function(err) {
                                 if (err) {
                                     console.log("Error when saving the messages file: " + err);
                                 }
 
                                 recipientDone();
-                            });
+                            });*/
                     } else {
                         recipientDone(err);
                     }
@@ -207,9 +222,9 @@ var runLoop = function(loopTimeoutInSeconds) {
     }, loopTimeoutInSeconds * 1000);
 }
 
-downloadMessages(function() {
-    messages = require(path.join(__dirname, 'messageConfig.json'));
-    
+downloadMessages(function(messageData) {
+    messages = JSON.parse(messageData);
+        
     // Output some useful information
     console.log("Bot started, interval is currently " + config.defaultLoopTimeInSeconds + "s");
     console.log("The current time is " + moment().format());

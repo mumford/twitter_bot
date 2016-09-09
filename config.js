@@ -3,7 +3,7 @@ var config = {
     access_token:       '768806591004971008-SZceIh62F8wmLyOtPuLMfFbAoqmngtC',
     inDevelopmentMode:  true,
     timezone:           'America/Chicago',
-    defaultLoopTimeInSeconds:    1000,
+    defaultLoopTimeInSeconds:    10,
     awsRegion:          'us-east-1',
     s3Bucket:           'is-twitter-bot'
 }
