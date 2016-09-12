@@ -1,10 +1,16 @@
 var config = {
-    consumer_key:       'sticymoTj9cKszaTWQQGrr4Rm',    
-    access_token:       '768806591004971008-SZceIh62F8wmLyOtPuLMfFbAoqmngtC',
-    timezone:           'America/Chicago',
-    defaultLoopTimeInSeconds:    10,
-    awsRegion:          'us-east-1',
-    s3Bucket:           'is-twitter-bot'
+    "timezone":           'America/Chicago',
+    "defaultLoopTimeInSeconds":    1,
+    "aws": {
+        "region": "us-east-1",
+        "bucket": "is-twitter-bot",
+        "key": "messageConfig.json",
+        "devKey": "messageConfig_test.json"
+    },
+    "twitter": {
+        "consumer_key":       'sticymoTj9cKszaTWQQGrr4Rm',    
+        "access_token":       '768806591004971008-SZceIh62F8wmLyOtPuLMfFbAoqmngtC',
+    }    
 }
 
 module.exports = config;

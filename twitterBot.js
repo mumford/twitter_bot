@@ -78,21 +78,24 @@ function TwitterBot(options) {
     function initializeTwit() {
         if (isInProductionMode()) {
             logMessage("Running in production mode, initializing twit.");
-            // Configure Twit so we can post
-            config.consumer_secret = process.env.consumer_secret;
-            config.access_token_secret = process.env.access_token_secret;
 
-            twit = new Twit(config);
+            // Configure Twit so we can post
+            var twitterConfig = that.options.twitter;
+            twitterConfig.consumer_secret = process.env.consumer_secret;
+            twitterConfig.access_token_secret = process.env.access_token_secret;
+
+            that.twit = new Twit(that.options.twitter);
         }
     }
 
     function initializeAws() {
+        var key = isInProductionMode() ? that.options.aws.key : that.options.aws.devKey; 
         logMessage("Initializing AWS and S3.\n\tRegion: " + that.options.aws.region + 
-            "\n\tBucket: " + that.options.aws.s3Bucket + "\n\tKey: " + that.options.aws.s3BucketKey);
+            "\n\tBucket: " + that.options.aws.bucket + "\n\tKey: " + key);
 
         // Configure the AWS service
         aws.config.region = that.options.aws.region;
-        s3Bucket = new aws.S3({params:{Bucket: that.options.aws.s3Bucket, Key: that.options.aws.s3BucketKey}});
+        that.s3Bucket = new aws.S3({params:{Bucket: that.options.aws.bucket, Key: key}});
     }
 
     function isInProductionMode() {
@@ -108,7 +111,7 @@ function TwitterBot(options) {
 
         logMessage("Attempting to download messages.")
 
-        s3Bucket.getObject()
+        that.s3Bucket.getObject()
             .on('httpData', function(chunk) {
                 messageData += chunk;             
             })
@@ -121,7 +124,7 @@ function TwitterBot(options) {
     }
 
     function uploadMessages(cb) {
-        s3Bucket.upload({Body: JSON.stringify(messages, null, 3)})
+        that.s3Bucket.upload({Body: JSON.stringify(messages, null, 3)})
             .on('httpUploadProgress', function(evt) { logMessage(evt); })
             .send(function(err, data) {
                 if (err) {
@@ -244,10 +247,10 @@ function TwitterBot(options) {
             logMessage("Outputting message to the console.\n\n" + message + "\n");
             cb();
         } else {
-            twit.post('statuses/update', { status: message },
+            /*that.twit.post('statuses/update', { status: message },
                 function(err, data, response) {
                     cb(err, data);
-                });
+                });*/cb();
         }
     }
 }
