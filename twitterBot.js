@@ -11,10 +11,11 @@ function TwitterBot(options) {
     this.options = options;
     
     var that = this;
-    var morse = Morse.create('ITU');
-    var twit;
-    var s3Bucket;
-    var messages = '';
+    
+    this.twit;    
+    this.morse = Morse.create('ITU');
+    this.s3Bucket;
+    this.messages = '';
     
     initializeMoment();
     initializeTwit();
