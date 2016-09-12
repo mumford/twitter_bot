@@ -47,8 +47,8 @@ function TwitterBot(options) {
                 logMessage("Messages processed successfully");
             }
 
-            var difference = result - moment();
-            logMessage("The next post will occur at: " + result.format() + "\nIn " + difference / 1000 + "s");
+            var difference = moment(result - moment());
+            logMessage("The next post will occur " + result.calendar() + ", " + result.fromNow());
             
             cb(difference / 1000);
         });
