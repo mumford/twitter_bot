@@ -4,8 +4,7 @@ var fs = require('fs'),
     Morse = require('morse-node'),
     moment = require('moment-timezone'),
     async = require('async'),
-    aws = require('aws-sdk'),
-    config = require(path.join(__dirname, 'config.js'))
+    aws = require('aws-sdk');
 
 module.exports = TwitterBot;
 
@@ -26,13 +25,13 @@ function TwitterBot(options) {
     this.runBot = function() {
         downloadMessages(function() {       
             // Output some useful information
-            logMessage("Bot started, interval is currently " + config.defaultLoopTimeInSeconds + "s");
+            logMessage("Bot started, interval is currently " + that.options.defaultLoopTimeInSeconds + "s");
             logMessage("The current time is " + moment().format());
-            logMessage("The post delay is " + messages.repeatingMessages.repeatDelayInSeconds + "s");
+            logMessage("The post delay is " + that.messages.repeatingMessages.repeatDelayInSeconds + "s");
 
             // And run the loop to watch for messages
-            logMessage("Starting up the loop, using default timeout: " + config.defaultLoopTimeInSeconds + "s");
-            runLoop(config.defaultLoopTimeInSeconds);
+            logMessage("Starting up the loop, using default timeout: " + that.options.defaultLoopTimeInSeconds + "s");
+            runLoop(that.options.defaultLoopTimeInSeconds);
         });
     }
 
@@ -69,10 +68,10 @@ function TwitterBot(options) {
 
     function initializeMoment() {
         // Configure moment with the timezone we want to use
-        moment().tz(config.timezone).format();
-        moment.tz.setDefault(config.timezone);
+        moment().tz(that.options.timezone).format();
+        moment.tz.setDefault(that.options.timezone);
 
-        logMessage("Moment configured.\n\tCurrent time is: " + moment().format() + "\n\tDefault timezone: " + config.timezone);
+        logMessage("Moment configured.\n\tCurrent time is: " + moment().format() + "\n\tDefault timezone: " + that.options.timezone);
     }
 
     function initializeTwit() {
@@ -117,14 +116,14 @@ function TwitterBot(options) {
             })
             .on('httpDone', function() {
                 logMessage("EOF reached, messages downloaded.");
-                messages = JSON.parse(messageData);
+                that.messages = JSON.parse(messageData);
                 cb(); 
             })
             .send();
     }
 
     function uploadMessages(cb) {
-        that.s3Bucket.upload({Body: JSON.stringify(messages, null, 3)})
+        that.s3Bucket.upload({Body: JSON.stringify(that.messages, null, 3)})
             .on('httpUploadProgress', function(evt) { logMessage(evt); })
             .send(function(err, data) {
                 if (err) {
@@ -137,20 +136,20 @@ function TwitterBot(options) {
     }
 
     function processRepeatingMessages(cb) {
-        var postDelay = messages.repeatingMessages.repeatDelayInSeconds * 1000;
-        var lastPosted = moment(messages.repeatingMessages.lastPosted);
+        var postDelay = that.messages.repeatingMessages.repeatDelayInSeconds * 1000;
+        var lastPosted = moment(that.messages.repeatingMessages.lastPosted);
         var sinceLastMessage = moment() - lastPosted;
 
         logMessage("Since last message was posted " + (sinceLastMessage / 1000) + "s");
         logMessage("Post delay is " + (postDelay / 1000) + "s");
 
         if (sinceLastMessage > postDelay) {
-            var index = Math.round(Math.random() * messages.repeatingMessages.messages.length);
+            var index = Math.round(Math.random() * that.messages.repeatingMessages.messages.length);
 
             logMessage("Retrieving message " + index + " of " +
-                messages.repeatingMessages.messages.length);
+                that.messages.repeatingMessages.messages.length);
 
-            var message = morse.encode(messages.repeatingMessages.messages[index - 1]);
+            var message = that.morse.encode(that.messages.repeatingMessages.messages[index - 1]);
 
             logMessage("Converted message to " + message.length + " long morse code.");
             logMessage(message);
@@ -160,9 +159,9 @@ function TwitterBot(options) {
                     logMessage("There was an error posting the message: ", err);
                     cb(err);
                 } else {
-                    messages.repeatingMessages.lastPosted = moment().format();
+                    that.messages.repeatingMessages.lastPosted = moment().format();
                     logMessage("Message posted successfully: " + botData);
-                    logMessage("Last message posted at " + messages.repeatingMessages.lastPosted);
+                    logMessage("Last message posted at " + that.messages.repeatingMessages.lastPosted);
 
                     uploadMessages(function() {
                         cb(null, calculateNextRepeatingPostTime());
@@ -175,8 +174,8 @@ function TwitterBot(options) {
     }
 
     function calculateNextRepeatingPostTime() {
-        var lastPosted = moment(messages.repeatingMessages.lastPosted);
-        lastPosted.add(messages.repeatingMessages.repeatDelayInSeconds, "seconds");
+        var lastPosted = moment(that.messages.repeatingMessages.lastPosted);
+        lastPosted.add(that.messages.repeatingMessages.repeatDelayInSeconds, "seconds");
 
         logMessage("Next repeating post will be at: " + lastPosted.format());
 
@@ -186,12 +185,12 @@ function TwitterBot(options) {
     function processOneTimeMessages(nextScheduledPost, cb) {
         logMessage("Processing one time messages.");
 
-        async.each(messages.oneTimeMessages, function(oneTimeMessage, messageDone) {
+        async.each(that.messages.oneTimeMessages, function(oneTimeMessage, messageDone) {
             if (!oneTimeMessage.isPosted && moment().isAfter(moment(oneTimeMessage.postDate))) {
                 logMessage("Sending this message: " + oneTimeMessage.message);
 
                 var message = oneTimeMessage.encode 
-                    ? morse.encode(oneTimeMessage.message)
+                    ? that.morse.encode(oneTimeMessage.message)
                     : oneTimeMessage.message;
 
                 async.each(oneTimeMessage.recipients, function(recipient, recipientDone) {
@@ -228,7 +227,7 @@ function TwitterBot(options) {
 
     function findNextOneTimeMessage(cb) {
         var nextPost;
-        async.each(messages.oneTimeMessages, function(oneTimeMessage, done) {
+        async.each(that.messages.oneTimeMessages, function(oneTimeMessage, done) {
             var messageDate = moment(oneTimeMessage.postDate);
 
             if (messageDate.isAfter(moment()) &&
