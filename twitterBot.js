@@ -6,8 +6,6 @@ var fs = require('fs'),
     async = require('async'),
     aws = require('aws-sdk');
 
-module.exports = TwitterBot;
-
 function TwitterBot(options) {
     
     this.options = options;
@@ -246,10 +244,10 @@ function TwitterBot(options) {
             logMessage("Outputting message to the console.\n\n" + message + "\n");
             cb();
         } else {
-            /*that.twit.post('statuses/update', { status: message },
+            that.twit.post('statuses/update', { status: message },
                 function(err, data, response) {
                     cb(err, data);
-                });*/cb();
+                });
         }
     }
 }
@@ -259,3 +257,4 @@ TwitterBot.prototype.start = function() {
     this.runBot();
 }
 
+module.exports = TwitterBot;
