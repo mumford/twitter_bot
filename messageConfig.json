@@ -61,7 +61,18 @@
          "The Seekers may be lost but they can help",
          "Meet me at Zeros",
          "There are devils to be feared in the Dark",
-         "The wisps can be found in the nightside"
+         "The wisps can be found in the nightside",
+         "Tusk is gone the elderbrin has gone missing",
+         "The emptiness of the Vacuous God broke Auryn",
+         "I lost something important in the Thought Ruins",
+         "Thank the nomads of the Eulephane Forests",
+         "The Carbon Sage revealed my destiny and yours",
+         "Time is fractured in Shadow",
+         "I do not know when this will reach",
+         "Nor do I know the order",
+         "You know your life is not correct",
+         "Why else would you reach out from Grey",
+         "I do as the Carbon Sage directed"
       ]
    },
    "oneTimeMessages": [
@@ -168,8 +179,40 @@
          ]
       },
       {
+         "postDate": "2016-09-28T19:33:17-0500",
+         "message": "I've been preparing for this day.",
+         "encode": false,
+         "recipients": [
+            "@trinabg"
+         ]
+      },
+      {
+         "postDate": "2016-09-28T19:36:17-0500",
+         "message": "Time doesn't work right in the Shadow.",
+         "encode": false,
+         "recipients": [
+            "@troyp23"
+         ]
+      },
+      {
+         "postDate": "2016-09-28T19:38:17-0500",
+         "message": "I can't be sure where to find you just yet.",
+         "encode": false,
+         "recipients": [
+            "@jimbg"
+         ]
+      },
+      {
+         "postDate": "2016-09-28T19:45:17-0500",
+         "message": "But I'm putting something together that will help with that.",
+         "encode": false,
+         "recipients": [
+            "@mage124"
+         ]
+      },
+      {
          "postDate": "2016-10-03T11:31:21-0500",
-         "message": "This world is not real",
+         "message": "Your world is not real",
          "encode": false,
          "recipients": [
             "@jimbg",
@@ -180,7 +223,7 @@
       },
       {
          "postDate": "2016-10-03T11:31:31-0500",
-         "message": "This world is only Shadow. You must return to Satyrine.",
+         "message": "Your world is only Shadow. You must return to Satyrine, and the Actuality.",
          "encode": false,
          "recipients": [
             "@jimbg",
