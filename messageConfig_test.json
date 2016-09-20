@@ -1,8 +1,8 @@
 {
-   "repeatingMessages": {
-      "repeatDelayInSeconds": 61200,
-      "lastPosted": "2016-09-09T12:53:06-05:00",
-      "messages": [
+   "repeatingMessages":{
+      "repeatDelayInSeconds":61200,
+      "lastPosted":"2016-09-19T10:53:06-05:00",
+      "messages":[
          "You are in shadow",
          "Beware Demiurge",
          "You must prepare",
@@ -50,15 +50,121 @@
          "Seek out Embracer of Null Thought",
          "Consult the Seekers",
          "I am coming for you",
-         "You are not alone"
+         "You are not alone",
+         "The Church of Midnight is dangerous",
+         "Stolen dreams have been reappearing",
+         "Wisps in the nightside can return you home",
+         "There are rumors of a singing nephilim",
+         "Do not be alarmed if your skin disappears",
+         "Dream Ash is more trouble than its worth",
+         "Speak to the Voiceless Choir",
+         "The Seekers may be lost but they can help",
+         "Meet me at Zeros",
+         "There are devils to be feared in the Dark",
+         "The wisps can be found in the nightside",
+         "Tusk is gone the elderbrin has gone missing",
+         "The emptiness of the Vacuous God broke Auryn",
+         "I lost something important in the Thought Ruins",
+         "Thank the nomads of the Eulephane Forests",
+         "The Carbon Sage revealed my destiny and yours",
+         "Time is fractured in Shadow",
+         "I do not know when this will reach",
+         "Nor do I know the order",
+         "You know your life is not correct",
+         "Why else would you reach out from Grey",
+         "I do as the Carbon Sage directed"
       ]
    },
-   "oneTimeMessages": [
-       {
-         "postDate": "2016-09-11T23:24:00-0500",
-         "message": "I have been looking for you",
-         "encode": true,
-         "recipients": [
+   "oneTimeMessages":[
+      {
+         "postDate":"2016-09-17T09:33:00-0500",
+         "message":"I have been looking for you",
+         "encode":true,
+         "recipients":[
+            "@jimbg",
+            "@trinabg",
+            "@troyp23",
+            "@mage124"
+         ],
+         "isPosted":true
+      },
+      {
+         "postDate":"2016-09-17T09:33:41-0500",
+         "message":"You were buried deep in Shadow",
+         "encode":true,
+         "recipients":[
+            "@jimbg",
+            "@trinabg",
+            "@troyp23",
+            "@mage124"
+         ],
+         "isPosted":true
+      },
+      {
+         "postDate":"2016-09-17T09:35:00-0500",
+         "message":"You can call me Z",
+         "encode":true,
+         "recipients":[
+            "@jimbg",
+            "@trinabg",
+            "@troyp23",
+            "@mage124"
+         ],
+         "isPosted":true
+      },
+      {
+         "postDate":"2016-09-17T09:40:17-0500",
+         "message":"I will be in touch when it is safe",
+         "encode":true,
+         "recipients":[
+            "@jimbg",
+            "@trinabg",
+            "@troyp23",
+            "@mage124"
+         ],
+         "isPosted":true
+      },
+      {
+         "postDate":"2016-09-19T10:01:17-0500",
+         "message":"Something is missing",
+         "encode":true,
+         "recipients":[
+            "@jimbg"
+         ],
+         "isPosted":true
+      },
+      {
+         "postDate":"2016-09-19T10:27:17-0500",
+         "message":"This cannot be done without all of you",
+         "encode":true,
+         "recipients":[
+            "@troyp23"
+         ],
+         "isPosted":true
+      },
+      {
+         "postDate":"2016-09-19T10:43:17-0500",
+         "message":"There were supposed to be five",
+         "encode":true,
+         "recipients":[
+            "@mage124"
+         ],
+         "isPosted":true
+      },
+      {
+         "postDate":"2016-09-19T11:13:17-0500",
+         "message":"I cannot reach all of you yet",
+         "encode":true,
+         "recipients":[
+            "@trinabg"
+         ],
+         "isPosted":true
+      },
+      {
+         "postDate":"2016-09-28T19:27:21-0500",
+         "message":"I think we are unnoticed.",
+         "encode":false,
+         "recipients":[
             "@jimbg",
             "@trinabg",
             "@troyp23",
@@ -66,10 +172,10 @@
          ]
       },
       {
-         "postDate": "2016-09-11T23:24:30-0500",
-         "message": "I have been looking for you",
-         "encode": true,
-         "recipients": [
+         "postDate":"2016-09-28T19:28:03-0500",
+         "message":"I am working to get you more information as soon as I can.",
+         "encode":false,
+         "recipients":[
             "@jimbg",
             "@trinabg",
             "@troyp23",
@@ -77,157 +183,115 @@
          ]
       },
       {
-         "postDate": "2016-09-17T09:33:00-0500",
-         "message": "I have been looking for you",
-         "encode": true,
-         "recipients": [
-            "@jimbg",
-            "@trinabg",
-            "@troyp23",
+         "postDate":"2016-09-28T19:33:17-0500",
+         "message":"I've been preparing for this day.",
+         "encode":false,
+         "recipients":[
+            "@trinabg"
+         ]
+      },
+      {
+         "postDate":"2016-09-28T19:36:17-0500",
+         "message":"Time doesn't work right in Shadow.",
+         "encode":false,
+         "recipients":[
+            "@troyp23"
+         ]
+      },
+      {
+         "postDate":"2016-09-28T19:38:17-0500",
+         "message":"Pinpointing your exact location is going to take some time.",
+         "encode":false,
+         "recipients":[
+            "@jimbg"
+         ]
+      },
+      {
+         "postDate":"2016-09-28T19:45:17-0500",
+         "message":"But I'm putting something together that will help with that.",
+         "encode":false,
+         "recipients":[
+            "@smythent"
+         ]
+      },
+      {
+         "postDate":"2016-09-28T19:57:17-0500",
+         "message":"I will find a way to contact you.",
+         "encode":false,
+         "recipients":[
             "@mage124"
          ]
       },
       {
-         "postDate": "2016-09-17T09:33:41-0500",
-         "message": "You were buried deep in Shadow",
-         "encode": true,
-         "recipients": [
+         "postDate":"2016-10-03T11:31:21-0500",
+         "message":"Your world is not real",
+         "encode":false,
+         "recipients":[
             "@jimbg",
             "@trinabg",
             "@troyp23",
-            "@mage124"
+            "@mage124",
+            "@smythent"
          ]
       },
       {
-         "postDate": "2016-09-17T09:35:00-0500",
-         "message": "You can call me Z",
-         "encode": true,
-         "recipients": [
+         "postDate":"2016-10-03T11:31:31-0500",
+         "message":"Your world is only Shadow. You must return to Satyrine, and the Actuality.",
+         "encode":false,
+         "recipients":[
             "@jimbg",
             "@trinabg",
             "@troyp23",
-            "@mage124"
+            "@mage124",
+            "@smythent"
          ]
       },
       {
-         "postDate": "2016-09-17T09:40:17-0500",
-         "message": "I will be in touch when it is safe",
-         "encode": true,
-         "recipients": [
+         "postDate":"2016-10-03T11:32:10-0500",
+         "message":"You need to find Book M",
+         "encode":false,
+         "recipients":[
             "@jimbg",
             "@trinabg",
             "@troyp23",
-            "@mage124"
+            "@mage124",
+            "@smythent"
          ]
       },
       {
-         "postDate": "2016-09-28T19:27:21-0500",
-         "message": "I think we are unnoticed.",
-         "encode": false,
-         "recipients": [
+         "postDate":"2016-10-03T17:11:41-0500",
+         "message":"They found me. That name has a gravity of its own. I should have known better",
+         "encode":false,
+         "recipients":[
             "@jimbg",
             "@trinabg",
             "@troyp23",
-            "@mage124"
+            "@mage124",
+            "@smythent"
          ]
       },
       {
-         "postDate": "2016-09-28T19:28:03-0500",
-         "message": "I am working to get you more information as soon as I can.",
-         "encode": false,
-         "recipients": [
+         "postDate":"2016-10-31T07:23:41-0500",
+         "message":"I need to be more careful",
+         "encode":true,
+         "recipients":[
             "@jimbg",
             "@trinabg",
             "@troyp23",
-            "@mage124"
+            "@mage124",
+            "@smythent"
          ]
       },
       {
-         "postDate": "2016-10-03T11:31:21-0500",
-         "message": "This world is not real",
-         "encode": false,
-         "recipients": [
+         "postDate":"2016-10-31T07:25:21-0500",
+         "message":"Words carry power even in Shadow",
+         "encode":true,
+         "recipients":[
             "@jimbg",
             "@trinabg",
             "@troyp23",
-            "@mage124"
-         ]
-      },
-      {
-         "postDate": "2016-10-03T11:31:31-0500",
-         "message": "This world is only Shadow. You must return to Satyrine.",
-         "encode": false,
-         "recipients": [
-            "@jimbg",
-            "@trinabg",
-            "@troyp23",
-            "@mage124"
-         ]
-      },
-      {
-         "postDate": "2016-10-03T11:32:10-0500",
-         "message": "You need to find Book M",
-         "encode": false,
-         "recipients": [
-            "@jimbg",
-            "@trinabg",
-            "@troyp23",
-            "@mage124"
-         ]
-      },
-      {
-         "postDate": "2016-10-03T17:11:41-0500",
-         "message": "They found me. That name has a gravity of its own. I should have known better",
-         "encode": false,
-         "recipients": [
-            "@jimbg",
-            "@trinabg",
-            "@troyp23",
-            "@mage124"
-         ]
-      },
-      {
-         "postDate": "2016-10-31T07:23:41-0500",
-         "message": "I need to be more careful",
-         "encode": true,
-         "recipients": [
-            "@jimbg",
-            "@trinabg",
-            "@troyp23",
-            "@mage124"
-         ]
-      },
-      {
-         "postDate": "2016-10-31T07:25:21-0500",
-         "message": "Words carry power even in Shadow",
-         "encode": true,
-         "recipients": [
-            "@jimbg",
-            "@trinabg",
-            "@troyp23",
-            "@mage124"
-         ]
-      },
-      {
-         "postDate": "2016-11-04T13:13:41-0500",
-         "message": "I need more time",
-         "encode": true,
-         "recipients": [
-            "@jimbg",
-            "@trinabg",
-            "@troyp23",
-            "@mage124"
-         ]
-      },
-      {
-         "postDate": "2016-11-04T13:13:41-0500",
-         "message": "I will get you what you need",
-         "encode": true,
-         "recipients": [
-            "@jimbg",
-            "@trinabg",
-            "@troyp23",
-            "@mage124"
+            "@mage124",
+            "@smythent"
          ]
       }
    ]
