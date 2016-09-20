@@ -1,7 +1,7 @@
 {
    "repeatingMessages": {
       "repeatDelayInSeconds": 61200,
-      "lastPosted": "2016-09-18T17:53:06-05:00",
+      "lastPosted": "2016-09-19T10:53:06-05:00",
       "messages": [
          "You are in shadow",
          "Beware Demiurge",
@@ -72,7 +72,11 @@
          "Nor do I know the order",
          "You know your life is not correct",
          "Why else would you reach out from Grey",
-         "I do as the Carbon Sage directed"
+         "I do as the Carbon Sage directed",
+         "The Black Cube Ritual is a beacon",
+         "We can use the Green Circle of magic",
+         "You are on a powerful circle of magic",
+         "We are passing the torch on to you"
       ]
    },
    "oneTimeMessages": [
@@ -130,15 +134,17 @@
          "encode": true,
          "recipients": [
             "@jimbg"
-         ]
+         ],
+         "isPosted": true
       },
       {
-         "postDate": "2016-09-19T10:27:17-0500",
+         "postDate": "2016-09-19T10:31:17-0500",
          "message": "This cannot be done without all of you",
          "encode": true,
          "recipients": [
             "@troyp23"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-09-19T10:43:17-0500",
@@ -146,7 +152,8 @@
          "encode": true,
          "recipients": [
             "@mage124"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-09-19T11:13:17-0500",
@@ -154,6 +161,15 @@
          "encode": true,
          "recipients": [
             "@trinabg"
+         ],
+         "isPosted": true
+      },
+      {
+         "postDate": "2016-09-22T14:37:17-0500",
+         "message": "It was difficult but I found you",
+         "encode": true,
+         "recipients": [
+            "@smythent"
          ]
       },
       {
@@ -164,7 +180,8 @@
             "@jimbg",
             "@trinabg",
             "@troyp23",
-            "@mage124"
+            "@mage124",
+            "@smythent"
          ]
       },
       {
@@ -175,7 +192,8 @@
             "@jimbg",
             "@trinabg",
             "@troyp23",
-            "@mage124"
+            "@mage124",
+            "@smythent"
          ]
       },
       {
@@ -188,7 +206,7 @@
       },
       {
          "postDate": "2016-09-28T19:36:17-0500",
-         "message": "Time doesn't work right in the Shadow.",
+         "message": "Time doesn't work right in Shadow.",
          "encode": false,
          "recipients": [
             "@troyp23"
@@ -196,7 +214,7 @@
       },
       {
          "postDate": "2016-09-28T19:38:17-0500",
-         "message": "I can't be sure where to find you just yet.",
+         "message": "I can't be sure where to locate you exactly just yet.",
          "encode": false,
          "recipients": [
             "@jimbg"
@@ -205,6 +223,14 @@
       {
          "postDate": "2016-09-28T19:45:17-0500",
          "message": "But I'm putting something together that will help with that.",
+         "encode": false,
+         "recipients": [
+            "@smythent"
+         ]
+      },
+      {
+         "postDate": "2016-09-28T19:57:17-0500",
+         "message": "Sending something along the Path isn't a terribly accurate proposition.",
          "encode": false,
          "recipients": [
             "@mage124"
@@ -218,7 +244,8 @@
             "@jimbg",
             "@trinabg",
             "@troyp23",
-            "@mage124"
+            "@mage124",
+            "@smythent"
          ]
       },
       {
@@ -229,7 +256,8 @@
             "@jimbg",
             "@trinabg",
             "@troyp23",
-            "@mage124"
+            "@mage124",
+            "@smythent"
          ]
       },
       {
@@ -240,7 +268,8 @@
             "@jimbg",
             "@trinabg",
             "@troyp23",
-            "@mage124"
+            "@mage124",
+            "@smythent"
          ]
       },
       {
@@ -251,7 +280,8 @@
             "@jimbg",
             "@trinabg",
             "@troyp23",
-            "@mage124"
+            "@mage124",
+            "@smythent"
          ]
       },
       {
@@ -262,7 +292,8 @@
             "@jimbg",
             "@trinabg",
             "@troyp23",
-            "@mage124"
+            "@mage124",
+            "@smythent"
          ]
       },
       {
@@ -273,29 +304,8 @@
             "@jimbg",
             "@trinabg",
             "@troyp23",
-            "@mage124"
-         ]
-      },
-      {
-         "postDate": "2016-11-04T13:13:41-0500",
-         "message": "I need more time",
-         "encode": true,
-         "recipients": [
-            "@jimbg",
-            "@trinabg",
-            "@troyp23",
-            "@mage124"
-         ]
-      },
-      {
-         "postDate": "2016-11-04T13:13:41-0500",
-         "message": "I will get you what you need",
-         "encode": true,
-         "recipients": [
-            "@jimbg",
-            "@trinabg",
-            "@troyp23",
-            "@mage124"
+            "@mage124",
+            "@smythent"
          ]
       }
    ]
