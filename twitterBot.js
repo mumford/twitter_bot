@@ -11,6 +11,7 @@ function TwitterBot(options) {
     this.options = options;
     
     var that = this;
+    var dateFormat = 'dddd, MMMM Do YYYY, h:mm a';
     
     this.twit;    
     this.morse = Morse.create('ITU');
@@ -25,7 +26,7 @@ function TwitterBot(options) {
         downloadMessages(function() {       
             // Output some useful information
             logMessage("Bot started, interval is currently " + that.options.defaultLoopTimeInSeconds + "s");
-            logMessage("The current time is " + moment().format());
+            logMessage("The current time is " + moment().format(dateFormat));
             logMessage("The post delay is " + that.messages.repeatingMessages.repeatDelayInSeconds + "s");
 
             // And run the loop to watch for messages
@@ -70,7 +71,7 @@ function TwitterBot(options) {
         moment().tz(that.options.timezone).format();
         moment.tz.setDefault(that.options.timezone);
 
-        logMessage("Moment configured.\n\tCurrent time is: " + moment().format() + "\n\tDefault timezone: " + that.options.timezone);
+        logMessage("Moment configured.\n\tCurrent time is: " + moment().format(dateFormat) + "\n\tDefault timezone: " + that.options.timezone);
     }
 
     function initializeTwit() {
@@ -176,7 +177,7 @@ function TwitterBot(options) {
         var lastPosted = moment(that.messages.repeatingMessages.lastPosted);
         lastPosted.add(that.messages.repeatingMessages.repeatDelayInSeconds, "seconds");
 
-        logMessage("Next repeating post will be at: " + lastPosted.format());
+        logMessage("Next repeating post will be at: " + lastPosted.format(dateFormat));
 
         return lastPosted;
     }
@@ -235,7 +236,7 @@ function TwitterBot(options) {
             }
             done();        
         }, function() {
-            logMessage("The next one time message will be posted at: " + nextPost.format());
+            logMessage("The next one time message will be posted at: " + nextPost.format(dateFormat));
             cb(nextPost);
         });
     }
