@@ -169,7 +169,7 @@
          "isPosted": true
       },
       {
-         "postDate": "2016-09-27T19:27:21-0500",
+         "postDate": "2016-09-25T19:27:21-0500",
          "message": "I think we are unnoticed.",
          "encode": false,
          "recipients": [
@@ -181,8 +181,8 @@
          ]
       },
       {
-         "postDate": "2016-09-27T19:28:03-0500",
-         "message": "I am working to get you more information as soon as I can.",
+         "postDate": "2016-09-25T19:28:03-0500",
+         "message": "You need to find Book M",
          "encode": false,
          "recipients": [
             "@jimbg",
@@ -193,15 +193,27 @@
          ]
       },
       {
-         "postDate": "2016-09-28T19:33:17-0500",
-         "message": "I've been preparing for this.",
+         "postDate": "2016-09-25T19:34:03-0500",
+         "message": "I am working to get to you as soon as I can.",
+         "encode": false,
+         "recipients": [
+            "@jimbg",
+            "@trinabg",
+            "@troyp23",
+            "@mage124",
+            "@smythent"
+         ]
+      },
+      {
+         "postDate": "2016-09-26T12:33:17-0500",
+         "message": "We've been preparing for this.",
          "encode": false,
          "recipients": [
             "@trinabg"
          ]
       },
       {
-         "postDate": "2016-09-28T19:36:17-0500",
+         "postDate": "2016-09-26T12:36:17-0500",
          "message": "Time doesn't work right in Shadow.",
          "encode": false,
          "recipients": [
@@ -209,24 +221,24 @@
          ]
       },
       {
-         "postDate": "2016-09-28T19:38:17-0500",
-         "message": "Pinpointing your exact location is going to take some time.",
+         "postDate": "2016-09-26T13:38:17-0500",
+         "message": "Pinpointing your exact location is going to take some effort.",
          "encode": false,
          "recipients": [
             "@jimbg"
          ]
       },
       {
-         "postDate": "2016-09-28T19:45:17-0500",
-         "message": "I'm putting something together that will help with that.",
+         "postDate": "2016-09-26T14:45:17-0500",
+         "message": "I'm working on something that will help with that.",
          "encode": false,
          "recipients": [
             "@smythent"
          ]
       },
       {
-         "postDate": "2016-09-28T19:57:17-0500",
-         "message": "I will find a way to contact you.",
+         "postDate": "2016-09-26T14:57:17-0500",
+         "message": "I will find a way to anchor you.",
          "encode": false,
          "recipients": [
             "@mage124"
@@ -247,30 +259,6 @@
       {
          "postDate": "2016-10-03T11:31:31-0500",
          "message": "Your world is only Shadow. You must return to Satyrine, and the Actuality.",
-         "encode": false,
-         "recipients": [
-            "@jimbg",
-            "@trinabg",
-            "@troyp23",
-            "@mage124",
-            "@smythent"
-         ]
-      },
-      {
-         "postDate": "2016-10-03T11:32:10-0500",
-         "message": "You need to find Book M",
-         "encode": false,
-         "recipients": [
-            "@jimbg",
-            "@trinabg",
-            "@troyp23",
-            "@mage124",
-            "@smythent"
-         ]
-      },
-      {
-         "postDate": "2016-10-03T17:11:41-0500",
-         "message": "They found me. That name has a gravity of its own. I should have known better",
          "encode": false,
          "recipients": [
             "@jimbg",
