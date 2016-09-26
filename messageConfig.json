@@ -1,7 +1,7 @@
 {
    "repeatingMessages": {
       "repeatDelayInSeconds": 61200,
-      "lastPosted": "2016-09-25T01:37:26-05:00",
+      "lastPosted": "2016-09-25T18:37:26-05:00",
       "messages": [
          "You are in shadow",
          "Beware Demiurge",
@@ -178,7 +178,8 @@
             "@troyp23",
             "@mage124",
             "@smythent"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-09-25T19:28:03-0500",
@@ -190,7 +191,8 @@
             "@troyp23",
             "@mage124",
             "@smythent"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-09-25T19:34:03-0500",
@@ -202,7 +204,8 @@
             "@troyp23",
             "@mage124",
             "@smythent"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-09-26T12:33:17-0500",
@@ -246,31 +249,7 @@
       },
       {
          "postDate": "2016-10-03T11:31:21-0500",
-         "message": "Your world is not real",
-         "encode": false,
-         "recipients": [
-            "@jimbg",
-            "@trinabg",
-            "@troyp23",
-            "@mage124",
-            "@smythent"
-         ]
-      },
-      {
-         "postDate": "2016-10-03T11:31:31-0500",
-         "message": "Your world is only Shadow. You must return to Satyrine, and the Actuality.",
-         "encode": false,
-         "recipients": [
-            "@jimbg",
-            "@trinabg",
-            "@troyp23",
-            "@mage124",
-            "@smythent"
-         ]
-      },
-      {
-         "postDate": "2016-10-31T07:23:41-0500",
-         "message": "I need to be more careful",
+         "message": "Best not mention that book again",
          "encode": true,
          "recipients": [
             "@jimbg",
@@ -281,8 +260,20 @@
          ]
       },
       {
-         "postDate": "2016-10-31T07:25:21-0500",
-         "message": "Words carry power even in Shadow",
+         "postDate": "2016-10-03T11:32:17-0500",
+         "message": "That name has a certain gravity",
+         "encode": true,
+         "recipients": [
+            "@jimbg",
+            "@trinabg",
+            "@troyp23",
+            "@mage124",
+            "@smythent"
+         ]
+      },
+      {
+         "postDate": "2016-10-03T11:32:53-0500",
+         "message": "I must be more careful",
          "encode": true,
          "recipients": [
             "@jimbg",
