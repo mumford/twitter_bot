@@ -1,7 +1,7 @@
 {
    "repeatingMessages": {
       "repeatDelayInSeconds": 61200,
-      "lastPosted": "2016-09-25T18:37:26-05:00",
+      "lastPosted": "2016-09-29T07:37:33-05:00",
       "messages": [
          "You are in shadow",
          "Beware Demiurge",
@@ -213,7 +213,8 @@
          "encode": false,
          "recipients": [
             "@trinabg"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-09-26T12:36:17-0500",
@@ -221,7 +222,8 @@
          "encode": false,
          "recipients": [
             "@troyp23"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-09-26T13:38:17-0500",
@@ -229,7 +231,8 @@
          "encode": false,
          "recipients": [
             "@jimbg"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-09-26T14:45:17-0500",
@@ -237,7 +240,8 @@
          "encode": false,
          "recipients": [
             "@smythent"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-09-26T14:57:17-0500",
@@ -245,42 +249,47 @@
          "encode": false,
          "recipients": [
             "@mage124"
+         ],
+         "isPosted": true
+      },
+      {
+         "postDate": "2016-09-29T11:29:44-0500",
+         "message": "Somebody took notice of the messenger",
+         "encode": true,
+         "recipients": [
+            "@troyp23"            
          ]
       },
       {
-         "postDate": "2016-10-03T11:31:21-0500",
+         "postDate": "2016-09-29T11:31:21-0500",
          "message": "Best not mention that book again",
          "encode": true,
          "recipients": [
-            "@jimbg",
-            "@trinabg",
-            "@troyp23",
-            "@mage124",
-            "@smythent"
+            "@trinabg"
          ]
       },
       {
-         "postDate": "2016-10-03T11:32:17-0500",
+         "postDate": "2016-09-29T11:32:17-0500",
          "message": "That name has a certain gravity",
          "encode": true,
          "recipients": [
-            "@jimbg",
-            "@trinabg",
-            "@troyp23",
-            "@mage124",
             "@smythent"
          ]
       },
       {
-         "postDate": "2016-10-03T11:32:53-0500",
+         "postDate": "2016-09-29T11:32:53-0500",
          "message": "I must be more careful",
          "encode": true,
          "recipients": [
-            "@jimbg",
-            "@trinabg",
-            "@troyp23",
-            "@mage124",
-            "@smythent"
+            "@mage124"            
+         ]
+      },
+      {
+         "postDate": "2016-09-29T11:32:53-0500",
+         "message": "And you must move quickly to beat him",
+         "encode": true,
+         "recipients": [
+            "@jimbg"            
          ]
       }
    ]
