@@ -71,7 +71,10 @@
          "Nor do I know the order",
          "You know your life is not correct",
          "Why else would you reach out from Grey",
-         "I do as the Carbon Sage directed"
+         "I do as the Carbon Sage directed",
+         "Consult the stars for answers",
+         "The star will guide your way",
+         "Secrets are hidden in the star"
       ]
    },
    "oneTimeMessages": [
@@ -341,6 +344,46 @@
             "@smythent"
          ],
          "isPosted": true
+      },
+      {
+         "postDate": "2016-10-06T13:23:17-0500",
+         "message": "Auryn has been tipped off",
+         "encode": true,
+         "recipients": [
+            "@smythent"
+         ]
+      },
+      {
+         "postDate": "2016-10-06T13:29:17-0500",
+         "message": "He is working to keep you in Shadow",
+         "encode": true,
+         "recipients": [
+            "@trinabg"
+         ]
+      },
+      {
+         "postDate": "2016-10-06T13:31:17-0500",
+         "message": "We are at an advantage for now",
+         "encode": true,
+         "recipients": [
+            "@mage124"
+         ]
+      },
+      {
+         "postDate": "2016-10-06T13:35:17-0500",
+         "message": "Find what I sent you before he does",
+         "encode": true,
+         "recipients": [
+            "@troyp23"
+         ]
+      },
+      {
+         "postDate": "2016-10-06T13:39:17-0500",
+         "message": "There are answers in the stars",
+         "encode": true,
+         "recipients": [
+            "@jimbg"
+         ]
       }
    ]
 }

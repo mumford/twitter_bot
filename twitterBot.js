@@ -194,7 +194,7 @@ function TwitterBot(options) {
                     : oneTimeMessage.message;
 
                 async.each(oneTimeMessage.recipients, function(recipient, recipientDone) {
-                    var tweet = recipient + " " + message;
+                    var tweet = "." + recipient + " " + message;
                     postMessage(tweet, function(err) {
                         if (!err) {
                             oneTimeMessage.isPosted = true;                         
