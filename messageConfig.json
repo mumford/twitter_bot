@@ -1,7 +1,7 @@
 {
    "repeatingMessages": {
       "repeatDelayInSeconds": 61200,
-      "lastPosted": "2016-09-29T07:37:33-05:00",
+      "lastPosted": "2016-10-06T11:31:10-05:00",
       "messages": [
          "You are in shadow",
          "Beware Demiurge",
@@ -257,8 +257,9 @@
          "message": "Somebody took notice of the messenger",
          "encode": true,
          "recipients": [
-            "@troyp23"            
-         ]
+            "@troyp23"
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-09-29T11:31:21-0500",
@@ -266,7 +267,8 @@
          "encode": true,
          "recipients": [
             "@trinabg"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-09-29T11:32:17-0500",
@@ -274,23 +276,71 @@
          "encode": true,
          "recipients": [
             "@smythent"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-09-29T11:32:53-0500",
          "message": "I must be more careful",
          "encode": true,
          "recipients": [
-            "@mage124"            
-         ]
+            "@mage124"
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-09-29T11:38:00-0500",
          "message": "And you must move quickly to beat him",
          "encode": true,
          "recipients": [
-            "@jimbg"            
-         ]
+            "@jimbg"
+         ],
+         "isPosted": true
+      },
+      {
+         "postDate": "2016-09-29T12:17:00-0500",
+         "message": "Unlock the path",
+         "encode": true,
+         "recipients": [
+            "@troyp23"
+         ],
+         "isPosted": true
+      },
+      {
+         "postDate": "2016-09-29T12:19:17-0500",
+         "message": "Auryn is onto you",
+         "encode": true,
+         "recipients": [
+            "@mage124"
+         ],
+         "isPosted": true
+      },
+      {
+         "postDate": "2016-09-29T12:25:17-0500",
+         "message": "If you do not beat him I cannot reach you",
+         "encode": true,
+         "recipients": [
+            "@jimbg"
+         ],
+         "isPosted": true
+      },
+      {
+         "postDate": "2016-09-29T12:30:17-0500",
+         "message": "Uncover the secrets before he gets to them",
+         "encode": true,
+         "recipients": [
+            "@trinabg"
+         ],
+         "isPosted": true
+      },
+      {
+         "postDate": "2016-09-29T12:35:17-0500",
+         "message": "And be careful you are no longer safe",
+         "encode": true,
+         "recipients": [
+            "@smythent"
+         ],
+         "isPosted": true
       }
    ]
 }
