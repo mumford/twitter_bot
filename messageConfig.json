@@ -1,7 +1,7 @@
 {
    "repeatingMessages": {
       "repeatDelayInSeconds": 61200,
-      "lastPosted": "2016-10-06T11:31:10-05:00",
+      "lastPosted": "2016-10-07T04:47:36-05:00",
       "messages": [
          "You are in shadow",
          "Beware Demiurge",
@@ -74,7 +74,11 @@
          "I do as the Carbon Sage directed",
          "Consult the stars for answers",
          "The star will guide your way",
-         "Secrets are hidden in the star"
+         "Secrets are hidden in the star",
+		 "Wisps might lead out out of the darkness",
+		 "Wisps of the night like to hide",
+		 "Careful observence of wisps is required",
+		 "We found our fate under Lu Ac Toor"
       ]
    },
    "oneTimeMessages": [
@@ -351,7 +355,8 @@
          "encode": true,
          "recipients": [
             "@smythent"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-10-06T13:29:17-0500",
@@ -359,7 +364,8 @@
          "encode": true,
          "recipients": [
             "@trinabg"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-10-06T13:31:17-0500",
@@ -367,7 +373,8 @@
          "encode": true,
          "recipients": [
             "@mage124"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-10-06T13:35:17-0500",
@@ -375,7 +382,8 @@
          "encode": true,
          "recipients": [
             "@troyp23"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-10-06T13:39:17-0500",
@@ -383,7 +391,8 @@
          "encode": true,
          "recipients": [
             "@jimbg"
-         ]
+         ],
+         "isPosted": true
       }
    ]
 }
