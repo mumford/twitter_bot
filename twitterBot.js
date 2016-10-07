@@ -1,5 +1,4 @@
-var fs = require('fs'),
-    path = require('path'),
+var path = require('path'),
     Twit = require('twit'),
     Morse = require('morse-node'),
     moment = require('moment-timezone'),
@@ -106,20 +105,26 @@ function TwitterBot(options) {
     }
 
     function downloadMessages(cb) {
-        var messageData = '';
+        if (isInProductionMode()) {
+            var messageData = '';
 
-        logMessage("Attempting to download messages.")
+            logMessage("Attempting to download messages.")
 
-        that.s3Bucket.getObject()
-            .on('httpData', function(chunk) {
-                messageData += chunk;             
-            })
-            .on('httpDone', function() {
-                logMessage("EOF reached, messages downloaded.");
-                that.messages = JSON.parse(messageData);
-                cb(); 
-            })
-            .send();
+            that.s3Bucket.getObject()
+                .on('httpData', function(chunk) {
+                    messageData += chunk;             
+                })
+                .on('httpDone', function() {
+                    logMessage("EOF reached, messages downloaded.");
+                    that.messages = JSON.parse(messageData);
+                    cb(); 
+                })
+                .send();
+        } else {
+            logMessage("Loading messages from local file.");
+            that.messages = require(path.join(__dirname, "messageConfig_test.json"));
+            cb();
+        }
     }
 
     function uploadMessages(cb) {
@@ -216,7 +221,7 @@ function TwitterBot(options) {
         }, function() {
             logMessage("Processed one time messages, finding the next time one will be posted.");
             findNextOneTimeMessage(function(nextOneTimePost) {
-                if (nextOneTimePost.isBefore(nextScheduledPost)) {
+                if (nextOneTimePost && nextOneTimePost.isBefore(nextScheduledPost)) {
                     cb(null, nextOneTimePost);
                 } else {
                     cb(null, nextScheduledPost);
@@ -236,8 +241,13 @@ function TwitterBot(options) {
             }
             done();        
         }, function() {
-            logMessage("The next one time message will be posted at: " + nextPost.format(dateFormat));
-            cb(nextPost);
+			if (nextPost) {
+				logMessage("The next one time message will be posted at: " + nextPost.format(dateFormat));
+            } else {
+				logMessage("There are no upcoming one time messages.");
+			}
+			
+			cb(nextPost);			
         });
     }
 
