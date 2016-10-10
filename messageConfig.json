@@ -1,9 +1,8 @@
 {
    "repeatingMessages": {
       "repeatDelayInSeconds": 61200,
-      "lastPosted": "2016-10-07T04:47:36-05:00",
+      "lastPosted": "2016-10-10T00:47:39-05:00",
       "messages": [
-         "You are in shadow",
          "Beware Demiurge",
          "You must prepare",
          "Satyrine is waiting",
@@ -28,7 +27,6 @@
          "Silver leaves bloom on rounded trees",
          "Do not trust Auryn",
          "Demiurge is your gaoler",
-         "The Black Cube is summoned",
          "Have patience salvation comes",
          "Your eyes are deceitful",
          "Keep watch on the stars",
@@ -72,13 +70,8 @@
          "You know your life is not correct",
          "Why else would you reach out from Grey",
          "I do as the Carbon Sage directed",
-         "Consult the stars for answers",
-         "The star will guide your way",
-         "Secrets are hidden in the star",
-		 "Wisps might lead out out of the darkness",
-		 "Wisps of the night like to hide",
-		 "Careful observence of wisps is required",
-		 "We found our fate under Lu Ac Toor"
+         "We found our fate under Lu Ac Toor",
+         "Dark Courier has something for you"
       ]
    },
    "oneTimeMessages": [
@@ -393,6 +386,46 @@
             "@jimbg"
          ],
          "isPosted": true
+      },
+      {
+         "postDate": "2016-10-11T07:17:17-0500",
+         "message": "Temporal information received",
+         "encode": true,
+         "recipients": [
+            "@mage124"
+         ]
+      },
+      {
+         "postDate": "2016-10-11T07:17:34-0500",
+         "message": "Geographical information received",
+         "encode": true,
+         "recipients": [
+            "@trinabg"
+         ]
+      },
+      {
+         "postDate": "2016-10-11T08:45:17-0500",
+         "message": "Additional reference points are needed",
+         "encode": true,
+         "recipients": [
+            "@jimbg"
+         ]
+      },
+      {
+         "postDate": "2016-10-11T08:45:17-0500",
+         "message": "We need to be more careful now",
+         "encode": true,
+         "recipients": [
+            "@smythent"
+         ]
+      },
+      {
+         "postDate": "2016-10-11T10:03:17-0500",
+         "message": "We are contacting Dark Courier",
+         "encode": true,
+         "recipients": [
+            "@troyp23"
+         ]
       }
    ]
 }
