@@ -1,7 +1,7 @@
 {
    "repeatingMessages": {
       "repeatDelayInSeconds": 61200,
-      "lastPosted": "2016-10-10T00:47:39-05:00",
+      "lastPosted": "2016-10-10T20:02:09-05:00",
       "messages": [
          "Beware Demiurge",
          "You must prepare",
@@ -71,7 +71,14 @@
          "Why else would you reach out from Grey",
          "I do as the Carbon Sage directed",
          "We found our fate under Lu Ac Toor",
-         "Dark Courier has something for you"
+         "We are sending Dark Courier to you",
+         "The Ouroboros comes with Dark Courier",
+         "It takes effort to find nothing",
+         "Wait for the snake it eat its tail",
+         "Silver snakes and tail takes",
+         "Like Ouroboros Grey always is",
+         "The sigil of Dark Courier is eternal",
+         "Ouroboros is eternal"
       ]
    },
    "oneTimeMessages": [
@@ -393,7 +400,8 @@
          "encode": true,
          "recipients": [
             "@mage124"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-10-11T07:17:34-0500",
@@ -401,7 +409,8 @@
          "encode": true,
          "recipients": [
             "@trinabg"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-10-11T08:45:17-0500",
@@ -409,15 +418,17 @@
          "encode": true,
          "recipients": [
             "@jimbg"
-         ]
+         ],
+         "isPosted": true
       },
       {
-         "postDate": "2016-10-11T08:45:17-0500",
+         "postDate": "2016-10-11T08:51:17-0500",
          "message": "We need to be more careful now",
          "encode": true,
          "recipients": [
             "@smythent"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-10-11T10:03:17-0500",
@@ -425,6 +436,46 @@
          "encode": true,
          "recipients": [
             "@troyp23"
+         ]
+      },
+      {
+         "postDate": "2016-10-19T14:03:17-0500",
+         "message": "You must watch for Dark Courier",
+         "encode": true,
+         "recipients": [
+            "@troyp23"
+         ]
+      },
+      {
+         "postDate": "2016-10-19T04:12:17-0500",
+         "message": "Be discrete you are being watched",
+         "encode": true,
+         "recipients": [
+            "@mage124"
+         ]
+      },
+      {
+         "postDate": "2016-10-20T17:52:17-0500",
+         "message": "Follow protocol with Dark Courier",
+         "encode": true,
+         "recipients": [
+            "@smythent"
+         ]
+      },
+      {
+         "postDate": "2016-10-21T11:34:17-0500",
+         "message": "Protocol requires a passphrase",
+         "encode": true,
+         "recipients": [
+            "@jimbg"
+         ]
+      },
+      {
+         "postDate": "2016-10-22T19:01:17-0500",
+         "message": "The contract with Dark Courier is set",
+         "encode": true,
+         "recipients": [
+            "@trinabg"
          ]
       }
    ]
