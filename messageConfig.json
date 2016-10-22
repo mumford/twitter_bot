@@ -1,84 +1,58 @@
 {
    "repeatingMessages": {
       "repeatDelayInSeconds": 61200,
-      "lastPosted": "2016-10-10T20:02:09-05:00",
+      "lastPosted": "2016-10-21T11:53:34-05:00",
       "messages": [
-         "Beware Demiurge",
-         "You must prepare",
-         "Satyrine is waiting",
-         "You are sleeping",
-         "Wake up",
-         "Grey is falsehood",
-         "Grey is prison",
-         "Grey is an oubliette",
          "The war is over",
-         "You are trapped",
-         "Shadow is twisted",
-         "The reflection is false",
-         "You are vislae",
          "Follow the path",
          "Await the Black Cube",
-         "Seek the Actuality",
-         "Seek communion with Quiss",
-         "Quiss is gone",
          "Beware the cysts of the War",
-         "I am looking for you",
          "You have forgotten",
-         "Silver leaves bloom on rounded trees",
          "Do not trust Auryn",
-         "Demiurge is your gaoler",
-         "Have patience salvation comes",
-         "Your eyes are deceitful",
          "Keep watch on the stars",
          "Satyrine holds its secrets",
          "Time in Shadow is a pale shade",
-         "You are stronger than you know",
-         "You are vislae",
          "Shadow is becoming more dangerous",
-         "Stay vigilant stay strong",
          "There is strength in knowledge",
-         "Keep listening",
          "You are living in exile",
-         "We will get you out of Shadow",
          "Never stop looking",
          "Mirrors are a virus upon reality",
-         "You know there is more out there",
          "Awaken your dreaming mind",
-         "Seek out Embracer of Null Thought",
-         "Consult the Seekers",
-         "I am coming for you",
-         "You are not alone",
-         "The Church of Midnight is dangerous",
          "Stolen dreams have been reappearing",
-         "Wisps in the nightside can return you home",
          "There are rumors of a singing nephilim",
-         "Do not be alarmed if your skin disappears",
          "Dream Ash is more trouble than its worth",
-         "Speak to the Voiceless Choir",
-         "The Seekers may be lost but they can help",
+         "Speak with the Voiceless Choir",
          "Meet me at Zeros",
          "There are devils to be feared in the Dark",
-         "The wisps can be found in the nightside",
-         "Tusk is gone the elderbrin has gone missing",
          "The emptiness of the Vacuous God broke Auryn",
          "I lost something important in the Thought Ruins",
          "Thank the nomads of the Eulephane Forests",
          "The Carbon Sage revealed my destiny and yours",
          "Time is fractured in Shadow",
-         "I do not know when this will reach",
-         "Nor do I know the order",
          "You know your life is not correct",
          "Why else would you reach out from Grey",
-         "I do as the Carbon Sage directed",
          "We found our fate under Lu Ac Toor",
          "We are sending Dark Courier to you",
-         "The Ouroboros comes with Dark Courier",
          "It takes effort to find nothing",
-         "Wait for the snake it eat its tail",
-         "Silver snakes and tail takes",
-         "Like Ouroboros Grey always is",
          "The sigil of Dark Courier is eternal",
-         "Ouroboros is eternal"
+         "Dark Courier is a very particular demon",
+         "Dark Courier will find you in Grey",
+         "Light of Celare reveals all",
+         "The Invisible Sun shares its secrets",
+         "There are friends in the dusk",
+         "You are in Grey but silver brings help",
+         "Serpents are simply failed dragons",
+         "Trusted agents must be found",
+         "We need tighter security",
+         "Auryn has thoughtforms tracking you down",
+         "Adding in additional security",
+         "Rodir is weaving more complexity in",
+         "Dusk brings a great many things",
+         "Devils linger in the Dark",
+         "Auryn is getting crafty",
+         "Shadow folds in on itself",
+         "The Mobius Prison is inescapable",
+         "Two points do not always make a line"
       ]
    },
    "oneTimeMessages": [
@@ -436,46 +410,123 @@
          "encode": true,
          "recipients": [
             "@troyp23"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-10-19T14:03:17-0500",
-         "message": "You must watch for Dark Courier",
-         "encode": true,
-         "recipients": [
-            "@troyp23"
-         ]
-      },
-      {
-         "postDate": "2016-10-19T04:12:17-0500",
-         "message": "Be discrete you are being watched",
+         "message": "The contract with Dark Courier is set",
          "encode": true,
          "recipients": [
             "@mage124"
+         ],
+         "isPosted": true
+      },
+      {
+         "postDate": "2016-10-19T04:12:17-0500",
+         "message": "Demons are dictated by protocol",
+         "encode": true,
+         "recipients": [
+            "@troyp23"
+         ],
+         "isPosted": true
+      },
+      {
+         "postDate": "2016-10-20T16:52:17-0500",
+         "message": "Follow protocol with Dark Courier",
+         "encode": true,
+         "recipients": [
+            "@smythent"
+         ],
+         "isPosted": true
+      },
+      {
+         "postDate": "2016-10-21T11:34:17-0500",
+         "message": "Dark Courier will recognize the words",
+         "encode": true,
+         "recipients": [
+            "@jimbg"
+         ],
+         "isPosted": true
+      },
+      {
+         "postDate": "2016-10-22T19:01:17-0500",
+         "message": "You must use the words",
+         "encode": true,
+         "recipients": [
+            "@trinabg"
          ]
       },
       {
-         "postDate": "2016-10-20T17:52:17-0500",
-         "message": "Follow protocol with Dark Courier",
+         "postDate": "2016-10-25T11:17:17-0500",
+         "message": "Tell Dark Courier",
          "encode": true,
          "recipients": [
             "@smythent"
          ]
       },
       {
-         "postDate": "2016-10-21T11:34:17-0500",
-         "message": "Protocol requires a passphrase",
+         "postDate": "2016-10-25T11:17:34-0500",
+         "message": "Jonathan woke up early yesterday",
+         "encode": true,
+         "recipients": [
+            "@smythent"
+         ]
+      },
+      {
+         "postDate": "2016-10-25T11:18:17-0500",
+         "message": "Dark Courier will respond",
+         "encode": true,
+         "recipients": [
+            "@trinabg"
+         ]
+      },
+      {
+         "postDate": "2016-10-25T11:18:34-0500",
+         "message": "There are devils in the dark",
+         "encode": true,
+         "recipients": [
+            "@trinabg"
+         ]
+      },
+      {
+         "postDate": "2016-10-25T11:19:17-0500",
+         "message": "Tell Dark Courier",
+         "encode": true,
+         "recipients": [
+            "@mage124"
+         ]
+      },
+      {
+         "postDate": "2016-10-25T11:19:34-0500",
+         "message": "The room is missing",
+         "encode": true,
+         "recipients": [
+            "@mage124"
+         ]
+      },
+      {
+         "postDate": "2016-10-25T11:20:17-0500",
+         "message": "Dark Courier will respond",
          "encode": true,
          "recipients": [
             "@jimbg"
          ]
       },
       {
-         "postDate": "2016-10-22T19:01:17-0500",
-         "message": "The contract with Dark Courier is set",
+         "postDate": "2016-10-25T11:20:17-0500",
+         "message": "Satyrine is waiting",
          "encode": true,
          "recipients": [
-            "@trinabg"
+            "@jimbg"
+         ]
+      },
+      {
+         "postDate": "2016-10-28T12:00:00-0500",
+         "message": "The window for Dark Courier opens",
+         "encode": true,
+         "recipients": [
+            "@troyp23"
          ]
       }
    ]
