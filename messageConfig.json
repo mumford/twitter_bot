@@ -1,7 +1,7 @@
 {
    "repeatingMessages": {
       "repeatDelayInSeconds": 61200,
-      "lastPosted": "2016-10-21T11:53:34-05:00",
+      "lastPosted": "2016-10-31T09:53:39-05:00",
       "messages": [
          "The war is over",
          "Follow the path",
@@ -32,18 +32,13 @@
          "You know your life is not correct",
          "Why else would you reach out from Grey",
          "We found our fate under Lu Ac Toor",
-         "We are sending Dark Courier to you",
          "It takes effort to find nothing",
-         "The sigil of Dark Courier is eternal",
-         "Dark Courier is a very particular demon",
-         "Dark Courier will find you in Grey",
          "Light of Celare reveals all",
          "The Invisible Sun shares its secrets",
          "There are friends in the dusk",
          "You are in Grey but silver brings help",
          "Serpents are simply failed dragons",
          "Trusted agents must be found",
-         "We need tighter security",
          "Auryn has thoughtforms tracking you down",
          "Adding in additional security",
          "Rodir is weaving more complexity in",
@@ -52,7 +47,16 @@
          "Auryn is getting crafty",
          "Shadow folds in on itself",
          "The Mobius Prison is inescapable",
-         "Two points do not always make a line"
+         "Two points do not always make a line",
+         "Snows threaten to bury Dusk",
+         "The token is hidden",
+         "Messages within messages",
+         "What does Marbas answer truly",
+         "Secrets must be hidden in nonsecrets",
+         "Hidden information can be revealed",
+         "Cold sets in and Dusk freezes",
+         "The token must be found",
+         "Dusk does not know who you are"
       ]
    },
    "oneTimeMessages": [
@@ -455,7 +459,8 @@
          "encode": true,
          "recipients": [
             "@trinabg"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-10-25T11:17:17-0500",
@@ -463,7 +468,8 @@
          "encode": true,
          "recipients": [
             "@smythent"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-10-25T11:17:34-0500",
@@ -471,7 +477,8 @@
          "encode": true,
          "recipients": [
             "@smythent"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-10-25T11:18:17-0500",
@@ -479,7 +486,8 @@
          "encode": true,
          "recipients": [
             "@trinabg"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-10-25T11:18:34-0500",
@@ -487,7 +495,8 @@
          "encode": true,
          "recipients": [
             "@trinabg"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-10-25T11:19:17-0500",
@@ -495,7 +504,8 @@
          "encode": true,
          "recipients": [
             "@mage124"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-10-25T11:19:34-0500",
@@ -503,7 +513,8 @@
          "encode": true,
          "recipients": [
             "@mage124"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-10-25T11:20:17-0500",
@@ -511,7 +522,8 @@
          "encode": true,
          "recipients": [
             "@jimbg"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-10-25T11:20:17-0500",
@@ -519,7 +531,8 @@
          "encode": true,
          "recipients": [
             "@jimbg"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-10-28T12:00:00-0500",
@@ -527,6 +540,39 @@
          "encode": true,
          "recipients": [
             "@troyp23"
+         ],
+         "isPosted": true
+      },
+      {
+         "postDate": "2016-11-07T04:17:17-0500",
+         "message": "Information has not been received",
+         "encode": true,
+         "recipients": [
+            "@mage124"
+         ]
+      },
+      {
+         "postDate": "2016-11-08T14:17:17-0500",
+         "message": "Calibration corruption imminent",
+         "encode": true,
+         "recipients": [
+            "@troyp23"
+         ]
+      },
+      {
+         "postDate": "2016-11-09T09:17:17-0500",
+         "message": "Do you have messenger directive",
+         "encode": true,
+         "recipients": [
+            "@trinabg"
+         ]
+      },
+      {
+         "postDate": "2016-11-10T17:17:17-0500",
+         "message": "Nothing is there to uncover",
+         "encode": true,
+         "recipients": [
+            "@smythent"
          ]
       }
    ]
