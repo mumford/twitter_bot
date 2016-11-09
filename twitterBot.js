@@ -275,7 +275,16 @@ function TwitterBot(options) {
     }
 
     function scrambleText(text) {
-        logMessage('Scrambling the message.');
+        logMessage('The chance to scramble messages is ' + that.messages.repeatingMessages.scrambleChance);
+
+        var randomChance = Math.random();
+
+        if (randomChance > that.messages.repeatingMessages.scrambleChance) {
+            logMessage('We rolled a ' + randomChance + ', so we won\'t scramble the message');
+            return text;
+        }
+
+        logMessage('We rolled a ' + randomChance + ', so we will scramble the message');
 
         var characters = text.split('');
             textLength = characters.length;
