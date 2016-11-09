@@ -1,7 +1,7 @@
 {
    "repeatingMessages": {
       "repeatDelayInSeconds": 61200,
-      "lastPosted": "2016-10-31T09:53:39-05:00",
+      "lastPosted": "2016-11-08T20:53:48-06:00",
       "messages": [
          "The war is over",
          "Follow the path",
@@ -21,7 +21,6 @@
          "Stolen dreams have been reappearing",
          "There are rumors of a singing nephilim",
          "Dream Ash is more trouble than its worth",
-         "Speak with the Voiceless Choir",
          "Meet me at Zeros",
          "There are devils to be feared in the Dark",
          "The emptiness of the Vacuous God broke Auryn",
@@ -44,18 +43,13 @@
          "Rodir is weaving more complexity in",
          "Dusk brings a great many things",
          "Devils linger in the Dark",
-         "Auryn is getting crafty",
          "Shadow folds in on itself",
          "The Mobius Prison is inescapable",
          "Two points do not always make a line",
          "Snows threaten to bury Dusk",
-         "The token is hidden",
          "Messages within messages",
          "What does Marbas answer truly",
-         "Secrets must be hidden in nonsecrets",
-         "Hidden information can be revealed",
          "Cold sets in and Dusk freezes",
-         "The token must be found",
          "Dusk does not know who you are"
       ]
    },
@@ -545,11 +539,12 @@
       },
       {
          "postDate": "2016-11-07T04:17:17-0500",
-         "message": "Information has not been received",
+         "message": "Image has not been received",
          "encode": true,
          "recipients": [
             "@mage124"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-11-08T14:17:17-0500",
@@ -557,23 +552,60 @@
          "encode": true,
          "recipients": [
             "@troyp23"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-11-09T09:17:17-0500",
-         "message": "Do you have messenger directive",
+         "message": "You have the messenger instructions",
          "encode": true,
          "recipients": [
             "@trinabg"
-         ]
+         ],
+         "isPosted": true
       },
       {
-         "postDate": "2016-11-10T17:17:17-0500",
-         "message": "Nothing is there to uncover",
+         "postDate": "2016-11-04T20:17:17-0500",
+         "message": "PJs? Very similar to PK",
+         "encode": true,
+         "recipients": [
+            "@jimbg"
+         ],
+         "isPosted": true
+      },
+      {
+         "postDate": "2016-11-04T19:57:17-0500",
+         "message": "Landscape with Perspective is close",
+         "encode": true,
+         "recipients": [
+            "@trinabg"
+         ],
+         "isPosted": true
+      },
+      {
+         "postDate": "2016-11-04T20:27:17-0500",
+         "message": "Central Directory knows what is there",
          "encode": true,
          "recipients": [
             "@smythent"
-         ]
+         ],
+         "isPosted": true
+      },
+      {
+          "postDate": "2016-11-10T10:37:17-0500",
+          "message": "Rodir detected you were close",
+          "encode": true,
+          "recipients": [
+              "@jimbg"
+          ]
+      },
+      {
+          "postDate": "2016-11-10T10:37:27-0500",
+          "message": "To the Landscape with Perspective",
+          "encode": true,
+          "recipients": [
+              "@trinabg"
+          ]
       }
    ]
 }
