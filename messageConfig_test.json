@@ -1,6 +1,7 @@
 {
    "repeatingMessages": {
       "repeatDelayInSeconds": 61200,
+      "scrambleMessages": true,
       "lastPosted": "2016-11-08T13:17:17-06:00",
       "messages": [
          "The war is over",

@@ -100,10 +100,6 @@ function TwitterBot(options) {
         return process.env.ENVIRONMENT === 'production';
     }
 
-    function logMessage(message) {
-        console.log(message);
-    }
-
     function downloadMessages(cb) {
         if (isInProductionMode()) {
             var messageData = '';
@@ -159,7 +155,13 @@ function TwitterBot(options) {
             logMessage("Retrieving message " + index + " of " +
                 that.messages.repeatingMessages.messages.length);
 
-            var message = that.morse.encode(that.messages.repeatingMessages.messages[index - 1]);
+            var message = that.messages.repeatingMessages.messages[index - 1];
+
+            if (that.messages.repeatingMessages.scrambleMessages) {
+                message = scrambleText(message);
+            }
+
+            message = that.morse.encode(message);
 
             logMessage("Converted message to " + message.length + " long morse code.");
             logMessage(message);
@@ -201,7 +203,7 @@ function TwitterBot(options) {
 
                 var message = oneTimeMessage.encode 
                     ? that.morse.encode(oneTimeMessage.message)
-                    : oneTimeMessage.message;
+                    : oneTimeMessage.message;                
 
                 async.each(oneTimeMessage.recipients, function(recipient, recipientDone) {
                     var tweet = "." + recipient + " " + message;
@@ -266,6 +268,26 @@ function TwitterBot(options) {
                     cb(err, data);
                 });
         }
+    }
+
+    function logMessage(message) {
+        console.log(message);
+    }
+
+    function scrambleText(text) {
+        logMessage('Scrambling the message.');
+
+        var characters = text.split('');
+            textLength = characters.length;
+
+        for (var i = textLength - 1; i > 0; i--) {
+            var x = Math.floor(Math.random() * (i + 1));
+            var temp = characters[i];
+            characters[i] = characters[x];
+            characters[x] = temp;
+        }
+
+        return characters.join(''); 
     }
 }
 
