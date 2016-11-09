@@ -157,14 +157,16 @@ function TwitterBot(options) {
 
             var message = that.messages.repeatingMessages.messages[index - 1];
 
+            logMessage('Preparing to send a message:\n\n' + message + '\n\n');
+
             if (that.messages.repeatingMessages.scrambleMessages) {
                 message = scrambleText(message);
+                logMessage('Message scrambled:\n\n' + message + '\n\n');
             }
 
             message = that.morse.encode(message);
 
             logMessage("Converted message to " + message.length + " long morse code.");
-            logMessage(message);
 
             postMessage(message, function(err, botData) {
                 if (err) {
