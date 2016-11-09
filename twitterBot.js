@@ -128,16 +128,21 @@ function TwitterBot(options) {
     }
 
     function uploadMessages(cb) {
-        that.s3Bucket.upload({Body: JSON.stringify(that.messages, null, 3)})
-            .on('httpUploadProgress', function(evt) { logMessage(evt); })
-            .send(function(err, data) {
-                if (err) {
-                    logMessage("Ran into an issue uploading the messages: " + err);
-                } else {
-                    logMessage("Messages uploaded.");
-                    cb();
-                }
-            })
+        if (!isInProductionMode()) {
+            logMessage('Skipping the message upload since we are not in production.');
+            cb();
+        } else {
+            that.s3Bucket.upload({Body: JSON.stringify(that.messages, null, 3)})
+                .on('httpUploadProgress', function(evt) { logMessage(evt); })
+                .send(function(err, data) {
+                    if (err) {
+                        logMessage("Ran into an issue uploading the messages: " + err);
+                    } else {
+                        logMessage("Messages uploaded.");
+                        cb();
+                    }
+            });
+        }
     }
 
     function processRepeatingMessages(cb) {

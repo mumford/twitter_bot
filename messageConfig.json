@@ -1,7 +1,7 @@
 {
    "repeatingMessages": {
       "repeatDelayInSeconds": 61200,
-      "lastPosted": "2016-11-08T20:53:48-06:00",
+      "lastPosted": "2016-11-09T13:17:17-06:00",
       "messages": [
          "The war is over",
          "Follow the path",
@@ -592,20 +592,44 @@
          "isPosted": true
       },
       {
-          "postDate": "2016-11-10T10:37:17-0500",
-          "message": "Rodir detected you were close",
-          "encode": true,
-          "recipients": [
-              "@jimbg"
-          ]
+         "postDate": "2016-11-11T17:17:17-0600",
+         "message": "Temporal information received",
+         "encode": true,
+         "recipients": [
+            "@mage124"
+         ]
       },
       {
-          "postDate": "2016-11-10T10:37:27-0500",
-          "message": "To the Landscape with Perspective",
-          "encode": true,
-          "recipients": [
-              "@trinabg"
-          ]
+         "postDate": "2016-11-11T17:17:34-0600",
+         "message": "Geographical information received",
+         "encode": true,
+         "recipients": [
+            "@trinabg"
+         ]
+      },
+      {
+         "postDate": "2016-11-11T17:17:51-0600",
+         "message": "Rodir is recalibrating with this",
+         "encode": true,
+         "recipients": [
+            "@smythent"
+         ]
+      },
+      {
+         "postDate": "2016-11-12T12:17:17-0600",
+         "message": "These points do not make a line",
+         "encode": true,
+         "recipients": [
+            "@troyp23"
+         ]
+      },
+      {          
+         "postDate": "2016-11-12T12:17:17-0600",
+         "message": "Something is interfering with the spell",
+         "encode": true,
+         "recipients": [
+            "@jimbg"
+         ]
       }
    ]
 }
