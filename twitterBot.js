@@ -34,6 +34,15 @@ function TwitterBot(options) {
         });
     }
 
+    function runStream() {
+        logMessage('Starting up the Twitter stream client.');
+        var stream = that.twit.stream('statuses/filter', { track: '#InvisibleSunRPG'});
+
+        stream.on('tweet', function(tweet) {
+            logMessage('\n@' + tweet.user.screen_name + ' just posted something about Invisible Sun.\n\n' + tweet.text);
+        });
+    }
+
     function run(cb) {
         async.waterfall([
             processRepeatingMessages,
@@ -74,8 +83,8 @@ function TwitterBot(options) {
     }
 
     function initializeTwit() {
-        if (isInProductionMode()) {
-            logMessage("Running in production mode, initializing twit.");
+        //if (isInProductionMode()) {
+        //    logMessage("Running in production mode, initializing twit.");
 
             // Configure Twit so we can post
             var twitterConfig = that.options.twitter;
@@ -83,7 +92,7 @@ function TwitterBot(options) {
             twitterConfig.access_token_secret = process.env.access_token_secret;
 
             that.twit = new Twit(that.options.twitter);
-        }
+        //}
     }
 
     function initializeAws() {
@@ -98,10 +107,6 @@ function TwitterBot(options) {
 
     function isInProductionMode() {
         return process.env.ENVIRONMENT === 'production';
-    }
-
-    function logMessage(message) {
-        console.log(message);
     }
 
     function downloadMessages(cb) {
@@ -159,10 +164,18 @@ function TwitterBot(options) {
             logMessage("Retrieving message " + index + " of " +
                 that.messages.repeatingMessages.messages.length);
 
-            var message = that.morse.encode(that.messages.repeatingMessages.messages[index - 1]);
+            var message = that.messages.repeatingMessages.messages[index - 1];
+
+            logMessage('Preparing to send a message:\n\n' + message + '\n\n');
+
+            if (that.messages.repeatingMessages.scrambleMessages) {
+                message = scrambleText(message);
+                logMessage('Message scrambled:\n\n' + message + '\n\n');
+            }
+
+            message = that.morse.encode(message);
 
             logMessage("Converted message to " + message.length + " long morse code.");
-            logMessage(message);
 
             postMessage(message, function(err, botData) {
                 if (err) {
@@ -201,7 +214,7 @@ function TwitterBot(options) {
 
                 var message = oneTimeMessage.encode 
                     ? that.morse.encode(oneTimeMessage.message)
-                    : oneTimeMessage.message;
+                    : oneTimeMessage.message;                
 
                 async.each(oneTimeMessage.recipients, function(recipient, recipientDone) {
                     var tweet = "." + recipient + " " + message;
@@ -266,6 +279,35 @@ function TwitterBot(options) {
                     cb(err, data);
                 });
         }
+    }
+
+    function logMessage(message) {
+        console.log(message);
+    }
+
+    function scrambleText(text) {
+        logMessage('The chance to scramble messages is ' + that.messages.repeatingMessages.scrambleChance);
+
+        var randomChance = Math.random();
+
+        if (randomChance > that.messages.repeatingMessages.scrambleChance) {
+            logMessage('We rolled a ' + randomChance + ', so we won\'t scramble the message');
+            return text;
+        }
+
+        logMessage('We rolled a ' + randomChance + ', so we will scramble the message');
+
+        var characters = text.split('');
+            textLength = characters.length;
+
+        for (var i = textLength - 1; i > 0; i--) {
+            var x = Math.floor(Math.random() * (i + 1));
+            var temp = characters[i];
+            characters[i] = characters[x];
+            characters[x] = temp;
+        }
+
+        return characters.join(''); 
     }
 }
 
