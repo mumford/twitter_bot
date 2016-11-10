@@ -1,7 +1,7 @@
 {
    "repeatingMessages": {
-      "repeatDelayInSeconds": 61200,
-      "scrambleMessages": false,
+      "repeatDelayInSeconds": 5,
+      "scrambleMessages": true,
       "scrambleChance": ".9",
       "lastPosted": "2016-11-09T13:17:17-06:00",
       "messages": [
@@ -63,7 +63,7 @@
            "smythent",
            "tex_red"
        ],
-       "keyPhrase": "Magic phrase to stop something" 
+       "keyPhrase": "nothing important" 
    },
    "oneTimeMessages": [
       {

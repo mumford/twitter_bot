@@ -48,6 +48,11 @@ function TwitterBot(options) {
         stream.on('tweet', function(tweet) {
             if (that.messages.messageMonitor.allowedUsers.indexOf(tweet.user.screen_name) > -1 && tweet.text.toUpperCase().includes(that.messages.messageMonitor.keyPhrase.toUpperCase())) {
                 logMessage('\n@' + tweet.user.screen_name + ' just posted the key phrase.\n\n' + tweet.text);
+                that.messages.repeatingMessages.scrambleMessages = false;
+
+                uploadMessages(function() {
+                    logMessage('Messages uploaded after getting magic phrase.');
+                })
             }
         });
     }
