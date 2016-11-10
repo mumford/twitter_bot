@@ -34,6 +34,15 @@ function TwitterBot(options) {
         });
     }
 
+    function runStream() {
+        logMessage('Starting up the Twitter stream client.');
+        var stream = that.twit.stream('statuses/filter', { track: '#InvisibleSunRPG'});
+
+        stream.on('tweet', function(tweet) {
+            logMessage('\n@' + tweet.user.screen_name + ' just posted something about Invisible Sun.\n\n' + tweet.text);
+        });
+    }
+
     function run(cb) {
         async.waterfall([
             processRepeatingMessages,
@@ -74,8 +83,8 @@ function TwitterBot(options) {
     }
 
     function initializeTwit() {
-        if (isInProductionMode()) {
-            logMessage("Running in production mode, initializing twit.");
+        //if (isInProductionMode()) {
+        //    logMessage("Running in production mode, initializing twit.");
 
             // Configure Twit so we can post
             var twitterConfig = that.options.twitter;
@@ -83,7 +92,7 @@ function TwitterBot(options) {
             twitterConfig.access_token_secret = process.env.access_token_secret;
 
             that.twit = new Twit(that.options.twitter);
-        }
+        //}
     }
 
     function initializeAws() {
