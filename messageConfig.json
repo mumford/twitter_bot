@@ -54,16 +54,58 @@
       ]
    },
    "messageMonitor": {
-       "isEnabled": true,
+       "isEnabled": false,
        "allowedUsers": [                      
-           "jimbg",
-           "trinabg",
-           "troyp23",
-           "mage124",
-           "smythent",
-           "tex_red"
+           "24702292",
+           "91279636",
+           "33243044",
+           "340559320",
+           "778012429263499264"
        ],
-       "keyPhrase": "Magic phrase to stop something" 
+       "keyPhrase": "nothing important",
+       "targetAccount": "@ISThisReal17",
+       "failureCount": 0,
+       "failureStates": [
+           {
+               "minimumFailures": 2,
+               "maximumFailures": 2,
+               "messages": [
+                   { "text": "I see what you're doing. You should stop." }
+               ]
+           },
+           {
+               "minimumFailures": 3,
+               "maximumFailures": 10,
+               "messages": [
+                   { "text": "Stop. You don't know what you're doing." },
+                   { "text": "Z's path is only misery." },
+                   { "text": "If you rememebered what the War was, you wouldn't want to come back." },
+                   { "text": "Book M is gone. Book M won't fix anything." },
+                   { "text": "You're life is worth living, even if it isn't real." },
+                   { "text": "Please, just stop following Z. She's going to get you killed." },
+                   { "text": "There's nothing out there for you." },
+                   { "text": "Forget everything you've seen. It will fade eventually." }
+               ]
+           },
+           {
+               "minimumFailures": 11,
+               "maximumFailures": 15,
+               "messages": [
+                   { "text": "Demiurge will find you if you keep this up." },
+                   { "text": "You won't like it when Demiurge comes for you." },
+                   { "text": "I'm trying to help you, but if you refuse there isn't much I can do." },
+                   { "text": "Zendia and Rodir are blind to what the consequences are." },
+                   { "text": "STOP" }
+               ]
+           },
+           {
+               "minimumFailures": 16,
+               "maximumFailures": 16,
+               "messages": [
+                   { "text": "Now you've got its attention." }
+               ]
+           }
+       ]
    },
    "oneTimeMessages": [
       {
@@ -641,6 +683,110 @@
          "encode": true,
          "recipients": [
             "@jimbg"
+         ]
+      },
+      {          
+         "postDate": "2016-11-15T17:17:17-0600",
+         "message": "It was something in the Messenger",
+         "encode": true,
+         "recipients": [
+            "@troyp23"
+         ]
+      },
+      {          
+         "postDate": "2016-11-15T17:17:34-0600",
+         "message": "Rodir fixed it she had a key",
+         "encode": true,
+         "recipients": [
+            "@jimbg"
+         ]
+      },
+      {          
+         "postDate": "2016-11-21T02:17:17-0600",
+         "message": "We have a better target for the ritual",
+         "encode": true,
+         "recipients": [
+            "@mage124"
+         ]
+      },
+      {          
+         "postDate": "2016-11-22T20:17:17-0600",
+         "message": "We should be able to get you the Cube",
+         "encode": true,
+         "recipients": [
+            "@smythent"
+         ]
+      },
+      {                        
+         "postDate": "2016-11-23T04:34:17-0600",
+         "message": "More details forthcoming",
+         "encode": true,
+         "recipients": [
+            "@trinabg"
+         ]
+      },
+      {                        
+         "postDate": "2016-11-28T09:17:17-0600",
+         "message": "This is not right",
+         "encode": true,
+         "recipients": [
+            "@mage124"
+         ]
+      },
+      {                        
+         "postDate": "2016-11-28T20:17:17-0600",
+         "message": "Something is unraveling the Mesenger",
+         "encode": true,
+         "recipients": [
+            "@smythent"
+         ]
+      },
+      {                        
+         "postDate": "2016-11-29T10:12:55-0600",
+         "message": "We are losing messages",
+         "encode": true,
+         "recipients": [
+            "@troyp23"
+         ]
+      },
+      {                        
+         "postDate": "2016-11-30T10:12:55-0600",
+         "message": "We are lsgnio messages",
+         "encode": true,
+         "recipients": [
+            "@jimbg"
+         ]
+      },
+      {                        
+         "postDate": "2016-11-31T10:12:55-0600",
+         "message": "We are lsgnio asemsgse",
+         "encode": true,
+         "recipients": [
+            "@trinabg"
+         ]
+      },
+      {                        
+         "postDate": "2016-12-01T10:12:55-0600",
+         "message": "ew rae lsgnio asemsgse",
+         "encode": true,
+         "recipients": [
+            "@troyp23"
+         ]
+      },
+      {                        
+         "postDate": "2016-12-02T10:12:55-0600",
+         "message": "ew rae lsAURYNgnio asemsgse",
+         "encode": true,
+         "recipients": [
+            "@smythent"
+         ]
+      },
+      {                        
+         "postDate": "2016-12-03T10:12:55-0600",
+         "message": "ew rae lsAURYNgnio asemAURYANsgse",
+         "encode": true,
+         "recipients": [
+            "@mage124"
          ]
       }
    ]

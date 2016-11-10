@@ -54,7 +54,12 @@ function TwitterBot(options) {
         });
     }
 
-    function processTweet(tweet, cb) {        
+    function processTweet(tweet, cb) {
+        if (!tweet.text.toUpperCase().includes(that.messages.messageMonitor.targetAccount.toUpperCase())) {
+            // If the tweet isn't to the bot, then we ignore it.
+            cb(false);
+        }   
+
         if (tweet.text.toUpperCase().includes(that.messages.messageMonitor.keyPhrase.toUpperCase())) {
             logMessage('\n@' + tweet.user.screen_name + ' just posted the key phrase.\n\n' + tweet.text);
 
