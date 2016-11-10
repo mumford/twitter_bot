@@ -28,6 +28,8 @@ function TwitterBot(options) {
             logMessage("The current time is " + moment().format(dateFormat));
             logMessage("The post delay is " + that.messages.repeatingMessages.repeatDelayInSeconds + "s");
 
+            runStream();
+
             // And run the loop to watch for messages
             logMessage("Starting up the loop, using default timeout: " + that.options.defaultLoopTimeInSeconds + "s");
             runLoop(that.options.defaultLoopTimeInSeconds);
@@ -35,11 +37,18 @@ function TwitterBot(options) {
     }
 
     function runStream() {
-        logMessage('Starting up the Twitter stream client.');
-        var stream = that.twit.stream('statuses/filter', { track: '#InvisibleSunRPG'});
+        if (!that.messages.messageMonitor.isEnabled) {
+            logMessage('The message monitor is not enabled.');
+            return;
+        }
+
+        logMessage('Starting up the Twitter stream client. Watching for "' + that.messages.messageMonitor.keyPhrase + '"');
+        var stream = that.twit.stream('statuses/filter', { track: that.messages.messageMonitor.keyPhrase});
 
         stream.on('tweet', function(tweet) {
-            logMessage('\n@' + tweet.user.screen_name + ' just posted something about Invisible Sun.\n\n' + tweet.text);
+            if (that.messages.messageMonitor.allowedUsers.indexOf(tweet.user.screen_name) > -1 && tweet.text.toUpperCase().includes(that.messages.messageMonitor.keyPhrase.toUpperCase())) {
+                logMessage('\n@' + tweet.user.screen_name + ' just posted the key phrase.\n\n' + tweet.text);
+            }
         });
     }
 

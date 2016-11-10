@@ -53,6 +53,18 @@
          "Dusk does not know who you are"
       ]
    },
+   "messageMonitor": {
+       "isEnabled": true,
+       "allowedUsers": [                      
+           "jimbg",
+           "trinabg",
+           "troyp23",
+           "mage124",
+           "smythent",
+           "tex_red"
+       ],
+       "keyPhrase": "Magic phrase to stop something" 
+   },
    "oneTimeMessages": [
       {
          "postDate": "2016-09-17T09:33:00-0500",

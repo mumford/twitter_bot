@@ -1,16 +1,15 @@
 {
    "repeatingMessages": {
       "repeatDelayInSeconds": 61200,
-      "scrambleMessages": true,
+      "scrambleMessages": false,
       "scrambleChance": ".9",
-      "lastPosted": "2016-11-08T13:17:17-06:00",
+      "lastPosted": "2016-11-09T13:17:17-06:00",
       "messages": [
          "The war is over",
          "Follow the path",
          "Await the Black Cube",
          "Beware the cysts of the War",
          "You have forgotten",
-         "Do not trust Auryn",
          "Keep watch on the stars",
          "Satyrine holds its secrets",
          "Time in Shadow is a pale shade",
@@ -41,7 +40,6 @@
          "Serpents are simply failed dragons",
          "Trusted agents must be found",
          "Auryn has thoughtforms tracking you down",
-         "Adding in additional security",
          "Rodir is weaving more complexity in",
          "Dusk brings a great many things",
          "Devils linger in the Dark",
@@ -54,6 +52,18 @@
          "Cold sets in and Dusk freezes",
          "Dusk does not know who you are"
       ]
+   },
+   "messageMonitor": {
+       "isEnabled": true,
+       "allowedUsers": [                      
+           "jimbg",
+           "trinabg",
+           "troyp23",
+           "mage124",
+           "smythent",
+           "tex_red"
+       ],
+       "keyPhrase": "Magic phrase to stop something" 
    },
    "oneTimeMessages": [
       {
