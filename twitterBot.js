@@ -43,18 +43,66 @@ function TwitterBot(options) {
         }
 
         logMessage('Starting up the Twitter stream client. Watching for "' + that.messages.messageMonitor.keyPhrase + '"');
-        var stream = that.twit.stream('statuses/filter', { track: that.messages.messageMonitor.keyPhrase});
+        var stream = that.twit.stream('statuses/filter', { follow: that.messages.messageMonitor.allowedUsers.join(',')});
 
         stream.on('tweet', function(tweet) {
-            if (that.messages.messageMonitor.allowedUsers.indexOf(tweet.user.screen_name) > -1 && tweet.text.toUpperCase().includes(that.messages.messageMonitor.keyPhrase.toUpperCase())) {
-                logMessage('\n@' + tweet.user.screen_name + ' just posted the key phrase.\n\n' + tweet.text);
-                that.messages.repeatingMessages.scrambleMessages = false;
-
-                uploadMessages(function() {
-                    logMessage('Messages uploaded after getting magic phrase.');
-                })
-            }
+            processTweet(tweet, function(scrambleStopped) {
+                if (scrambleStopped) {
+                    stream.stop();
+                }
+            });
         });
+    }
+
+    function processTweet(tweet, cb) {        
+        if (tweet.text.toUpperCase().includes(that.messages.messageMonitor.keyPhrase.toUpperCase())) {
+            logMessage('\n@' + tweet.user.screen_name + ' just posted the key phrase.\n\n' + tweet.text);
+
+            that.messages.repeatingMessages.scrambleMessages = false;
+            that.messages.messageMonitor.isEnabled = false;
+
+            uploadMessages(function() {
+                logMessage('Messages uploaded after getting magic phrase.');
+                cb(true);
+            });
+        } else {
+            logMessage('Received a message, but it didn\'t match the magic phrase.');
+            // Bump the failed message count
+            var monitor = that.messages.messageMonitor;
+
+            monitor.failureCount++;
+
+            var failureState;                
+
+            for (var i = 0; i < monitor.failureStates.length; i++) {
+                if (monitor.failureStates[i].minimumFailures <= monitor.failureCount && monitor.failureStates[i].maximumFailures >= monitor.failureCount) {
+                    failureState = monitor.failureStates[i];
+                    break;
+                }
+            }
+
+            if (failureState) {
+                var messages = [];
+
+                for (var i = 0; i < failureState.messages.length; i++) {
+                    if (!failureState.messages[i].isPosted) {
+                        messages.push(failureState.messages[i]);
+                    }
+                }
+
+                var index = messages.length > 1 ? Math.round(Math.random() * messages.length) - 1 : 0;
+                logMessage('We have ' + messages.length + ' messages and will use message ' + index + '.');
+                postMessage(messages[index].text, function(err, data) {
+                    messages[index].isPosted = true;
+                    uploadMessages(function() {
+                        logMessage('Uploaded messages after posting a failure state.');
+                        cb(false);
+                    })
+                });
+            } else {
+                cb(false);
+            }
+        }        
     }
 
     function run(cb) {
