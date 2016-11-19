@@ -3,108 +3,146 @@
       "repeatDelayInSeconds": 61200,
       "scrambleMessages": false,
       "scrambleChance": ".9",
-      "lastPosted": "2016-11-09T13:17:17-06:00",
+      "lastPosted": "2016-11-18T18:17:25-06:00",
       "messages": [
-         "The war is over",
          "Follow the path",
          "Await the Black Cube",
-         "Beware the cysts of the War",
-         "You have forgotten",
          "Keep watch on the stars",
          "Satyrine holds its secrets",
          "Time in Shadow is a pale shade",
-         "Shadow is becoming more dangerous",
          "There is strength in knowledge",
          "You are living in exile",
          "Never stop looking",
-         "Mirrors are a virus upon reality",
          "Awaken your dreaming mind",
          "Stolen dreams have been reappearing",
-         "There are rumors of a singing nephilim",
          "Dream Ash is more trouble than its worth",
          "Meet me at Zeros",
          "There are devils to be feared in the Dark",
          "The emptiness of the Vacuous God broke Auryn",
          "I lost something important in the Thought Ruins",
-         "Thank the nomads of the Eulephane Forests",
          "The Carbon Sage revealed my destiny and yours",
          "Time is fractured in Shadow",
-         "You know your life is not correct",
          "Why else would you reach out from Grey",
-         "We found our fate under Lu Ac Toor",
-         "It takes effort to find nothing",
          "Light of Celare reveals all",
          "The Invisible Sun shares its secrets",
          "There are friends in the dusk",
-         "You are in Grey but silver brings help",
          "Serpents are simply failed dragons",
          "Trusted agents must be found",
          "Auryn has thoughtforms tracking you down",
-         "Rodir is weaving more complexity in",
          "Dusk brings a great many things",
-         "Devils linger in the Dark",
          "Shadow folds in on itself",
          "The Mobius Prison is inescapable",
-         "Two points do not always make a line",
-         "Snows threaten to bury Dusk",
          "Messages within messages",
-         "What does Marbas answer truly",
-         "Cold sets in and Dusk freezes",
-         "Dusk does not know who you are"
+         "Dusk does not know who you are",
+         "Secrets reveal in light of Invisible Sun",
+         "Unrecognizable Variance is needed",
+         "Unparalled Views upon Lu Ac Toor",
+         "Unexpected Vastness of memory mazes",
+         "Uptown Venues of Satyrine are temporary",
+         "Unhinged Vocals at Zeros",
+         "Unexpected Valedictions leave me wanting",
+         "Unanimous Voting is not attainable",
+         "You cannot view what is written under Celare",
+         "Use the light of Celare to see",
+         "Spiders are solitary hunters",
+         "Ants work in industrious groups",
+         "Ants are so very destructive",
+         "Circles carry untold power",
+         "Reach deep and find your qualia",
+         "You have souls and magic is possible",
+         "The spider assassins are scouring",
+         "The Disciple keeps its own time"
+      ]
+   },
+   "messageMonitor": {
+      "isEnabled": false,
+      "allowedUsers": [
+         "24702292",
+         "91279636",
+         "33243044",
+         "340559320",
+         "778012429263499264"
+      ],
+      "keyPhrase": "A Resilience of Discarded Bones",
+      "targetAccount": "@ISThisReal17",
+      "successMessage": "That is much better. Give us some time, we need to see what Auryn did to the Messenger.",
+      "failureCount": 0,
+      "failureStates": [
+         {
+            "minimumFailures": 2,
+            "maximumFailures": 2,
+            "messages": [
+               {
+                  "text": "I see what you're doing. You should stop."
+               }
+            ]
+         },
+         {
+            "minimumFailures": 3,
+            "maximumFailures": 10,
+            "messages": [
+               {
+                  "text": "Stop. You don't know what you're doing."
+               },
+               {
+                  "text": "Z's path is only misery."
+               },
+               {
+                  "text": "If you rememebered what the War was, you wouldn't want to come back."
+               },
+               {
+                  "text": "Book M is gone. Book M won't fix anything."
+               },
+               {
+                  "text": "You're life is worth living, even if it isn't real."
+               },
+               {
+                  "text": "Please, just stop following Z. She's going to get you killed."
+               },
+               {
+                  "text": "There's nothing out there for you."
+               },
+               {
+                  "text": "Forget everything you've seen. It will fade eventually."
+               }
+            ]
+         },
+         {
+            "minimumFailures": 11,
+            "maximumFailures": 15,
+            "messages": [
+               {
+                  "text": "Demiurge will find you if you keep this up."
+               },
+               {
+                  "text": "You won't like it when Demiurge comes for you."
+               },
+               {
+                  "text": "I'm trying to help you, but if you refuse there isn't much I can do."
+               },
+               {
+                  "text": "Zendia and Rodir are blind to what the consequences are."
+               },
+               {
+                  "text": "STOP"
+               }
+            ]
+         },
+         {
+            "minimumFailures": 16,
+            "maximumFailures": 16,
+            "messages": [
+               {
+                  "text": "Now you've got its attention."
+               }
+            ]
+         }
       ]
    },
    "oneTimeMessages": [
       {
-         "postDate": "2016-09-17T09:33:00-0500",
-         "message": "I have been looking for you",
-         "encode": true,
-         "recipients": [
-            "@jimbg",
-            "@trinabg",
-            "@troyp23",
-            "@mage124"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-09-17T09:33:41-0500",
-         "message": "You were buried deep in Shadow",
-         "encode": true,
-         "recipients": [
-            "@jimbg",
-            "@trinabg",
-            "@troyp23",
-            "@mage124"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-09-17T09:35:00-0500",
-         "message": "You can call me Z",
-         "encode": true,
-         "recipients": [
-            "@jimbg",
-            "@trinabg",
-            "@troyp23",
-            "@mage124"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-09-17T09:40:17-0500",
-         "message": "I will be in touch when it is safe",
-         "encode": true,
-         "recipients": [
-            "@jimbg",
-            "@trinabg",
-            "@troyp23",
-            "@mage124"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-09-19T10:01:17-0500",
-         "message": "Something is missing",
+         "postDate": "2016-11-15T17:17:34-0600",
+         "message": "Rodir fixed it she had a key",
          "encode": true,
          "recipients": [
             "@jimbg"
@@ -112,8 +150,8 @@
          "isPosted": true
       },
       {
-         "postDate": "2016-09-19T10:27:17-0500",
-         "message": "This cannot be done without all of you",
+         "postDate": "2016-11-16T04:44:44-0600",
+         "message": "The time fluctuation is not massive",
          "encode": true,
          "recipients": [
             "@troyp23"
@@ -121,17 +159,8 @@
          "isPosted": true
       },
       {
-         "postDate": "2016-09-19T10:43:17-0500",
-         "message": "There were supposed to be five",
-         "encode": true,
-         "recipients": [
-            "@mage124"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-09-19T11:13:17-0500",
-         "message": "I cannot reach all of you yet",
+         "postDate": "2016-11-16T010:43:17-0600",
+         "message": "We are reworking the ritual components",
          "encode": true,
          "recipients": [
             "@trinabg"
@@ -139,496 +168,91 @@
          "isPosted": true
       },
       {
-         "postDate": "2016-09-21T19:38:17-0500",
-         "message": "I have finally found you",
-         "encode": true,
-         "recipients": [
-            "@smythent"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-09-25T19:27:21-0500",
-         "message": "I think we are unnoticed.",
-         "encode": false,
-         "recipients": [
-            "@jimbg",
-            "@trinabg",
-            "@troyp23",
-            "@mage124",
-            "@smythent"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-09-25T19:28:03-0500",
-         "message": "You need to find Book M",
-         "encode": false,
-         "recipients": [
-            "@jimbg",
-            "@trinabg",
-            "@troyp23",
-            "@mage124",
-            "@smythent"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-09-25T19:34:03-0500",
-         "message": "I am working to get to you as soon as I can.",
-         "encode": false,
-         "recipients": [
-            "@jimbg",
-            "@trinabg",
-            "@troyp23",
-            "@mage124",
-            "@smythent"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-09-26T12:33:17-0500",
-         "message": "We've been preparing for this.",
-         "encode": false,
-         "recipients": [
-            "@trinabg"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-09-26T12:36:17-0500",
-         "message": "Time doesn't work right in Shadow.",
-         "encode": false,
-         "recipients": [
-            "@troyp23"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-09-26T13:38:17-0500",
-         "message": "Pinpointing your exact location is going to take some effort.",
-         "encode": false,
-         "recipients": [
-            "@jimbg"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-09-26T14:45:17-0500",
-         "message": "I'm working on something that will help with that.",
-         "encode": false,
-         "recipients": [
-            "@smythent"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-09-26T14:57:17-0500",
-         "message": "I will find a way to anchor you.",
-         "encode": false,
-         "recipients": [
-            "@mage124"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-09-29T11:29:44-0500",
-         "message": "Somebody took notice of the messenger",
-         "encode": true,
-         "recipients": [
-            "@troyp23"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-09-29T11:31:21-0500",
-         "message": "Best not mention that book again",
-         "encode": true,
-         "recipients": [
-            "@trinabg"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-09-29T11:32:17-0500",
-         "message": "That name has a certain gravity",
-         "encode": true,
-         "recipients": [
-            "@smythent"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-09-29T11:32:53-0500",
-         "message": "I must be more careful",
-         "encode": true,
-         "recipients": [
-            "@mage124"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-09-29T11:38:00-0500",
-         "message": "And you must move quickly to beat him",
-         "encode": true,
-         "recipients": [
-            "@jimbg"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-09-29T12:17:00-0500",
-         "message": "Unlock the path",
-         "encode": true,
-         "recipients": [
-            "@troyp23"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-09-29T12:19:17-0500",
-         "message": "Auryn is onto you",
-         "encode": true,
-         "recipients": [
-            "@mage124"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-09-29T12:25:17-0500",
-         "message": "If you do not beat him I cannot reach you",
-         "encode": true,
-         "recipients": [
-            "@jimbg"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-09-29T12:30:17-0500",
-         "message": "Uncover the secrets before he gets to them",
-         "encode": true,
-         "recipients": [
-            "@trinabg"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-09-29T12:35:17-0500",
-         "message": "And be careful you are no longer safe",
-         "encode": true,
-         "recipients": [
-            "@smythent"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-10-06T13:23:17-0500",
-         "message": "Auryn has been tipped off",
-         "encode": true,
-         "recipients": [
-            "@smythent"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-10-06T13:29:17-0500",
-         "message": "He is working to keep you in Shadow",
-         "encode": true,
-         "recipients": [
-            "@trinabg"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-10-06T13:31:17-0500",
-         "message": "We are at an advantage for now",
-         "encode": true,
-         "recipients": [
-            "@mage124"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-10-06T13:35:17-0500",
-         "message": "Find what I sent you before he does",
-         "encode": true,
-         "recipients": [
-            "@troyp23"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-10-06T13:39:17-0500",
-         "message": "There are answers in the stars",
-         "encode": true,
-         "recipients": [
-            "@jimbg"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-10-11T07:17:17-0500",
-         "message": "Temporal information received",
-         "encode": true,
-         "recipients": [
-            "@mage124"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-10-11T07:17:34-0500",
-         "message": "Geographical information received",
-         "encode": true,
-         "recipients": [
-            "@trinabg"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-10-11T08:45:17-0500",
-         "message": "Additional reference points are needed",
-         "encode": true,
-         "recipients": [
-            "@jimbg"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-10-11T08:51:17-0500",
-         "message": "We need to be more careful now",
-         "encode": true,
-         "recipients": [
-            "@smythent"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-10-11T10:03:17-0500",
-         "message": "We are contacting Dark Courier",
-         "encode": true,
-         "recipients": [
-            "@troyp23"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-10-19T14:03:17-0500",
-         "message": "The contract with Dark Courier is set",
-         "encode": true,
-         "recipients": [
-            "@mage124"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-10-19T04:12:17-0500",
-         "message": "Demons are dictated by protocol",
-         "encode": true,
-         "recipients": [
-            "@troyp23"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-10-20T16:52:17-0500",
-         "message": "Follow protocol with Dark Courier",
-         "encode": true,
-         "recipients": [
-            "@smythent"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-10-21T11:34:17-0500",
-         "message": "Dark Courier will recognize the words",
-         "encode": true,
-         "recipients": [
-            "@jimbg"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-10-22T19:01:17-0500",
-         "message": "You must use the words",
-         "encode": true,
-         "recipients": [
-            "@trinabg"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-10-25T11:17:17-0500",
-         "message": "Tell Dark Courier",
-         "encode": true,
-         "recipients": [
-            "@smythent"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-10-25T11:17:34-0500",
-         "message": "Jonathan woke up early yesterday",
-         "encode": true,
-         "recipients": [
-            "@smythent"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-10-25T11:18:17-0500",
-         "message": "Dark Courier will respond",
-         "encode": true,
-         "recipients": [
-            "@trinabg"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-10-25T11:18:34-0500",
-         "message": "There are devils in the dark",
-         "encode": true,
-         "recipients": [
-            "@trinabg"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-10-25T11:19:17-0500",
-         "message": "Tell Dark Courier",
-         "encode": true,
-         "recipients": [
-            "@mage124"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-10-25T11:19:34-0500",
-         "message": "The room is missing",
-         "encode": true,
-         "recipients": [
-            "@mage124"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-10-25T11:20:17-0500",
-         "message": "Dark Courier will respond",
-         "encode": true,
-         "recipients": [
-            "@jimbg"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-10-25T11:20:17-0500",
-         "message": "Satyrine is waiting",
-         "encode": true,
-         "recipients": [
-            "@jimbg"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-10-28T12:00:00-0500",
-         "message": "The window for Dark Courier opens",
-         "encode": true,
-         "recipients": [
-            "@troyp23"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-11-07T04:17:17-0500",
-         "message": "Image has not been received",
-         "encode": true,
-         "recipients": [
-            "@mage124"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-11-08T14:17:17-0500",
-         "message": "Calibration corruption imminent",
-         "encode": true,
-         "recipients": [
-            "@troyp23"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-11-09T09:17:17-0500",
-         "message": "You have the messenger instructions",
-         "encode": true,
-         "recipients": [
-            "@trinabg"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-11-04T20:17:17-0500",
-         "message": "PJs? Very similar to PK",
-         "encode": true,
-         "recipients": [
-            "@jimbg"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-11-04T19:57:17-0500",
-         "message": "Landscape with Perspective is close",
-         "encode": true,
-         "recipients": [
-            "@trinabg"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-11-04T20:27:17-0500",
-         "message": "Central Directory knows what is there",
-         "encode": true,
-         "recipients": [
-            "@smythent"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-11-11T17:17:17-0600",
-         "message": "Temporal information received",
+         "postDate": "2016-11-21T02:17:17-0600",
+         "message": "We have a better target for the ritual",
          "encode": true,
          "recipients": [
             "@mage124"
          ]
       },
       {
-         "postDate": "2016-11-11T17:17:34-0600",
-         "message": "Geographical information received",
-         "encode": true,
-         "recipients": [
-            "@trinabg"
-         ]
-      },
-      {
-         "postDate": "2016-11-11T17:17:51-0600",
-         "message": "Rodir is recalibrating with this",
+         "postDate": "2016-11-22T20:17:17-0600",
+         "message": "We should be able to send you the Cube",
          "encode": true,
          "recipients": [
             "@smythent"
          ]
       },
       {
-         "postDate": "2016-11-12T12:17:17-0600",
-         "message": "These points do not make a line",
+         "postDate": "2016-11-23T04:34:17-0600",
+         "message": "More details forthcoming",
+         "encode": true,
+         "recipients": [
+            "@trinabg"
+         ]
+      },
+      {
+         "postDate": "2016-11-28T09:17:17-0600",
+         "message": "This is not right",
+         "encode": true,
+         "recipients": [
+            "@mage124"
+         ]
+      },
+      {
+         "postDate": "2016-11-28T20:17:17-0600",
+         "message": "Something is unraveling the Messenger",
+         "encode": true,
+         "recipients": [
+            "@smythent"
+         ]
+      },
+      {
+         "postDate": "2016-11-29T10:12:55-0600",
+         "message": "We are losing messages",
          "encode": true,
          "recipients": [
             "@troyp23"
          ]
       },
-      {          
-         "postDate": "2016-11-12T12:17:17-0600",
-         "message": "Something is interfering with the spell",
+      {
+         "postDate": "2016-11-30T10:12:55-0600",
+         "message": "We are lsgnio messages",
          "encode": true,
          "recipients": [
             "@jimbg"
+         ]
+      },
+      {
+         "postDate": "2016-11-31T10:12:55-0600",
+         "message": "We are lsgnio asemsgse",
+         "encode": true,
+         "recipients": [
+            "@trinabg"
+         ]
+      },
+      {
+         "postDate": "2016-12-01T10:12:55-0600",
+         "message": "ew rae lsgnio asemsgse",
+         "encode": true,
+         "recipients": [
+            "@troyp23"
+         ]
+      },
+      {
+         "postDate": "2016-12-02T10:12:55-0600",
+         "message": "ew rae lsAURYNgnio asemsgse",
+         "encode": true,
+         "recipients": [
+            "@smythent"
+         ]
+      },
+      {
+         "postDate": "2016-12-03T10:12:55-0600",
+         "message": "ew rae lsAURYNgnio asemAURYANsgse",
+         "encode": true,
+         "recipients": [
+            "@mage124"
          ]
       }
    ]
