@@ -3,7 +3,7 @@
       "repeatDelayInSeconds": 61200,
       "scrambleMessages": false,
       "scrambleChance": ".9",
-      "lastPosted": "2016-11-15T05:17:17-06:00",
+      "lastPosted": "2016-11-18T18:17:25-06:00",
       "messages": [
          "Follow the path",
          "Await the Black Cube",
@@ -158,8 +158,8 @@
          "isPosted": true
       },
       {
-         "postDate": "2016-11-16T09:33:17-0600",
-         "message": "We are reworking the ritual",
+         "postDate": "2016-11-16T010:43:17-0600",
+         "message": "We are reworking the ritual components",
          "encode": true,
          "recipients": [
             "@trinabg"
