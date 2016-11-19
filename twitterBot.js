@@ -57,7 +57,7 @@ function TwitterBot(options) {
     function processTweet(tweet, cb) {
         if (!tweet.text.toUpperCase().includes(that.messages.messageMonitor.targetAccount.toUpperCase())) {
             // If the tweet isn't to the bot, then we ignore it.
-            cb(false);
+            return cb(false);
         }   
 
         if (tweet.text.toUpperCase().includes(that.messages.messageMonitor.keyPhrase.toUpperCase())) {
@@ -66,10 +66,14 @@ function TwitterBot(options) {
             that.messages.repeatingMessages.scrambleMessages = false;
             that.messages.messageMonitor.isEnabled = false;
 
-            uploadMessages(function() {
-                logMessage('Messages uploaded after getting magic phrase.');
-                cb(true);
-            });
+            logMessage('We have received the correct message, notifying the users.');
+
+            postMessage(that.messages.messageMonitor.successMessage, function(err, data) {
+                uploadMessages(function() {
+                    logMessage('Messages uploaded after getting magic phrase.');
+                    cb(true);
+                });
+            });            
         } else {
             logMessage('Received a message, but it didn\'t match the magic phrase.');
             // Bump the failed message count

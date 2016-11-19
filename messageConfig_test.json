@@ -1,7 +1,7 @@
 {
    "repeatingMessages": {
       "repeatDelayInSeconds": 10,
-      "scrambleMessages": false,
+      "scrambleMessages": true,
       "scrambleChance": ".9",
       "lastPosted": "2016-11-18T18:17:25-06:00",
       "messages": [
@@ -55,21 +55,23 @@
       ]
    },
    "messageMonitor": {
-      "isEnabled": false,
+      "isEnabled": true,
       "allowedUsers": [
          "24702292",
          "91279636",
          "33243044",
          "340559320",
-         "778012429263499264"
+         "778012429263499264",
+         "16392326"
       ],
-      "keyPhrase": "there is no magic phrase to unlock this yet",
+      "keyPhrase": "test message",
       "targetAccount": "@ISThisReal17",
+      "successMessage": "That is much better. Give us some time, we need to see what Auryn did to the Messenger.",
       "failureCount": 0,
       "failureStates": [
          {
-            "minimumFailures": 2,
-            "maximumFailures": 2,
+            "minimumFailures": 1,
+            "maximumFailures": 1,
             "messages": [
                {
                   "text": "I see what you're doing. You should stop."
@@ -77,7 +79,7 @@
             ]
          },
          {
-            "minimumFailures": 3,
+            "minimumFailures": 2,
             "maximumFailures": 10,
             "messages": [
                {
