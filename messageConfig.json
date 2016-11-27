@@ -52,14 +52,14 @@
          "Time is distorted in Grey",
          "Gold is not the end just a beginning"
       ],
-      "messagesWhenScrambled":[
-          "Auryn has blocked the messenger",
-          "We are still here",
-          "We have sent a demon but time is wrong",
-          "The demon will help you eventually",
-          "Cast the spell to free the Messenger",
-          "Stay quiet and hidden",
-          "Auryn and his agents are on to us"
+      "messagesWhenScrambled": [
+         "Auryn has blocked the messenger",
+         "We are still here",
+         "We have sent a demon but time is wrong",
+         "The demon will help you eventually",
+         "Cast the spell to free the Messenger",
+         "Stay quiet and hidden",
+         "Auryn and his agents are on to us"
       ],
       "archivedMessages": [
          "Unrecognizable Variance is needed",
@@ -242,7 +242,16 @@
       },
       {
          "postDate": "2016-11-27T09:55:17-0600",
-         "message": "That should make summoning predictable",
+         "message": "That should make summoning predictable ",
+         "encode": true,
+         "recipients": [
+            "@troyp23"
+         ],
+         "isPosted": true
+      },
+      {
+         "postDate": "2016-11-27T12:17:17-0600",
+         "message": "That should make summoning  predictable ",
          "encode": true,
          "recipients": [
             "@troyp23"
