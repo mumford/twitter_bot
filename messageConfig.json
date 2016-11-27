@@ -3,7 +3,7 @@
       "repeatDelayInSeconds": 61200,
       "scrambleMessages": false,
       "scrambleChance": ".9",
-      "lastPosted": "2016-11-18T18:17:25-06:00",
+      "lastPosted": "2016-11-27T06:17:25-06:00",
       "messages": [
          "Follow the path",
          "Await the Black Cube",
@@ -23,8 +23,6 @@
          "The Carbon Sage revealed my destiny and yours",
          "Time is fractured in Shadow",
          "Why else would you reach out from Grey",
-         "Light of Celare reveals all",
-         "The Invisible Sun shares its secrets",
          "There are friends in the dusk",
          "Serpents are simply failed dragons",
          "Trusted agents must be found",
@@ -35,15 +33,7 @@
          "Messages within messages",
          "Dusk does not know who you are",
          "Secrets reveal in light of Invisible Sun",
-         "Unrecognizable Variance is needed",
-         "Unparalled Views upon Lu Ac Toor",
-         "Unexpected Vastness of memory mazes",
-         "Uptown Venues of Satyrine are temporary",
-         "Unhinged Vocals at Zeros",
-         "Unexpected Valedictions leave me wanting",
-         "Unanimous Voting is not attainable",
          "You cannot view what is written under Celare",
-         "Use the light of Celare to see",
          "Spiders are solitary hunters",
          "Ants work in industrious groups",
          "Ants are so very destructive",
@@ -51,7 +41,27 @@
          "Reach deep and find your qualia",
          "You have souls and magic is possible",
          "The spider assassins are scouring",
-         "The Disciple keeps its own time"
+         "The Disciple keeps its own time",
+         "The Parliment of Discord reconvenes",
+         "Chaos spreads in the absence of a Warden",
+         "You have a house waiting in Fartown",
+         "Fallen Gods hint at Celare",
+         "Truth seeps into Grey in Strange ways",
+         "You visit Blue in dreams",
+         "Dusk settles with shifting time",
+         "Time is distorted in Grey",
+         "Gold is not the end just a beginning"
+      ],
+      "archivedMessages": [
+         "Unrecognizable Variance is needed",
+         "Unparalled Views upon Lu Ac Toor",
+         "Unexpected Vastness of memory mazes",
+         "Uptown Venues of Satyrine are temporary",
+         "Unhinged Vocals at Zeros",
+         "Unexpected Valedictions leave me wanting",
+         "Unanimous Voting is not attainable",
+         "Light of Celare reveals all",
+         "The Invisible Sun shares its secrets"
       ]
    },
    "messageMonitor": {
@@ -173,19 +183,65 @@
          "encode": true,
          "recipients": [
             "@mage124"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-11-22T20:17:17-0600",
-         "message": "We should be able to send you the Cube",
+         "message": "We will be able to send you the Cub3",
          "encode": true,
          "recipients": [
             "@smythent"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-11-23T04:34:17-0600",
          "message": "More details forthcoming",
+         "encode": true,
+         "recipients": [
+            "@trinabg"
+         ],
+         "isPosted": true
+      },
+      {
+         "postDate": "2016-11-25T14:34:17-0600",
+         "message": "We have a good templural component",
+         "encode": true,
+         "recipients": [
+            "@smythent"
+         ],
+         "isPosted": true
+      },
+      {
+         "postDate": "2016-11-26T11:17:17-0600",
+         "message": "That should make summoning predictable",
+         "encode": true,
+         "recipients": [
+            "@troyp23"
+         ],
+         "isPosted": true
+      },
+      {
+         "postDate": "2016-11-26T11:27:17-0600",
+         "message": "That should make summoning predictable",
+         "encode": true,
+         "recipients": [
+            "@troyp23"
+         ],
+         "isPosted": true
+      },
+      {
+         "postDate": "2016-11-27T16:16:17-0600",
+         "message": "Summoning will be Smarch 40th",
+         "encode": true,
+         "recipients": [
+            "@mage124"
+         ]
+      },
+      {
+         "postDate": "2016-11-27T16:36:17-0600",
+         "message": "You will find it at T",
          "encode": true,
          "recipients": [
             "@trinabg"
@@ -253,6 +309,72 @@
          "encode": true,
          "recipients": [
             "@mage124"
+         ]
+      }
+   ],
+   "upcomingMessages": [
+      {
+         "postDate": "2017-01-30T10:12:55-0600",
+         "message": "No no no no no no no no no no",
+         "encode": true,
+         "recipients": [
+            "@mage124"
+         ]
+      },
+      {
+         "postDate": "2017-01-30T10:13:15-0600",
+         "message": "None of this is correct",
+         "encode": true,
+         "recipients": [
+            "@troyp23"
+         ]
+      },
+      {
+         "postDate": "2017-01-30T10:14:30-0600",
+         "message": "What did Auryn do to the Messenger?",
+         "encode": true,
+         "recipients": [
+            "@jimbg"
+         ]
+      },
+      {
+         "postDate": "2017-01-30T10:15:15-0600",
+         "message": "It does not matter we must proceed",
+         "encode": true,
+         "recipients": [
+            "@smythent"
+         ]
+      },
+      {
+         "postDate": "2017-01-30T10:15:47-0600",
+         "message": "We will have to refine enroute",
+         "encode": true,
+         "recipients": [
+            "@trinabg"
+         ]
+      },
+      {
+         "postDate": "2017-01-31T17:15:47-0600",
+         "message": "It will take time but we can fix this",
+         "encode": true,
+         "recipients": [
+            "@smythent"
+         ]
+      },
+      {
+         "postDate": "2017-01-31T17:17:03-0600",
+         "message": "Rodir and I are working on it",
+         "encode": true,
+         "recipients": [
+            "@troyp23"
+         ]
+      },
+      {
+         "postDate": "2017-01-31T17:17:03-0600",
+         "message": "We need more safeguards",
+         "encode": true,
+         "recipients": [
+            "@jimbg"
          ]
       }
    ]
