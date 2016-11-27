@@ -232,6 +232,14 @@
          "isPosted": true
       },
       {
+         "postDate": "2016-11-27T09:55:17-0600",
+         "message": "That should make summoning predictable",
+         "encode": true,
+         "recipients": [
+            "@troyp23"
+         ]
+      },
+      {
          "postDate": "2016-11-27T16:16:17-0600",
          "message": "Summoning will be Smarch 40th",
          "encode": true,
