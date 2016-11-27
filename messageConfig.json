@@ -52,6 +52,15 @@
          "Time is distorted in Grey",
          "Gold is not the end just a beginning"
       ],
+      "messagesWhenScrambled":[
+          "Auryn has blocked the messenger",
+          "We are still here",
+          "We have sent a demon but time is wrong",
+          "The demon will help you eventually",
+          "Cast the spell to free the Messenger",
+          "Stay quiet and hidden",
+          "Auryn and his agents are on to us"
+      ],
       "archivedMessages": [
          "Unrecognizable Variance is needed",
          "Unparalled Views upon Lu Ac Toor",
@@ -313,7 +322,7 @@
       },
       {
          "postDate": "2016-12-03T10:12:55-0600",
-         "message": "ew rae lsAURYNgnio asemAURYANsgse",
+         "message": "ew rae lsAURYNgnio asemAURYNsgse",
          "encode": true,
          "recipients": [
             "@mage124"
