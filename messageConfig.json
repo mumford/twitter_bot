@@ -3,7 +3,7 @@
       "repeatDelayInSeconds": 61200,
       "scrambleMessages": false,
       "scrambleChance": ".9",
-      "lastPosted": "2016-11-27T06:17:25-06:00",
+      "lastPosted": "2016-11-29T09:17:25-06:00",
       "messages": [
          "Follow the path",
          "Await the Black Cube",
@@ -32,8 +32,6 @@
          "The Mobius Prison is inescapable",
          "Messages within messages",
          "Dusk does not know who you are",
-         "Secrets reveal in light of Invisible Sun",
-         "You cannot view what is written under Celare",
          "Spiders are solitary hunters",
          "Ants work in industrious groups",
          "Ants are so very destructive",
@@ -53,6 +51,7 @@
          "Gold is not the end just a beginning"
       ],
       "messagesWhenScrambled": [
+         "Some messages seem to sneak through",
          "Auryn has blocked the messenger",
          "We are still here",
          "We have sent a demon but time is wrong",
@@ -250,20 +249,13 @@
          "isPosted": true
       },
       {
-         "postDate": "2016-11-27T12:17:17-0600",
-         "message": "That should make summoning  predictable ",
-         "encode": true,
-         "recipients": [
-            "@troyp23"
-         ]
-      },
-      {
          "postDate": "2016-11-27T16:16:17-0600",
          "message": "Summoning will be Smarch 40th",
          "encode": true,
          "recipients": [
             "@mage124"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-11-27T16:36:17-0600",
@@ -271,7 +263,8 @@
          "encode": true,
          "recipients": [
             "@trinabg"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-11-28T09:17:17-0600",
@@ -279,7 +272,8 @@
          "encode": true,
          "recipients": [
             "@mage124"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-11-28T20:17:17-0600",
@@ -287,7 +281,8 @@
          "encode": true,
          "recipients": [
             "@smythent"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-11-29T10:12:55-0600",
@@ -295,7 +290,8 @@
          "encode": true,
          "recipients": [
             "@troyp23"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-11-30T10:12:55-0600",
