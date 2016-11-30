@@ -1,20 +1,17 @@
 {
    "repeatingMessages": {
       "repeatDelayInSeconds": 61200,
-      "scrambleMessages": false,
+      "scrambleMessages": true,
       "scrambleChance": ".9",
-      "lastPosted": "2016-11-29T09:17:25-06:00",
+      "lastPosted": "2016-11-30T02:17:25-06:00",
       "messages": [
          "Follow the path",
          "Await the Black Cube",
-         "Keep watch on the stars",
          "Satyrine holds its secrets",
          "Time in Shadow is a pale shade",
          "There is strength in knowledge",
-         "You are living in exile",
          "Never stop looking",
          "Awaken your dreaming mind",
-         "Stolen dreams have been reappearing",
          "Dream Ash is more trouble than its worth",
          "Meet me at Zeros",
          "There are devils to be feared in the Dark",
@@ -33,7 +30,6 @@
          "Messages within messages",
          "Dusk does not know who you are",
          "Spiders are solitary hunters",
-         "Ants work in industrious groups",
          "Ants are so very destructive",
          "Circles carry untold power",
          "Reach deep and find your qualia",
@@ -48,9 +44,7 @@
          "You visit Blue in dreams",
          "Dusk settles with shifting time",
          "Time is distorted in Grey",
-         "Gold is not the end just a beginning"
-      ],
-      "messagesWhenScrambled": [
+         "Gold is not the end just a beginning",      
          "Some messages seem to sneak through",
          "Auryn has blocked the messenger",
          "We are still here",
@@ -299,15 +293,8 @@
          "encode": true,
          "recipients": [
             "@jimbg"
-         ]
-      },
-      {
-         "postDate": "2016-11-31T10:12:55-0600",
-         "message": "We are lsgnio asemsgse",
-         "encode": true,
-         "recipients": [
-            "@trinabg"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2016-12-01T10:12:55-0600",
@@ -315,22 +302,6 @@
          "encode": true,
          "recipients": [
             "@troyp23"
-         ]
-      },
-      {
-         "postDate": "2016-12-02T10:12:55-0600",
-         "message": "ew rae lsAURYNgnio asemsgse",
-         "encode": true,
-         "recipients": [
-            "@smythent"
-         ]
-      },
-      {
-         "postDate": "2016-12-03T10:12:55-0600",
-         "message": "ew rae lsAURYNgnio asemAURYNsgse",
-         "encode": true,
-         "recipients": [
-            "@mage124"
          ]
       }
    ],
