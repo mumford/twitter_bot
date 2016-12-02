@@ -3,7 +3,7 @@
       "repeatDelayInSeconds": 61200,
       "scrambleMessages": true,
       "scrambleChance": ".9",
-      "lastPosted": "2016-11-30T02:17:25-06:00",
+      "lastPosted": "2016-12-02T05:29:48-06:00",
       "messages": [
          "Follow the path",
          "Await the Black Cube",
@@ -44,7 +44,7 @@
          "You visit Blue in dreams",
          "Dusk settles with shifting time",
          "Time is distorted in Grey",
-         "Gold is not the end just a beginning",      
+         "Gold is not the end just a beginning",
          "Some messages seem to sneak through",
          "Auryn has blocked the messenger",
          "We are still here",
@@ -52,7 +52,11 @@
          "The demon will help you eventually",
          "Cast the spell to free the Messenger",
          "Stay quiet and hidden",
-         "Auryn and his agents are on to us"
+         "Auryn and his agents are on to us",
+         "Mr. Fingers disappeared",
+         "We cannot locate Mr. Fingers",
+         "Mr. Fingers should find you",
+         "Auryn"
       ],
       "archivedMessages": [
          "Unrecognizable Variance is needed",
@@ -67,7 +71,7 @@
       ]
    },
    "messageMonitor": {
-      "isEnabled": false,
+      "isEnabled": true,
       "allowedUsers": [
          "24702292",
          "91279636",
@@ -302,7 +306,8 @@
          "encode": true,
          "recipients": [
             "@troyp23"
-         ]
+         ],
+         "isPosted": true
       }
    ],
    "upcomingMessages": [
