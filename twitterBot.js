@@ -16,6 +16,7 @@ function TwitterBot(options) {
     this.morse = Morse.create('ITU');
     this.s3Bucket;
     this.messages = '';
+    this.maxMessageLength = 140;
     
     initializeMoment();
     initializeTwit();
@@ -121,15 +122,16 @@ function TwitterBot(options) {
         ],
         function(err, result) {
             if (err) {
-                logMessage("There was an error processing messages: " + err);
+                logMessage("There was an error processing messages: " + err.description);
+                cb(moment().add(1, 'day'));
             } else {
                 logMessage("Messages processed successfully");
-            }
 
-            var difference = moment(result - moment());
-            logMessage("The next post will occur " + result.calendar() + ", " + result.fromNow());
-            
-            cb(difference / 1000);
+                var difference = moment(result - moment());
+                logMessage("The next post will occur " + result.calendar() + ", " + result.fromNow());
+                
+                cb(difference / 1000);
+            }
         });
     }
 
@@ -232,6 +234,8 @@ function TwitterBot(options) {
         if (sinceLastMessage > postDelay) {
             var index = Math.round(Math.random() * that.messages.repeatingMessages.messages.length);
 
+            if (index === 0) index++;
+
             logMessage("Retrieving message " + index + " of " +
                 that.messages.repeatingMessages.messages.length);
 
@@ -292,6 +296,10 @@ function TwitterBot(options) {
                     postMessage(tweet, function(err) {
                         if (!err) {
                             oneTimeMessage.isPosted = true;                         
+                        } else if (err.error) {
+                            logMessage(err.description);
+                        } else {
+                            logMessage('Encountered an error\r\n\r\n' + err);
                         }
                         
                         recipientDone(err);                    
@@ -341,6 +349,11 @@ function TwitterBot(options) {
     }
 
     function postMessage(message, cb) {
+        // Check the message length
+        if (message.length > that.maxMessageLength) {            
+            return cb({ error: 'message-length', description: 'Max message length exceeded.'});
+        }
+
         if (!isInProductionMode()) {
             logMessage("Outputting message to the console.\n\n" + message + "\n");
             cb();
