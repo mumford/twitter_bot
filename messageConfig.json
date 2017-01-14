@@ -3,7 +3,7 @@
       "repeatDelayInSeconds": 61200,
       "scrambleMessages": true,
       "scrambleChance": ".9",
-      "lastPosted": "2016-12-02T05:29:48-06:00",
+      "lastPosted": "2017-01-13T18:23:11-06:00",
       "messages": [
          "Follow the path",
          "Await the Black Cube",
@@ -13,11 +13,7 @@
          "Never stop looking",
          "Awaken your dreaming mind",
          "Dream Ash is more trouble than its worth",
-         "Meet me at Zeros",
-         "There are devils to be feared in the Dark",
-         "The emptiness of the Vacuous God broke Auryn",
-         "I lost something important in the Thought Ruins",
-         "The Carbon Sage revealed my destiny and yours",
+         "Meet me at Zero's",
          "Time is fractured in Shadow",
          "Why else would you reach out from Grey",
          "There are friends in the dusk",
@@ -52,11 +48,7 @@
          "The demon will help you eventually",
          "Cast the spell to free the Messenger",
          "Stay quiet and hidden",
-         "Auryn and his agents are on to us",
-         "Mr. Fingers disappeared",
-         "We cannot locate Mr. Fingers",
-         "Mr. Fingers should find you",
-         "Auryn"
+         "Auryn and his agents are on to us"
       ],
       "archivedMessages": [
          "Unrecognizable Variance is needed",
@@ -71,7 +63,7 @@
       ]
    },
    "messageMonitor": {
-      "isEnabled": true,
+      "isEnabled": false,
       "allowedUsers": [
          "24702292",
          "91279636",
@@ -82,49 +74,56 @@
       "keyPhrase": "A Resilience of Discarded Bones",
       "targetAccount": "@ISThisReal17",
       "successMessage": "That is much better. Give us some time, we need to see what Auryn did to the Messenger.",
-      "failureCount": 0,
+      "failureCount": 7,
       "failureStates": [
          {
-            "minimumFailures": 2,
-            "maximumFailures": 2,
+            "minimumFailures": 1,
+            "maximumFailures": 1,
             "messages": [
                {
-                  "text": "I see what you're doing. You should stop."
+                  "text": "I see what you're doing. You should stop.",
+                  "isPosted": true
                }
             ]
          },
          {
-            "minimumFailures": 3,
-            "maximumFailures": 10,
+            "minimumFailures": 2,
+            "maximumFailures": 9,
             "messages": [
                {
-                  "text": "Stop. You don't know what you're doing."
+                  "text": "Stop. You don't know what you're doing.",
+                  "isPosted": true
                },
                {
                   "text": "Z's path is only misery."
                },
                {
-                  "text": "If you rememebered what the War was, you wouldn't want to come back."
+                  "text": "If you rememebered what the War was, you wouldn't want to come back.",
+                  "isPosted": true
                },
                {
-                  "text": "Book M is gone. Book M won't fix anything."
+                  "text": "Book M is gone. Book M won't fix anything.",
+                  "isPosted": true
                },
                {
-                  "text": "You're life is worth living, even if it isn't real."
+                  "text": "You're life is worth living, even if it isn't real.",
+                  "isPosted": true
                },
                {
-                  "text": "Please, just stop following Z. She's going to get you killed."
+                  "text": "Please, just stop following Z. She's going to get you killed.",
+                  "isPosted": true
                },
                {
                   "text": "There's nothing out there for you."
                },
                {
-                  "text": "Forget everything you've seen. It will fade eventually."
+                  "text": "Forget everything you've seen. It will fade eventually.",
+                  "isPosted": true
                }
             ]
          },
          {
-            "minimumFailures": 11,
+            "minimumFailures": 10,
             "maximumFailures": 15,
             "messages": [
                {
@@ -308,11 +307,9 @@
             "@troyp23"
          ],
          "isPosted": true
-      }
-   ],
-   "upcomingMessages": [
+      },
       {
-         "postDate": "2017-01-30T10:12:55-0600",
+         "postDate": "2017-01-19T10:12:55-0600",
          "message": "No no no no no no no no no no",
          "encode": true,
          "recipients": [
@@ -320,7 +317,7 @@
          ]
       },
       {
-         "postDate": "2017-01-30T10:13:15-0600",
+         "postDate": "2017-01-19T10:13:15-0600",
          "message": "None of this is correct",
          "encode": true,
          "recipients": [
@@ -328,7 +325,7 @@
          ]
       },
       {
-         "postDate": "2017-01-30T10:14:30-0600",
+         "postDate": "2017-01-19T10:14:30-0600",
          "message": "What did Auryn do to the Messenger?",
          "encode": true,
          "recipients": [
@@ -336,15 +333,15 @@
          ]
       },
       {
-         "postDate": "2017-01-30T10:15:15-0600",
-         "message": "It does not matter we must proceed",
+         "postDate": "2017-01-19T10:15:15-0600",
+         "message": "It does not matter, we must proceed",
          "encode": true,
          "recipients": [
             "@smythent"
          ]
       },
       {
-         "postDate": "2017-01-30T10:15:47-0600",
+         "postDate": "2017-01-19T10:15:47-0600",
          "message": "We will have to refine enroute",
          "encode": true,
          "recipients": [
@@ -352,7 +349,7 @@
          ]
       },
       {
-         "postDate": "2017-01-31T17:15:47-0600",
+         "postDate": "2017-01-20T17:15:47-0600",
          "message": "It will take time but we can fix this",
          "encode": true,
          "recipients": [
@@ -360,7 +357,7 @@
          ]
       },
       {
-         "postDate": "2017-01-31T17:17:03-0600",
+         "postDate": "2017-01-20T17:17:03-0600",
          "message": "Rodir and I are working on it",
          "encode": true,
          "recipients": [
@@ -368,7 +365,7 @@
          ]
       },
       {
-         "postDate": "2017-01-31T17:17:03-0600",
+         "postDate": "2017-01-20T17:17:03-0600",
          "message": "We need more safeguards",
          "encode": true,
          "recipients": [

@@ -154,8 +154,8 @@ function TwitterBot(options) {
     }
 
     function initializeTwit() {
-        //if (isInProductionMode()) {
-        //    logMessage("Running in production mode, initializing twit.");
+        if (isInProductionMode()) {
+            logMessage("Running in production mode, initializing twit.");
 
             // Configure Twit so we can post
             var twitterConfig = that.options.twitter;
@@ -163,7 +163,7 @@ function TwitterBot(options) {
             twitterConfig.access_token_secret = process.env.access_token_secret;
 
             that.twit = new Twit(that.options.twitter);
-        //}
+        }
     }
 
     function initializeAws() {
