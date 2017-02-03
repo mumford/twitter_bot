@@ -3,10 +3,9 @@
       "repeatDelayInSeconds": 61200,
       "scrambleMessages": false,
       "scrambleChance": ".9",
-      "lastPosted": "2017-01-26T11:43:50-06:00",
+      "lastPosted": "2017-02-03T06:43:50-06:00",
       "messages": [
          "Meet me at Zero's",
-         "The Mobius Prison is inescapable",
          "The Disciple keeps its own time",
          "Dusk does not know who you are",
          "Auryn and his agents are on to us",
@@ -24,9 +23,8 @@
          "You will find your heart again",
          "Your secret soul is hidden",
          "Grey is the shadow of Indigo",
-         "The Token of Dusk must be visible",
          "Dusk will recognize the token",
-         "Your thoughforms are still here",
+         "Your thoughtforms are still here",
          "The Hendassa are a bit pushy",
          "We need you to return to Indigo",
          "We need you back in Satyrine",
@@ -36,7 +34,13 @@
          "Changeries await to reshape you",
          "You are children of Visla",
          "Come back to Indigo",
-         "The Path is a map of the soul"
+         "The Path is a map of the soul",
+         "What secrets are hidden in your house?",
+         "A legion grows",
+         "You are still connected to the noosphere",
+         "There is a code at the end of the book",
+         "Monsters are sometimes helpful",
+         "Optics are not always reliable"
       ],
       "archivedMessages": [
          "The Parliment of Discord reconvenes",
