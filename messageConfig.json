@@ -3,7 +3,7 @@
       "repeatDelayInSeconds": 61200,
       "scrambleMessages": false,
       "scrambleChance": ".9",
-      "lastPosted": "2017-02-03T06:43:50-06:00",
+      "lastPosted": "2017-02-06T19:43:50-06:00",
       "messages": [
          "Meet me at Zero's",
          "The Disciple keeps its own time",
@@ -13,7 +13,6 @@
          "Find your Testament",
          "Tor, Da, Tu, Ka, La, Ver",
          "Your power will return",
-         "Spiritforms gather again",
          "Death won't deter you",
          "What is the number between 12 and 13?",
          "Mr. Fingers thinks differently now",
@@ -40,9 +39,15 @@
          "You are still connected to the noosphere",
          "There is a code at the end of the book",
          "Monsters are sometimes helpful",
-         "Optics are not always reliable"
+         "Make sure you stop by the Lost Page",
+         "The 100 Rooms Hotel is down to 71 rooms",
+         "Goetics should visit the Two Handed Store",
+         "Listen to Teldar at The Orchard",
+         "Pale shades have a message for you",
+         "Sorry is no mere child"
       ],
       "archivedMessages": [
+         "Spiritforms gather again",
          "The Parliment of Discord reconvenes",
          "Keep the Icon of Dusk with you, always",
          "Follow the path",
@@ -187,229 +192,60 @@
    },
    "oneTimeMessages": [
       {
-         "postDate": "2016-11-15T17:17:34-0600",
-         "message": "Rodir fixed it she had a key",
+         "postDate": "2017-02-07T10:17:34-0600",
+         "message": "My time in Grey wasn't awful.",
          "encode": true,
          "recipients": [
             "@jimbg"
-         ],
-         "isPosted": true
+         ]
       },
       {
-         "postDate": "2016-11-16T04:44:44-0600",
-         "message": "The time fluctuation is not massive",
+         "postDate": "2017-02-07T17:17:34-0600",
+         "message": "I used to wake up, wondering where I was",
          "encode": true,
          "recipients": [
             "@troyp23"
-         ],
-         "isPosted": true
+         ]
       },
       {
-         "postDate": "2016-11-16T010:43:17-0600",
-         "message": "We are reworking the ritual components",
+         "postDate": "2017-02-08T13:34:34-0600",
+         "message": "I'd sleepwalk through my job",
          "encode": true,
          "recipients": [
             "@trinabg"
-         ],
-         "isPosted": true
+         ]
       },
       {
-         "postDate": "2016-11-21T02:17:17-0600",
-         "message": "We have a better target for the ritual",
-         "encode": true,
-         "recipients": [
-            "@mage124"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-11-22T20:17:17-0600",
-         "message": "We will be able to send you the Cub3",
+         "postDate": "2017-02-09T03:17:17-0600",
+         "message": "I worked on cars. I was good.",
          "encode": true,
          "recipients": [
             "@smythent"
-         ],
-         "isPosted": true
+         ]
       },
       {
-         "postDate": "2016-11-23T04:34:17-0600",
-         "message": "More details forthcoming",
-         "encode": true,
-         "recipients": [
-            "@trinabg"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-11-25T14:34:17-0600",
-         "message": "We have a good templural component",
-         "encode": true,
-         "recipients": [
-            "@smythent"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-11-26T11:17:17-0600",
-         "message": "That should make summoning predictable",
-         "encode": true,
-         "recipients": [
-            "@troyp23"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-11-26T11:27:17-0600",
-         "message": "That should make summoning predictable",
-         "encode": true,
-         "recipients": [
-            "@troyp23"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-11-27T09:55:17-0600",
-         "message": "That should make summoning predictable ",
-         "encode": true,
-         "recipients": [
-            "@troyp23"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-11-27T16:16:17-0600",
-         "message": "Summoning will be Smarch 40th",
+         "postDate": "2017-02-10T20:17:17-0600",
+         "message": "I came back to Indigo with a wrench.",
          "encode": true,
          "recipients": [
             "@mage124"
-         ],
-         "isPosted": true
+         ]
       },
       {
-         "postDate": "2016-11-27T16:36:17-0600",
-         "message": "You will find it at T",
-         "encode": true,
-         "recipients": [
-            "@trinabg"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-11-28T09:17:17-0600",
-         "message": "This is not right",
+         "postDate": "2017-02-12T15:17:17-0600",
+         "message": "I still use it, even here.",
          "encode": true,
          "recipients": [
             "@mage124"
-         ],
-         "isPosted": true
+         ]
       },
       {
-         "postDate": "2016-11-28T20:17:17-0600",
-         "message": "Something is unraveling the Messenger",
-         "encode": true,
-         "recipients": [
-            "@smythent"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-11-29T10:12:55-0600",
-         "message": "We are losing messages",
-         "encode": true,
-         "recipients": [
-            "@troyp23"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-11-30T10:12:55-0600",
-         "message": "We are lsgnio messages",
+         "postDate": "2017-02-15T11:17:17-0600",
+         "message": "And now I dream of shadows.",
          "encode": true,
          "recipients": [
             "@jimbg"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-12-01T10:12:55-0600",
-         "message": "ew rae lsgnio asemsgse",
-         "encode": true,
-         "recipients": [
-            "@troyp23"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2017-01-19T10:12:55-0600",
-         "message": "No no no no no no no no no no",
-         "encode": true,
-         "recipients": [
-            "@mage124"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2017-01-19T10:13:15-0600",
-         "message": "None of this is correct",
-         "encode": true,
-         "recipients": [
-            "@troyp23"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2017-01-19T10:14:30-0600",
-         "message": "What did Auryn do to the Messenger?",
-         "encode": true,
-         "recipients": [
-            "@jimbg"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2017-01-19T10:15:15-0600",
-         "message": "It does not matter, we must proceed",
-         "encode": true,
-         "recipients": [
-            "@smythent"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2017-01-19T10:15:47-0600",
-         "message": "We will have to refine enroute",
-         "encode": true,
-         "recipients": [
-            "@trinabg"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2017-01-20T17:15:47-0600",
-         "message": "It will take time but we can fix this",
-         "encode": true,
-         "recipients": [
-            "@smythent"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2017-01-20T17:17:03-0600",
-         "message": "Rodir and I are working on it",
-         "encode": true,
-         "recipients": [
-            "@troyp23"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2017-01-20T17:17:03-0600",
-         "message": "We need more safeguards",
-         "encode": true,
-         "recipients": [
-            "@jimbg"
-         ],
-         "isPosted": true
+         ]
       }
    ]
 }
