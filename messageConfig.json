@@ -3,7 +3,7 @@
       "repeatDelayInSeconds": 61200,
       "scrambleMessages": false,
       "scrambleChance": ".9",
-      "lastPosted": "2017-02-06T19:43:50-06:00",
+      "lastPosted": "2017-02-10T08:43:52-06:00",
       "messages": [
          "Meet me at Zero's",
          "The Disciple keeps its own time",
@@ -40,7 +40,7 @@
          "There is a code at the end of the book",
          "Monsters are sometimes helpful",
          "Make sure you stop by the Lost Page",
-         "The 100 Rooms Hotel is down to 71 rooms",
+         "The 100 Rooms Hotel is down to 70 rooms",
          "Goetics should visit the Two Handed Store",
          "Listen to Teldar at The Orchard",
          "Pale shades have a message for you",
@@ -197,7 +197,8 @@
          "encode": true,
          "recipients": [
             "@jimbg"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2017-02-07T17:17:34-0600",
@@ -205,7 +206,8 @@
          "encode": true,
          "recipients": [
             "@troyp23"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2017-02-08T13:34:34-0600",
@@ -213,7 +215,8 @@
          "encode": true,
          "recipients": [
             "@trinabg"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2017-02-09T03:17:17-0600",
@@ -221,7 +224,8 @@
          "encode": true,
          "recipients": [
             "@smythent"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2017-02-10T20:17:17-0600",
