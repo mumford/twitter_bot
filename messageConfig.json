@@ -3,34 +3,23 @@
       "repeatDelayInSeconds": 61200,
       "scrambleMessages": false,
       "scrambleChance": ".9",
-      "lastPosted": "2017-02-10T08:43:52-06:00",
+      "lastPosted": "2017-04-03T02:53:53-05:00",
       "messages": [
          "Meet me at Zero's",
-         "The Disciple keeps its own time",
-         "Dusk does not know who you are",
-         "Auryn and his agents are on to us",
-         "Dusk settles with shifting time",
          "Find your Testament",
          "Tor, Da, Tu, Ka, La, Ver",
          "Your power will return",
          "Death won't deter you",
-         "What is the number between 12 and 13?",
-         "Mr. Fingers thinks differently now",
-         "Auryn knows too much",
          "Do you remember your house?",
          "Pale is a realm of spirits",
          "You will find your heart again",
          "Your secret soul is hidden",
          "Grey is the shadow of Indigo",
-         "Dusk will recognize the token",
-         "Your thoughtforms are still here",
-         "The Hendassa are a bit pushy",
          "We need you to return to Indigo",
          "We need you back in Satyrine",
          "There will never be magic in Grey",
          "You will leave Grey and return home",
          "The Black Cube will bring you back",
-         "Changeries await to reshape you",
          "You are children of Visla",
          "Come back to Indigo",
          "The Path is a map of the soul",
@@ -38,15 +27,48 @@
          "A legion grows",
          "You are still connected to the noosphere",
          "There is a code at the end of the book",
-         "Monsters are sometimes helpful",
          "Make sure you stop by the Lost Page",
-         "The 100 Rooms Hotel is down to 70 rooms",
+         "The 100 Rooms Hotel is down to 68 rooms",
          "Goetics should visit the Two Handed Store",
          "Listen to Teldar at The Orchard",
          "Pale shades have a message for you",
-         "Sorry is no mere child"
+         "Sorry is no mere child",
+         "If you seek knowledge, check with Frye",
+         "The grigs leave Kestral alone",
+         "Frye's residence is behind The Renaissance",
+         "Don't turn down dinner at Hendric's",
+         "Inanimate things have such stories to tell",
+         "Satyrine is recovering",
+         "Some vislae will remind you of the War",
+         "Satyrine will grow strong again",
+         "What was the War even about?",
+         "Don't get lost in the Helios Library",
+         "The Broken Skull Market has what you need",
+         "Don't trust the Cutpurse Crossroad",
+         "Seki's house is limitless",
+         "Herman wasn't always a rat",
+         "Bagger is lost in delusions of reality",
+         "Malik listened to Beelzebub today",
+         "Malik listened to Azrael today",
+         "Malik listened to Lucy today",
+         "Malik listened to Aclateious today",
+         "Music from Grey can still be heard",
+         "The beard is incredibly alluring",
+         "Milford Bergsley desires the beard",
+         "Allie's beard is fascinating"
       ],
       "archivedMessages": [
+         "Auryn and his agents are on to us",
+         "Mr. Fingers thinks differently now",
+         "Auryn knows too much",
+         "Changeries await to reshape you",
+         "Monsters are sometimes helpful",
+         "Your thoughtforms are still here",
+         "The Hendassa are a bit pushy",
+         "The Disciple keeps its own time",
+         "Dusk does not know who you are",
+         "Dusk settles with shifting time",
+         "Dusk will recognize the token",
          "Spiritforms gather again",
          "The Parliment of Discord reconvenes",
          "Keep the Icon of Dusk with you, always",
@@ -233,7 +255,8 @@
          "encode": true,
          "recipients": [
             "@mage124"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2017-02-12T15:17:17-0600",
@@ -241,7 +264,8 @@
          "encode": true,
          "recipients": [
             "@mage124"
-         ]
+         ],
+         "isPosted": true
       },
       {
          "postDate": "2017-02-15T11:17:17-0600",
@@ -249,7 +273,62 @@
          "encode": true,
          "recipients": [
             "@jimbg"
-         ]
+         ],
+         "isPosted": true
+      },
+      {
+         "postDate": "2017-03-15T11:17:17-0500",
+         "message": "Dusk found you.",
+         "encode": true,
+         "recipients": [
+            "@troyp23"
+         ],
+         "isPosted": true
+      },
+      {
+         "postDate": "2017-03-15T11:27:17-0500",
+         "message": "Hopefully you have what you need.",
+         "encode": true,
+         "recipients": [
+            "@trinabg"
+         ],
+         "isPosted": true
+      },
+      {
+         "postDate": "2017-03-20T22:22:17-0500",
+         "message": "There is movement in the nightside",
+         "encode": true,
+         "recipients": [
+            "@mage124"
+         ],
+         "isPosted": true
+      },
+      {
+         "postDate": "2017-03-20T22:23:17-0500",
+         "message": "And with thoughtful purpose",
+         "encode": true,
+         "recipients": [
+            "@jimbg"
+         ],
+         "isPosted": true
+      },
+      {
+         "postDate": "2017-03-25T09:55:17-0500",
+         "message": "Your meeting was not unobserved",
+         "encode": true,
+         "recipients": [
+            "@smythent"
+         ],
+         "isPosted": true
+      },
+      {
+         "postDate": "2017-03-25T09:57:17-0500",
+         "message": "This may be an issue.",
+         "encode": true,
+         "recipients": [
+            "@jimbg"
+         ],
+         "isPosted": true
       }
    ]
 }
