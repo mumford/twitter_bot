@@ -156,16 +156,16 @@ function TwitterBot(options) {
     }
 
     function initializeTwit() {
-        if (isInProductionMode()) {
-            logMessage("Running in production mode, initializing twit.");
+        var twitterConfig = isInProductionMode()
+            ? that.options.twitter
+            : that.options.devTwitter;
 
-            // Configure Twit so we can post
-            var twitterConfig = that.options.twitter;
-            twitterConfig.consumer_secret = process.env.consumer_secret;
-            twitterConfig.access_token_secret = process.env.access_token_secret;
+        // Configure Twit so we can post
+        var twitterConfig = that.options.twitter;
+        twitterConfig.consumer_secret = process.env.consumer_secret;
+        twitterConfig.access_token_secret = process.env.access_token_secret;
 
-            that.twit = new Twit(that.options.twitter);
-        }
+        that.twit = new Twit(that.options.twitter);
     }
 
     function initializeAws() {

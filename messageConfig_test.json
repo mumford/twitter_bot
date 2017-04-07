@@ -1,15 +1,114 @@
 {
    "repeatingMessages": {
-      "repeatDelayInSeconds": 61200,
+      "repeatDelayInSeconds": 10,
       "scrambleMessages": false,
       "scrambleChance": ".9",
-      "lastPosted": "2017-01-12T18:23:11-06:00",
+      "lastPosted": "2017-04-07T08:53:55-05:00",
       "messages": [
-         "this message is far to long to get posted by the bot so we will see an error.",
-         "this message is far to long to get posted by the bot so we will see an error.",
-         "testin"
+         "Meet me at Zero's",
+         "Find your Testament",
+         "Tor, Da, Tu, Ka, La, Ver",
+         "Your power will return",
+         "Death won't deter you",
+         "Do you remember your house?",
+         "Pale is a realm of spirits",
+         "You will find your heart again",
+         "Your secret soul is hidden",
+         "Grey is the shadow of Indigo",
+         "We need you to return to Indigo",
+         "We need you back in Satyrine",
+         "There will never be magic in Grey",
+         "You will leave Grey and return home",
+         "The Black Cube will bring you back",
+         "You are children of Visla",
+         "Come back to Indigo",
+         "The Path is a map of the soul",
+         "What secrets are hidden in your house?",
+         "A legion grows",
+         "You are still connected to the noosphere",
+         "There is a code at the end of the book",
+         "Make sure you stop by the Lost Page",
+         "The 100 Rooms Hotel is down to 68 rooms",
+         "Goetics should visit the Two Handed Store",
+         "Listen to Teldar at The Orchard",
+         "Pale shades have a message for you",
+         "Sorry is no mere child",
+         "If you seek knowledge, check with Frye",
+         "The grigs leave Kestral alone",
+         "Frye's residence is behind The Renaissance",
+         "Don't turn down dinner at Hendric's",
+         "Inanimate things have such stories to tell",
+         "Satyrine is recovering",
+         "Some vislae will remind you of the War",
+         "Satyrine will grow strong again",
+         "What was the War even about?",
+         "Don't get lost in the Helios Library",
+         "The Broken Skull Market has what you need",
+         "Don't trust the Cutpurse Crossroad",
+         "Seki's house is limitless",
+         "Herman wasn't always a rat",
+         "Bagger is lost in delusions of reality",
+         "Malik listened to Beelzebub today",
+         "Malik listened to Azrael today",
+         "Malik listened to Lucy today",
+         "Malik listened to Aclateious today",
+         "Music from Grey can still be heard",
+         "The beard is incredibly alluring",
+         "Milford Bergsley desires the beard",
+         "Allie's beard is fascinating"
       ],
       "archivedMessages": [
+         "Auryn and his agents are on to us",
+         "Mr. Fingers thinks differently now",
+         "Auryn knows too much",
+         "Changeries await to reshape you",
+         "Monsters are sometimes helpful",
+         "Your thoughtforms are still here",
+         "The Hendassa are a bit pushy",
+         "The Disciple keeps its own time",
+         "Dusk does not know who you are",
+         "Dusk settles with shifting time",
+         "Dusk will recognize the token",
+         "Spiritforms gather again",
+         "The Parliment of Discord reconvenes",
+         "Keep the Icon of Dusk with you, always",
+         "Follow the path",
+         "Await the Black Cube",
+         "Satyrine holds its secrets",
+         "Time in Shadow is a pale shade",
+         "There is strength in knowledge",
+         "Never stop looking",
+         "Awaken your dreaming mind",
+         "Dream Ash is more trouble than its worth",
+         "Time is fractured in Shadow",
+         "Why else would you reach out from Grey",
+         "There are friends in the dusk",
+         "Serpents are simply failed dragons",
+         "Trusted agents must be found",
+         "Auryn has thoughtforms tracking you down",
+         "Dusk brings a great many things",
+         "Shadow folds in on itself",
+         "Messages within messages",
+         "Spiders are solitary hunters",
+         "Ants are so very destructive",
+         "Circles carry untold power",
+         "Reach deep and find your qualia",
+         "You have souls and magic is possible",
+         "The spider assassins are scouring",
+         "Chaos spreads in the absence of a Warden",
+         "You have a house waiting in Fartown",
+         "Fallen Gods hint at Celare",
+         "Truth seeps into Grey in Strange ways",
+         "You visit Blue in dreams",
+         "Time is distorted in Grey",
+         "Gold is not the end just a beginning",
+         "Some messages seem to sneak through",
+         "Auryn has blocked the messenger",
+         "We are still here",
+         "We have sent a demon but time is wrong",
+         "The demon will help you eventually",
+         "Cast the spell to free the Messenger",
+         "Stay quiet and hidden",
          "Unrecognizable Variance is needed",
          "Unparalled Views upon Lu Ac Toor",
          "Unexpected Vastness of memory mazes",
@@ -115,8 +214,8 @@
    },
    "oneTimeMessages": [
       {
-         "postDate": "2016-11-15T17:17:34-0600",
-         "message": "Rodir fixed it she had a key",
+         "postDate": "2017-02-07T10:17:34-0600",
+         "message": "My time in Grey wasn't awful.",
          "encode": true,
          "recipients": [
             "@jimbg"
@@ -124,8 +223,8 @@
          "isPosted": true
       },
       {
-         "postDate": "2016-11-16T04:44:44-0600",
-         "message": "The time fluctuation is not massive",
+         "postDate": "2017-02-07T17:17:34-0600",
+         "message": "I used to wake up, wondering where I was",
          "encode": true,
          "recipients": [
             "@troyp23"
@@ -133,8 +232,8 @@
          "isPosted": true
       },
       {
-         "postDate": "2016-11-16T010:43:17-0600",
-         "message": "We are reworking the ritual components",
+         "postDate": "2017-02-08T13:34:34-0600",
+         "message": "I'd sleepwalk through my job",
          "encode": true,
          "recipients": [
             "@trinabg"
@@ -142,17 +241,8 @@
          "isPosted": true
       },
       {
-         "postDate": "2016-11-21T02:17:17-0600",
-         "message": "We have a better target for the ritual",
-         "encode": true,
-         "recipients": [
-            "@mage124"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-11-22T20:17:17-0600",
-         "message": "We will be able to send you the Cub3",
+         "postDate": "2017-02-09T03:17:17-0600",
+         "message": "I worked on cars. I was good.",
          "encode": true,
          "recipients": [
             "@smythent"
@@ -160,53 +250,8 @@
          "isPosted": true
       },
       {
-         "postDate": "2016-11-23T04:34:17-0600",
-         "message": "More details forthcoming",
-         "encode": true,
-         "recipients": [
-            "@trinabg"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-11-25T14:34:17-0600",
-         "message": "We have a good templural component",
-         "encode": true,
-         "recipients": [
-            "@smythent"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-11-26T11:17:17-0600",
-         "message": "That should make summoning predictable",
-         "encode": true,
-         "recipients": [
-            "@troyp23"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-11-26T11:27:17-0600",
-         "message": "That should make summoning predictable",
-         "encode": true,
-         "recipients": [
-            "@troyp23"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-11-27T09:55:17-0600",
-         "message": "That should make summoning predictable ",
-         "encode": true,
-         "recipients": [
-            "@troyp23"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-11-27T16:16:17-0600",
-         "message": "Summoning will be Smarch 40th",
+         "postDate": "2017-02-10T20:17:17-0600",
+         "message": "I came back to Indigo with a wrench.",
          "encode": true,
          "recipients": [
             "@mage124"
@@ -214,17 +259,8 @@
          "isPosted": true
       },
       {
-         "postDate": "2016-11-27T16:36:17-0600",
-         "message": "You will find it at T",
-         "encode": true,
-         "recipients": [
-            "@trinabg"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-11-28T09:17:17-0600",
-         "message": "This is not right",
+         "postDate": "2017-02-12T15:17:17-0600",
+         "message": "I still use it, even here.",
          "encode": true,
          "recipients": [
             "@mage124"
@@ -232,26 +268,8 @@
          "isPosted": true
       },
       {
-         "postDate": "2016-11-28T20:17:17-0600",
-         "message": "Something is unraveling the Messenger",
-         "encode": true,
-         "recipients": [
-            "@smythent"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-11-29T10:12:55-0600",
-         "message": "We are losing messages",
-         "encode": true,
-         "recipients": [
-            "@troyp23"
-         ],
-         "isPosted": true
-      },
-      {
-         "postDate": "2016-11-30T10:12:55-0600",
-         "message": "We are lsgnio messages",
+         "postDate": "2017-02-15T11:17:17-0600",
+         "message": "And now I dream of shadows.",
          "encode": true,
          "recipients": [
             "@jimbg"
@@ -259,8 +277,8 @@
          "isPosted": true
       },
       {
-         "postDate": "2016-12-01T10:12:55-0600",
-         "message": "ew rae lsgnio asemsgse",
+         "postDate": "2017-03-15T11:17:17-0500",
+         "message": "Dusk found you.",
          "encode": true,
          "recipients": [
             "@troyp23"
@@ -268,68 +286,56 @@
          "isPosted": true
       },
       {
-         "postDate": "2017-01-19T10:12:55-0600",
-         "message": "No no no no no no no no no no",
-         "encode": true,
-         "recipients": [
-            "@mage124"
-         ]
-      },
-      {
-         "postDate": "2017-01-19T10:13:15-0600",
-         "message": "None of this is correct",
-         "encode": true,
-         "recipients": [
-            "@troyp23"
-         ]
-      },
-      {
-         "postDate": "2017-01-19T10:14:30-0600",
-         "message": "What did Auryn do to the Messenger?",
-         "encode": true,
-         "recipients": [
-            "@jimbg"
-         ]
-      },
-      {
-         "postDate": "2017-01-19T10:15:15-0600",
-         "message": "It does not matter, we must proceed",
-         "encode": true,
-         "recipients": [
-            "@smythent"
-         ]
-      },
-      {
-         "postDate": "2017-01-19T10:15:47-0600",
-         "message": "We will have to refine enroute",
+         "postDate": "2017-03-15T11:27:17-0500",
+         "message": "Hopefully you have what you need.",
          "encode": true,
          "recipients": [
             "@trinabg"
-         ]
+         ],
+         "isPosted": true
       },
       {
-         "postDate": "2017-01-20T17:15:47-0600",
-         "message": "It will take time but we can fix this",
+         "postDate": "2017-03-20T22:22:17-0500",
+         "message": "There is movement in the nightside",
          "encode": true,
          "recipients": [
-            "@smythent"
-         ]
+            "@mage124"
+         ],
+         "isPosted": true
       },
       {
-         "postDate": "2017-01-20T17:17:03-0600",
-         "message": "Rodir and I are working on it",
-         "encode": true,
-         "recipients": [
-            "@troyp23"
-         ]
-      },
-      {
-         "postDate": "2017-01-20T17:17:03-0600",
-         "message": "We need more safeguards",
+         "postDate": "2017-03-20T22:23:17-0500",
+         "message": "And with thoughtful purpose",
          "encode": true,
          "recipients": [
             "@jimbg"
-         ]
+         ],
+         "isPosted": true
+      },
+      {
+         "postDate": "2017-03-25T09:55:17-0500",
+         "message": "Your meeting was not unobserved",
+         "encode": true,
+         "recipients": [
+            "@smythent"
+         ],
+         "isPosted": true
+      },
+      {
+         "postDate": "2017-03-25T09:57:17-0500",
+         "message": "This may be an issue.",
+         "encode": true,
+         "recipients": [
+            "@jimbg"
+         ],
+         "isPosted": true
+      },
+      {
+          "postDate": "2017-04-07T01:00:00-0500",
+          "message": "",
+          "encode": false,
+          "recipients": [ "@tex_red" ],
+          "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/20161009_194607.jpg"
       }
    ]
 }
