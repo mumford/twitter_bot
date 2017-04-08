@@ -381,20 +381,35 @@ function TwitterBot(options) {
     }
 
     function postImage(imageUrl, message, cb) {
-        // Download the image
-        downloadImage(imageUrl, function(image) {
-            //that.twit.post('statuses/update', { status: 'hmmmm' }, cb);
-            that.twit.post('media/upload', { media: image }, cb);
-        });
+        downloadImage(imageUrl, function(err, image) {
+            if (err) {
+                return cb(err);
+            }
 
-        // Post the image
-        // Post the message with the image tied to it
+            that.twit.post('media/upload', { media: image }, function(imgErr, imgData, imgResponse)
+            {
+                if (imgErr) {
+                    logMessage('Encountered an error trying to upload the image "' + imageUrl + '"\n');
+                    return cb(imgErr, imgData);
+                } else {
+                    logMessage('Image uploaded, received media_id "' + imgData.media_id_string + '"');
+                    that.twit.post('statuses/update', { status: message, media_ids: imgData.media_id_string }, function(postErr, postData, postResponse) {                        
+                        return cb(postErr, postData);
+                    });
+                }                
+            });
+        });
     }
 
     function downloadImage(imageUrl, cb) {
-        logMessage('***** Attempting to download: "' + imageUrl + '"');
+        logMessage('Attempting to download: "' + imageUrl + '"');
         request.get(imageUrl, function(err, response, body) {
-            cb(new Buffer(body).toString('base64'));
+            if (err) {
+                logMessage('Encountered an error downloading the image.');
+                return cb(err, null);
+            } else {
+                return cb(null, new Buffer(body).toString('base64'));
+            }            
         });
     }
 

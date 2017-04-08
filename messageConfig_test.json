@@ -332,9 +332,9 @@
       },
       {
           "postDate": "2017-04-07T01:00:00-0500",
-          "message": "",
+          "message": "Testing",
           "encode": false,
-          "recipients": [ "@tex_red" ],
+          "recipients": [ "@is_image_test" ],
           "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/20161009_194607.jpg"
       }
    ]
