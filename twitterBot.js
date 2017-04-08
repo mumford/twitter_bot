@@ -3,7 +3,8 @@ var path = require('path'),
     Morse = require('morse-node'),
     moment = require('moment-timezone'),
     async = require('async'),
-    aws = require('aws-sdk');
+    aws = require('aws-sdk'),
+    request = require('request').defaults({ encoding: null });
 
 function TwitterBot(options) {
     
@@ -161,11 +162,10 @@ function TwitterBot(options) {
             : that.options.devTwitter;
 
         // Configure Twit so we can post
-        var twitterConfig = that.options.twitter;
         twitterConfig.consumer_secret = process.env.consumer_secret;
         twitterConfig.access_token_secret = process.env.access_token_secret;
 
-        that.twit = new Twit(that.options.twitter);
+        that.twit = new Twit(twitterConfig);
     }
 
     function initializeAws() {
@@ -293,17 +293,32 @@ function TwitterBot(options) {
 
                 async.each(oneTimeMessage.recipients, function(recipient, recipientDone) {
                     var tweet = "." + recipient + " " + message;
-                    postMessage(tweet, function(err) {
-                        if (!err) {
-                            oneTimeMessage.isPosted = true;                         
-                        } else if (err.error) {
-                            logMessage(err.description);
-                        } else {
-                            logMessage('Encountered an error\r\n\r\n' + err);
-                        }
-                        
-                        recipientDone(err);                    
-                    });
+
+                    if (oneTimeMessage.image) {
+                        postImage(oneTimeMessage.image, tweet, function(err) {
+                            if (!err) {
+                                oneTimeMessage.isPosted = true;                         
+                            } else if (err.error) {
+                                logMessage(err.description);
+                            } else {
+                                logMessage('Encountered an error\r\n\r\n' + err);
+                            }
+                            
+                            recipientDone(err);                    
+                        });
+                    } else {
+                        postMessage(tweet, function(err) {
+                            if (!err) {
+                                oneTimeMessage.isPosted = true;                         
+                            } else if (err.error) {
+                                logMessage(err.description);
+                            } else {
+                                logMessage('Encountered an error\r\n\r\n' + err);
+                            }
+                            
+                            recipientDone(err);                    
+                        });
+                    }                    
                 }, 
                 function(err) {
                     if (err) {
@@ -361,8 +376,26 @@ function TwitterBot(options) {
             that.twit.post('statuses/update', { status: message },
                 function(err, data, response) {
                     cb(err, data);
-                });
+                });            
         }
+    }
+
+    function postImage(imageUrl, message, cb) {
+        // Download the image
+        downloadImage(imageUrl, function(image) {
+            //that.twit.post('statuses/update', { status: 'hmmmm' }, cb);
+            that.twit.post('media/upload', { media: image }, cb);
+        });
+
+        // Post the image
+        // Post the message with the image tied to it
+    }
+
+    function downloadImage(imageUrl, cb) {
+        logMessage('***** Attempting to download: "' + imageUrl + '"');
+        request.get(imageUrl, function(err, response, body) {
+            cb(new Buffer(body).toString('base64'));
+        });
     }
 
     function logMessage(message) {

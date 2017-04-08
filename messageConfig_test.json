@@ -1,6 +1,6 @@
 {
    "repeatingMessages": {
-      "repeatDelayInSeconds": 10,
+      "repeatDelayInSeconds": 6000,
       "scrambleMessages": false,
       "scrambleChance": ".9",
       "lastPosted": "2017-04-07T08:53:55-05:00",
