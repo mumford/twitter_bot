@@ -3,7 +3,7 @@
       "repeatDelayInSeconds": 61200,
       "scrambleMessages": false,
       "scrambleChance": ".9",
-      "lastPosted": "2017-04-10T21:53:56-05:00",
+      "lastPosted": "2017-04-22T05:53:56-05:00",
       "messages": [
          "Meet me at Zero's",
          "Find your Testament",
@@ -12,7 +12,6 @@
          "Death won't deter you",
          "Do you remember your house?",
          "Pale is a realm of spirits",
-         "You will find your heart again",
          "Your secret soul is hidden",
          "Grey is the shadow of Indigo",
          "We need you to return to Indigo",
@@ -27,37 +26,45 @@
          "A legion grows",
          "You are still connected to the noosphere",
          "There is a code at the end of the book",
-         "Make sure you stop by the Lost Page",
          "The 100 Rooms Hotel is down to 68 rooms",
-         "Goetics should visit the Two Handed Store",
-         "Listen to Teldar at The Orchard",
          "Pale shades have a message for you",
+         "Satyrine is recovering",
+         "Some vislae will remind you of the War",
+         "Satyrine will grow strong again",
+         "What was the War even about?",
+         "Don't get lost in the Helios Library",
+         "We will exhaust Auryn's shadows",
+         "We will deplete their certes",
+         "You are more resiliant than shadows",
+         "We have improved the Messenger",
+         "We've dispatched spirits to Grey",
+         "Rodir's spell has scrambled things",
+         "What you need has been cast far and wide",
+         "Once the green blooms under Grey"
+      ],
+      "playtestMessages": [
+         "The Broken Skull Market has what you need",
+         "Don't trust the Cutpurse Crossroad",
+         "Seki's house is limitless",
+         "Herman wasn't always a rat",
+         "Bagger is lost in delusions of reality",
+         "It was quiet for Malik today",
+         "Music from Grey can still be heard",
+         "The beard is incredibly alluring",
+         "Milford Bergsley desires the beard",
+         "Allie's beard is fascinating",
          "Sorry is no mere child",
          "If you seek knowledge, check with Frye",
          "The grigs leave Kestral alone",
          "Frye's residence is behind The Renaissance",
          "Don't turn down dinner at Hendric's",
          "Inanimate things have such stories to tell",
-         "Satyrine is recovering",
-         "Some vislae will remind you of the War",
-         "Satyrine will grow strong again",
-         "What was the War even about?",
-         "Don't get lost in the Helios Library",
-         "The Broken Skull Market has what you need",
-         "Don't trust the Cutpurse Crossroad",
-         "Seki's house is limitless",
-         "Herman wasn't always a rat",
-         "Bagger is lost in delusions of reality",
-         "Malik listened to Beelzebub today",
-         "Malik listened to Azrael today",
-         "Malik listened to Lucy today",
-         "Malik listened to Aclateious today",
-         "Music from Grey can still be heard",
-         "The beard is incredibly alluring",
-         "Milford Bergsley desires the beard",
-         "Allie's beard is fascinating"
+         "Make sure you stop by the Lost Page",
+         "Goetics should visit the Two Handed Store",
+         "Listen to Teldar at The Orchard"
       ],
       "archivedMessages": [
+         "You will find your heart again",
          "Auryn and his agents are on to us",
          "Mr. Fingers thinks differently now",
          "Auryn knows too much",
@@ -220,7 +227,8 @@
          "recipients": [
             "@jimbg"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Preview_Silver.PNG"         
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Preview_Silver.PNG",
+         "isPosted": true
       },
       {
          "postDate": "2017-04-16T09:17:17-0500",
@@ -229,7 +237,8 @@
          "recipients": [
             "@troyp23"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Preview_Green.PNG"         
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Preview_Green.PNG",
+         "isPosted": true
       },
       {
          "postDate": "2017-04-21T17:17:17-0500",
@@ -238,7 +247,8 @@
          "recipients": [
             "@smythent"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Preview_Blue.PNG"         
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Preview_Blue.PNG",
+         "isPosted": true
       },
       {
          "postDate": "2017-04-26T12:17:17-0500",
@@ -247,7 +257,7 @@
          "recipients": [
             "@trinabg"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Preview_Indigo.PNG"         
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Preview_Indigo.PNG"
       },
       {
          "postDate": "2017-05-01T08:17:17-0500",
@@ -256,7 +266,7 @@
          "recipients": [
             "@mage124"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Preview_Grey.PNG"         
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Preview_Grey.PNG"
       },
       {
          "postDate": "2017-05-07T21:17:17-0500",
@@ -274,7 +284,7 @@
          "recipients": [
             "@jimbg"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Preview_Red.PNG"         
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Preview_Red.PNG"
       },
       {
          "postDate": "2017-05-17T07:17:17-0500",
@@ -283,7 +293,7 @@
          "recipients": [
             "@troyp23"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Preview_Gold.PNG"         
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Preview_Gold.PNG"
       },
       {
          "postDate": "2017-05-22T11:17:17-0500",
@@ -292,7 +302,138 @@
          "recipients": [
             "@smythent"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Preview_Celare.PNG"         
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Preview_Celare.PNG"
+      },
+      // These are the coordinates the cemeteries will fill
+      {
+          "postDate": "2017-05-21T14:17:17-0500",
+          "message": "N44 30.ABC W089 32.DEF",
+          "encode": true,
+          "recipients": [
+              "@mage124"
+          ]
+      },
+      // These are the coordinates the kenken will fill
+      {
+          "postDate": "2017-05-21T10:17:17-0500",
+          "message": "N44 2G.HI0 W089 3J.0KL",
+          "encode": true,
+          "recipients": [
+              "@trinabg"
+          ]
+      },
+      // ***** Begin coordinates for cemeteries *****
+      // Maine cemetery
+      {
+          "postDate": "2017-05-23T10:17:17-0500",
+          "message": "N44 25.936 W089 31.709",
+          "encode": true,
+          "recipients": [
+              "@smythent"
+          ]
+      },
+      // River pilot marker
+      {
+          "postDate": "2017-05-23T10:34:17-0500",
+          "message": "N44 28.956 W089 34.500",
+          "encode": true,
+          "recipients": [
+              "@trinabg"
+          ]
+      },
+      // St. Paul cemetery
+      {
+          "postDate": "2017-05-23T11:07:17-0500",
+          "message": "N44 30.682 W089 33.305",
+          "encode": true,
+          "recipients": [
+              "@troyp23"
+          ]
+      },
+      // St. Joseph cemetery
+      {
+          "postDate": "2017-05-23T11:21:17-0500",
+          "message": "N44 31.507 W089 33.159",
+          "encode": true,
+          "recipients": [
+              "@mage124"
+          ]
+      },
+      // Small cemetery on HH
+      {
+          "postDate": "2017-05-23T11:47:17-0500",
+          "message": "N44 29.854 W089 28.661",
+          "encode": true,
+          "recipients": [              
+              "@jimbg"
+          ]
+      },
+      // St. Peter cemetery
+      {
+          "postDate": "2017-05-23T12:08:17-0500",
+          "message": "N44 32.257 W089 36.041",
+          "encode": true,
+          "recipients": [
+              "@mage124"
+          ]
+      },
+      // ***** End of the cemetery coordinates ******
+
+      // ***** Begin the cemetery hints *****
+      {
+          "postDate": "2017-05-22T11:34:17-0500",
+          "message": "",
+          "encode": true,
+          "recipients": [
+              "@troyp23"
+          ],
+          "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Pale_Spirits/D_5FC8E806577542A2ADEE01426C010760.png"
+      },
+      {
+          "postDate": "2017-05-22T12:02:17-0500",
+          "message": "",
+          "encode": true,
+          "recipients": [
+              "@mage124"
+          ],
+          "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Pale_Spirits/F_0D34EFB2E134473FA91C3322FCFB0799.png"
+      },
+      {
+          "postDate": "2017-05-22T12:44:17-0500",
+          "message": "",
+          "encode": true,
+          "recipients": [
+              "@smythent"
+          ],
+          "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Pale_Spirits/B_D182CD978FF641C685B2A0B0E1F5BA6A.png"
+      },
+      {
+          "postDate": "2017-05-22T13:24:17-0500",
+          "message": "",
+          "encode": true,
+          "recipients": [
+              "@jimbg"
+          ],
+          "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Pale_Spirits/A_6179338A2C5C4DC4A226B71F2AF62356.png"
+      },
+      {
+          "postDate": "2017-05-22T13:55:17-0500",
+          "message": "",
+          "encode": true,
+          "recipients": [
+              "@trinabg"
+          ],
+          "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Pale_Spirits/C_609DBC6045D24F96ABC58E879B5ACC07.png"
+      },
+      {
+          "postDate": "2017-05-22T14:09:17-0500",
+          "message": "",
+          "encode": true,
+          "recipients": [
+              "@mage124"
+          ],
+          "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Pale_Spirits/E_1B8F0A1BB3A34848933E9797C03C89F7.png"
       }
+      // ***** End of the cemetery hints *****
    ]
 }
