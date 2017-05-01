@@ -157,6 +157,10 @@ function TwitterBot(options) {
     }
 
     function initializeTwit() {
+        if (!isInProductionMode()) {
+            return;
+        }
+
         var twitterConfig = isInProductionMode()
             ? that.options.twitter
             : that.options.devTwitter;
@@ -289,23 +293,32 @@ function TwitterBot(options) {
 
                 var message = oneTimeMessage.encode 
                     ? that.morse.encode(oneTimeMessage.message)
-                    : oneTimeMessage.message;                
+                    : oneTimeMessage.message;
+                    
+                var recipients = [ oneTimeMessage.recipients.join(' ') ];
 
-                async.each(oneTimeMessage.recipients, function(recipient, recipientDone) {
+                logMessage('Sending a message to: ' + recipients);
+
+                async.each(recipients, function(recipient, recipientDone) {
                     var tweet = "." + recipient + " " + message;
 
                     if (oneTimeMessage.image) {
-                        postImage(oneTimeMessage.image, tweet, function(err) {
-                            if (!err) {
-                                oneTimeMessage.isPosted = true;                         
-                            } else if (err.error) {
-                                logMessage(err.description);
-                            } else {
-                                logMessage('Encountered an error\r\n\r\n' + err);
-                            }
-                            
-                            recipientDone(err);                    
-                        });
+                        if (!isInProductionMode()) {
+                            logMessage('Image post processed: ' + tweet);
+                            recipientDone();
+                        } else {
+                            postImage(oneTimeMessage.image, tweet, function(err) {
+                                if (!err) {
+                                    oneTimeMessage.isPosted = true;                         
+                                } else if (err.error) {
+                                    logMessage(err.description);
+                                } else {
+                                    logMessage('Encountered an error\r\n\r\n' + err);
+                                }
+                                
+                                recipientDone(err);                    
+                            });
+                        }
                     } else {
                         postMessage(tweet, function(err) {
                             if (!err) {
