@@ -3,7 +3,7 @@
       "repeatDelayInSeconds": 61200,
       "scrambleMessages": false,
       "scrambleChance": ".9",
-      "lastPosted": "2017-05-01T10:53:56-05:00",
+      "lastPosted": "2017-05-04T06:53:56-05:00",
       "messages": [
          "Meet me at Zero's",
          "Find your Testament",
@@ -325,7 +325,8 @@
             "@trinabg",
             "@troyp23"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/01_71DC9024736E42BF9F297897CEE5AD7B.jpg"
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/01_71DC9024736E42BF9F297897CEE5AD7B.jpg",
+         "isPosted": true
       },
       {
          "postDate": "2017-05-01T11:27:17-0500",
@@ -346,106 +347,118 @@
          "isPosted": true
       },
       {
-         "postDate": "2017-05-04T10:17:17-0500",
+         "postDate": "2017-05-02T10:17:17-0500",
          "message": "N44 25.936 W089 31.709",
          "encode": true,
          "recipients": [
             "@smythent"
-         ]
+         ],
+         "isPosted": true
       },
       {
-         "postDate": "2017-05-04T10:34:17-0500",
+         "postDate": "2017-05-02T10:34:17-0500",
          "message": "N44 28.956 W089 34.500",
          "encode": true,
          "recipients": [
             "@trinabg"
-         ]
+         ],
+         "isPosted": true
       },
       {
-         "postDate": "2017-05-04T11:07:17-0500",
+         "postDate": "2017-05-02T11:07:17-0500",
          "message": "N44 30.682 W089 33.305",
          "encode": true,
          "recipients": [
             "@troyp23"
-         ]
+         ],
+         "isPosted": true
       },
       {
-         "postDate": "2017-05-04T11:21:17-0500",
+         "postDate": "2017-05-02T11:21:17-0500",
          "message": "N44 31.507 W089 33.159",
          "encode": true,
          "recipients": [
             "@mage124"
-         ]
+         ],
+         "isPosted": true
       },
       {
-         "postDate": "2017-05-04T11:47:17-0500",
+         "postDate": "2017-05-02T11:47:17-0500",
          "message": "N44 29.854 W089 28.661",
          "encode": true,
          "recipients": [
             "@jimbg"
-         ]
+         ],
+         "isPosted": true
       },
       {
-         "postDate": "2017-05-04T12:08:17-0500",
+         "postDate": "2017-05-02T12:08:17-0500",
          "message": "N44 32.257 W089 36.041",
          "encode": true,
          "recipients": [
             "@mage124"
-         ]
+         ],
+         "isPosted": true
       },
       {
-         "postDate": "2017-05-03T11:34:17-0500",
+         "postDate": "2017-05-02T10:48:17-0500",
          "message": "",
          "encode": true,
          "recipients": [
             "@troyp23"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Pale_Spirits/D_5FC8E806577542A2ADEE01426C010760.png"
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Pale_Spirits/D_5FC8E806577542A2ADEE01426C010760.png",
+         "isPosted": true
       },
       {
-         "postDate": "2017-05-03T12:02:17-0500",
+         "postDate": "2017-05-02T11:02:17-0500",
          "message": "",
          "encode": true,
          "recipients": [
             "@mage124"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Pale_Spirits/F_0D34EFB2E134473FA91C3322FCFB0799.png"
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Pale_Spirits/F_0D34EFB2E134473FA91C3322FCFB0799.png",
+         "isPosted": true
       },
       {
-         "postDate": "2017-05-03T12:44:17-0500",
+         "postDate": "2017-05-02T11:44:17-0500",
          "message": "",
          "encode": true,
          "recipients": [
             "@smythent"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Pale_Spirits/B_D182CD978FF641C685B2A0B0E1F5BA6A.png"
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Pale_Spirits/B_D182CD978FF641C685B2A0B0E1F5BA6A.png",
+         "isPosted": true
       },
       {
-         "postDate": "2017-05-03T13:24:17-0500",
+         "postDate": "2017-05-02T12:24:17-0500",
          "message": "",
          "encode": true,
          "recipients": [
             "@jimbg"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Pale_Spirits/A_6179338A2C5C4DC4A226B71F2AF62356.png"
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Pale_Spirits/A_6179338A2C5C4DC4A226B71F2AF62356.png",
+         "isPosted": true
       },
       {
-         "postDate": "2017-05-03T13:55:17-0500",
+         "postDate": "2017-05-02T12:55:17-0500",
          "message": "",
          "encode": true,
          "recipients": [
             "@trinabg"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Pale_Spirits/C_609DBC6045D24F96ABC58E879B5ACC07.png"
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Pale_Spirits/C_609DBC6045D24F96ABC58E879B5ACC07.png",
+         "isPosted": true
       },
       {
-         "postDate": "2017-05-03T14:09:17-0500",
+         "postDate": "2017-05-02T13:09:17-0500",
          "message": "",
          "encode": true,
          "recipients": [
             "@mage124"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Pale_Spirits/E_1B8F0A1BB3A34848933E9797C03C89F7.png"
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Pale_Spirits/E_1B8F0A1BB3A34848933E9797C03C89F7.png",
+         "isPosted": true
       },
       {
          "postDate": "2017-05-02T09:00:00-0500",
@@ -458,7 +471,8 @@
             "@trinabg",
             "@troyp23"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/02_AED2D3621E484DCCBD7542E1D8180855.jpg"
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/02_AED2D3621E484DCCBD7542E1D8180855.jpg",
+         "isPosted": true
       },
       {
          "postDate": "2017-05-02T10:00:00-0500",
@@ -471,7 +485,8 @@
             "@trinabg",
             "@troyp23"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/03_7470E737734D4967ADFCEB7411445725.jpg"
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/03_7470E737734D4967ADFCEB7411445725.jpg",
+         "isPosted": true
       },
       {
          "postDate": "2017-05-02T11:00:00-0500",
@@ -484,7 +499,8 @@
             "@trinabg",
             "@troyp23"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/04_F55883F4DCE548B2BF9CC0325B3B5D2F.jpg"
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/04_F55883F4DCE548B2BF9CC0325B3B5D2F.jpg",
+         "isPosted": true
       },
       {
          "postDate": "2017-05-02T12:00:00-0500",
@@ -497,7 +513,8 @@
             "@trinabg",
             "@troyp23"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/05_5DC49912BAAD48B2A36041A70C336325.jpg"
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/05_5DC49912BAAD48B2A36041A70C336325.jpg",
+         "isPosted": true
       },
       {
          "postDate": "2017-05-02T13:00:00-0500",
@@ -510,7 +527,8 @@
             "@trinabg",
             "@troyp23"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/06_729C9BE1CF324CFB919238B20A585A57.jpg"
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/06_729C9BE1CF324CFB919238B20A585A57.jpg",
+         "isPosted": true
       },
       {
          "postDate": "2017-05-02T14:00:00-0500",
@@ -523,7 +541,8 @@
             "@trinabg",
             "@troyp23"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/07_F091D3EF86194CB194D8BD04516A5A44.jpg"
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/07_F091D3EF86194CB194D8BD04516A5A44.jpg",
+         "isPosted": true
       },
       {
          "postDate": "2017-05-02T15:00:00-0500",
@@ -536,7 +555,8 @@
             "@trinabg",
             "@troyp23"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/08_1CE3383DCBC54BCEAE3EFD2BC94F6D51.jpg"
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/08_1CE3383DCBC54BCEAE3EFD2BC94F6D51.jpg",
+         "isPosted": true
       },
       {
          "postDate": "2017-05-02T16:00:00-0500",
@@ -549,7 +569,8 @@
             "@trinabg",
             "@troyp23"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/09_224CD4524EC942ED9A21CC99BADDEE09.jpg"
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/09_224CD4524EC942ED9A21CC99BADDEE09.jpg",
+         "isPosted": true
       },
       {
          "postDate": "2017-05-02T17:00:00-0500",
@@ -562,7 +583,8 @@
             "@trinabg",
             "@troyp23"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/10_4F7212E01852415887D5EBA213526E01.jpg"
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/10_4F7212E01852415887D5EBA213526E01.jpg",
+         "isPosted": true
       },
       {
          "postDate": "2017-05-03T08:00:00-0500",
@@ -575,7 +597,8 @@
             "@trinabg",
             "@troyp23"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/11_AB1662C5AE614C498B4B1CFCD39DF918.jpg"
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/11_AB1662C5AE614C498B4B1CFCD39DF918.jpg",
+         "isPosted": true
       },
       {
          "postDate": "2017-05-03T09:00:00-0500",
@@ -588,7 +611,8 @@
             "@trinabg",
             "@troyp23"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/12_EABD6AD11B09430BB288462A60C96EAB.jpg"
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/12_EABD6AD11B09430BB288462A60C96EAB.jpg",
+         "isPosted": true
       },
       {
          "postDate": "2017-05-03T10:00:00-0500",
@@ -601,7 +625,8 @@
             "@trinabg",
             "@troyp23"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/13_79C85239125647D6B8FEB30A01E49E52.jpg"
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/13_79C85239125647D6B8FEB30A01E49E52.jpg",
+         "isPosted": true
       },
       {
          "postDate": "2017-05-03T11:00:00-0500",
@@ -614,7 +639,8 @@
             "@trinabg",
             "@troyp23"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/14_802B97A8286F476FB15FC0C97E9DEA80.jpg"
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/14_802B97A8286F476FB15FC0C97E9DEA80.jpg",
+         "isPosted": true
       },
       {
          "postDate": "2017-05-03T12:00:00-0500",
@@ -627,7 +653,8 @@
             "@trinabg",
             "@troyp23"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/15_33DD86E879754526B593BC4C0AEFF76C.jpg"
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/15_33DD86E879754526B593BC4C0AEFF76C.jpg",
+         "isPosted": true
       },
       {
          "postDate": "2017-05-03T13:00:00-0500",
@@ -640,7 +667,8 @@
             "@trinabg",
             "@troyp23"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/16_DB652FFF5E3D48708055E5B82BFF5C78.jpg"
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/16_DB652FFF5E3D48708055E5B82BFF5C78.jpg",
+         "isPosted": true
       },
       {
          "postDate": "2017-05-03T14:00:00-0500",
@@ -653,7 +681,8 @@
             "@trinabg",
             "@troyp23"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/17_65DB2045A1E742BBB359CB8834A62A64.jpg"
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/17_65DB2045A1E742BBB359CB8834A62A64.jpg",
+         "isPosted": true
       },
       {
          "postDate": "2017-05-03T15:00:00-0500",
@@ -666,7 +695,8 @@
             "@trinabg",
             "@troyp23"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/18_A7B16B74F4E948DFA5481FA1C903F4D3.jpg"
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/18_A7B16B74F4E948DFA5481FA1C903F4D3.jpg",
+         "isPosted": true
       },
       {
          "postDate": "2017-05-03T16:00:00-0500",
@@ -679,7 +709,8 @@
             "@trinabg",
             "@troyp23"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/19_AF4FCDDA130B44E6B761222E2B354499.jpg"
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/19_AF4FCDDA130B44E6B761222E2B354499.jpg",
+         "isPosted": true
       },
       {
          "postDate": "2017-05-03T17:00:00-0500",
@@ -692,7 +723,8 @@
             "@trinabg",
             "@troyp23"
          ],
-         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/20_2F52B185506F48F0820FFEC81ABB83E8.jpg"
+         "image": "https://s3.amazonaws.com/is-twitter-bot/Photos/Path_of_Suns/20_2F52B185506F48F0820FFEC81ABB83E8.jpg",
+         "isPosted": true
       },
       {
          "postDate": "2017-05-04T08:00:00-0500",
